@@ -6,6 +6,7 @@ type ProjectCardProps = {
   image: string;
   tags: string[];
   caseStudyHref: string;
+  caseStudyLabel: string;
 };
 
 export function ProjectCard({
@@ -14,6 +15,7 @@ export function ProjectCard({
   image,
   tags,
   caseStudyHref,
+  caseStudyLabel,
 }: ProjectCardProps) {
   const isExternalLink = caseStudyHref.startsWith("http://") || caseStudyHref.startsWith("https://");
 
@@ -50,7 +52,7 @@ export function ProjectCard({
           rel={isExternalLink ? "noreferrer" : undefined}
           className="mt-7 inline-flex items-center text-sm font-semibold uppercase tracking-[0.08em] text-text transition-all duration-300 hover:translate-x-1"
         >
-          View Case Study
+          {caseStudyLabel}
         </a>
       </div>
     </article>

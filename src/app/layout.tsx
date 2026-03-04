@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
+import en from "../../locales/en.json";
+import { I18nProvider } from "@/i18n/I18nProvider";
 import "./globals.css";
 
 const poppins = Poppins({
@@ -10,29 +12,19 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://davidkim.design"),
-  title: "David Kim | UX/UI Designer",
-  description:
-    "Portfólio de David Kim, UX/UI Designer com experiência em branding, design digital e produtos.",
-  keywords: [
-    "David Kim",
-    "UX/UI Designer",
-    "UX/UI",
-    "Portfolio",
-    "UI Design",
-    "UX Design",
-  ],
+  title: en.meta.title,
+  description: en.meta.description,
+  keywords: en.meta.keywords,
   openGraph: {
-    title: "David Kim | UX/UI Designer",
-    description:
-      "Portfólio com foco em UX/UI, branding e design digital por David Kim.",
+    title: en.meta.title,
+    description: en.meta.description,
     type: "website",
     url: "https://davidkim.design",
   },
   twitter: {
     card: "summary_large_image",
-    title: "David Kim | UX/UI Designer",
-    description:
-      "Portfólio com foco em UX/UI, branding e design digital por David Kim.",
+    title: en.meta.title,
+    description: en.meta.description,
   },
 };
 
@@ -44,7 +36,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${poppins.variable} antialiased`}>
-        {children}
+        <I18nProvider>{children}</I18nProvider>
       </body>
     </html>
   );

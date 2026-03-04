@@ -1,11 +1,13 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { useI18n } from "@/i18n/I18nProvider";
 
 type Theme = "light" | "dark";
 
 export function ThemeToggle() {
   const [theme, setTheme] = useState<Theme>("light");
+  const { dictionary } = useI18n();
 
   useEffect(() => {
     const storedTheme = window.localStorage.getItem("theme") as Theme | null;
@@ -29,9 +31,9 @@ export function ThemeToggle() {
       type="button"
       onClick={toggleTheme}
       className="inline-flex h-10 items-center rounded-full border border-border bg-surface px-4 text-xs font-semibold tracking-[0.15em] uppercase text-text transition-all duration-300 hover:-translate-y-0.5"
-      aria-label="Toggle dark mode"
+      aria-label={dictionary.theme.aria}
     >
-      {theme === "dark" ? "Light" : "Dark"}
+      {theme === "dark" ? dictionary.theme.light : dictionary.theme.dark}
     </button>
   );
 }

@@ -1,0 +1,130 @@
+{
+  "meta": {
+    "title": "David Kim | Designer UX/UI",
+    "description": "Portfólio de David Kim, Designer UX/UI com experiência em branding, design digital e desenvolvimento de produtos.",
+    "keywords": ["David Kim", "Designer UX/UI", "UX/UI", "Portfólio", "UI Design", "UX Design"]
+  },
+  "nav": {
+    "brand": "David Kim",
+    "items": [
+      { "label": "Início", "href": "#home" },
+      { "label": "Sobre", "href": "#about" },
+      { "label": "Projetos", "href": "#projects" },
+      { "label": "Contato", "href": "#contact" }
+    ]
+  },
+  "language": {
+    "aria": "Alternar idioma",
+    "switchTo": "EN"
+  },
+  "theme": {
+    "aria": "Alternar modo escuro",
+    "light": "Claro",
+    "dark": "Escuro"
+  },
+  "hero": {
+    "location": "Blumenau, SC — Brasil",
+    "name": "David Kim",
+    "title": "Designer UX/UI",
+    "buttons": {
+      "projects": "Ver Projetos",
+      "contact": "Contato"
+    }
+  },
+  "about": {
+    "title": "Sobre",
+    "heading": "Desenvolvedor Flutter e Designer UX/UI com foco em produtos digitais.",
+    "imageSrc": "https://images.unsplash.com/photo-1545239351-1141bd82e8a6?auto=format&fit=crop&w=1400&q=80",
+    "imageAlt": "Ambiente de trabalho de design",
+    "description": "Desenvolvo projetos que conectam design e tecnologia com foco em usabilidade, clareza e resultado. No GitHub, concentro trabalhos em Flutter, web e backend (TypeScript, Dart, Java, HTML/CSS). No Behance, publico projetos de Design Gráfico, Branding e Social Media, com uso recorrente de Adobe Illustrator."
+  },
+  "projects": {
+    "title": "Projetos",
+    "caseStudyLabel": "Ver Case Study",
+    "list": [
+      {
+        "name": "davidkim.github.io",
+        "description": "Portfólio pessoal em Next.js com foco em UX/UI, arquitetura limpa e apresentação de projetos digitais.",
+        "image": "https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&w=1200&q=80",
+        "tags": ["TypeScript", "Next.js", "UX/UI"],
+        "caseStudyHref": "https://github.com/VidaRealDoKim/davidkim.github.io"
+      },
+      {
+        "name": "ProjetoIEQSede",
+        "description": "Projeto em Dart/Flutter com foco em desenvolvimento mobile e estruturação de funcionalidades orientadas ao usuário.",
+        "image": "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1200&q=80",
+        "tags": ["Flutter", "Dart", "Mobile"],
+        "caseStudyHref": "https://github.com/VidaRealDoKim/ProjetoIEQSede"
+      },
+      {
+        "name": "To-do-Backend",
+        "description": "Backend em Java desenvolvido em trilha prática da Rocketseat, com foco em fundamentos de API e organização de código.",
+        "image": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1200&q=80",
+        "tags": ["Java", "Backend", "API"],
+        "caseStudyHref": "https://github.com/VidaRealDoKim/To-do-Backend"
+      },
+      {
+        "name": "IBK Brasil",
+        "description": "Website institucional bilíngue do Instituto Brasil Koréia, com foco em clareza de conteúdo e presença digital.",
+        "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80",
+        "tags": ["HTML", "Website", "Design Visual"],
+        "caseStudyHref": "https://github.com/VidaRealDoKim/ibk-brasil"
+      },
+      {
+        "name": "Oversized - Maturity",
+        "description": "Projeto de identidade visual publicado no Behance, com foco em branding e direção gráfica.",
+        "image": "https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/708312211565359.Y3JvcCw4MTAsNjM0LDAsMA.png",
+        "tags": ["Branding", "Design Gráfico", "Illustrator"],
+        "caseStudyHref": "https://www.behance.net/gallery/211565359/Oversized-Maturity"
+      },
+      {
+        "name": "Aula 23 - Design com Vc - Promoção",
+        "description": "Peça para social media com foco em comunicação promocional e marketing visual.",
+        "image": "https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/1a01be211005521.Y3JvcCwxMDgwLDg0NCwwLDExNw.png",
+        "tags": ["Social Media", "Design Gráfico", "Illustrator"],
+        "caseStudyHref": "https://www.behance.net/gallery/211005521/Aula-23-Design-com-Vc-Promocao"
+      }
+    ]
+  },
+  "skills": {
+    "title": "Habilidades & Tecnologias",
+    "items": [
+      "TypeScript",
+      "Dart",
+      "Java",
+      "Next.js",
+      "Flutter",
+      "HTML/CSS",
+      "Git & GitHub",
+      "Vercel",
+      "UX/UI Design",
+      "Branding",
+      "Design Visual",
+      "Adobe Illustrator",
+      "Social Media Design"
+    ]
+  },
+  "contact": {
+    "title": "Contato",
+    "heading": "Vamos construir algo excepcional.",
+    "description": "Disponível para oportunidades e colaborações em UX/UI, produto digital e design visual.",
+    "phoneLabel": "Telefone",
+    "locationLabel": "Localização",
+    "email": "david8.escola@gmail.com",
+    "phone": "(47) 99629-5564",
+    "location": "Blumenau, SC",
+    "buttons": {
+      "email": "Enviar E-mail",
+      "backToTop": "Voltar ao Topo"
+    },
+    "links": [
+      { "label": "LinkedIn", "href": "https://www.linkedin.com/in/davidluiskim/" },
+      { "label": "GitHub", "href": "https://github.com/VidaRealDoKim" },
+      { "label": "Behance", "href": "https://www.behance.net/davidkim115" }
+    ]
+  },
+  "footer": {
+    "rights": "Todos os direitos reservados.",
+    "tagline": "Projetado com foco, precisão e intenção."
+  }
+}
