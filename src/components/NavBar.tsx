@@ -2,8 +2,11 @@ import { ThemeToggle } from "@/components/ThemeToggle";
 
 const navItems = [
   { label: "About", href: "#about" },
+  { label: "Experiência", href: "#experience" },
+  { label: "Formação", href: "#education" },
   { label: "Projects", href: "#projects" },
   { label: "Skills", href: "#skills" },
+  { label: "Certificados", href: "#certifications" },
   { label: "Contact", href: "#contact" },
 ];
 
