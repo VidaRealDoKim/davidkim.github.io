@@ -15,7 +15,7 @@ export function Button({ href, children, variant = "primary" }: ButtonProps) {
   return (
     <a
       href={href}
-      className={`inline-flex items-center rounded-full px-6 py-3 text-sm font-semibold tracking-[0.08em] uppercase transition-all duration-300 hover:-translate-y-0.5 hover:shadow-soft ${classes}`}
+      className={`inline-flex items-center rounded-full px-6 py-3 text-sm font-semibold tracking-[0.08em] uppercase transition-all duration-300 hover:-translate-y-0.5 hover:shadow-soft focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-text/40 ${classes}`}
     >
       {children}
     </a>

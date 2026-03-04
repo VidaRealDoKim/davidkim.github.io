@@ -1,21 +1,12 @@
 import { ThemeToggle } from "@/components/ThemeToggle";
-
-const navItems = [
-  { label: "About", href: "#about" },
-  { label: "Experiência", href: "#experience" },
-  { label: "Formação", href: "#education" },
-  { label: "Projects", href: "#projects" },
-  { label: "Skills", href: "#skills" },
-  { label: "Certificados", href: "#certifications" },
-  { label: "Contact", href: "#contact" },
-];
+import { heroContent, navItems } from "@/content/portfolio";
 
 export function NavBar() {
   return (
     <header className="fixed top-0 z-40 w-full">
       <div className="mx-auto mt-4 flex w-[min(1120px,92vw)] items-center justify-between rounded-full border border-border bg-background/85 px-4 py-3 backdrop-blur-md md:px-6">
         <a href="#home" className="text-sm font-semibold tracking-wide text-text">
-          David Kim
+          {heroContent.name}
         </a>
 
         <nav className="hidden items-center gap-6 md:flex">
@@ -23,7 +14,7 @@ export function NavBar() {
             <a
               key={item.label}
               href={item.href}
-              className="text-sm text-muted transition-colors duration-300 hover:text-text"
+              className="text-sm text-muted transition-all duration-300 hover:text-text hover:-translate-y-0.5"
             >
               {item.label}
             </a>
