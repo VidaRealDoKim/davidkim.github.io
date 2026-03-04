@@ -10,29 +10,29 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://davidkim.design"),
-  title: "David Kim | Product Designer & UX/UI",
+  title: "David Kim | UX/UI Designer",
   description:
-    "Premium portfolio for David Kim, a UX/UI and Product Designer crafting elegant digital products.",
+    "Portfólio de David Kim, UX/UI Designer com experiência em branding, design digital e produtos.",
   keywords: [
     "David Kim",
-    "Product Designer",
+    "UX/UI Designer",
     "UX/UI",
     "Portfolio",
     "UI Design",
     "UX Design",
   ],
   openGraph: {
-    title: "David Kim | Product Designer & UX/UI",
+    title: "David Kim | UX/UI Designer",
     description:
-      "Portfolio showcasing UX/UI, product strategy, and visual systems by David Kim.",
+      "Portfólio com foco em UX/UI, branding e design digital por David Kim.",
     type: "website",
     url: "https://davidkim.design",
   },
   twitter: {
     card: "summary_large_image",
-    title: "David Kim | Product Designer & UX/UI",
+    title: "David Kim | UX/UI Designer",
     description:
-      "Portfolio showcasing UX/UI, product strategy, and visual systems by David Kim.",
+      "Portfólio com foco em UX/UI, branding e design digital por David Kim.",
   },
 };
 

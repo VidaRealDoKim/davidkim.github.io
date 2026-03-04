@@ -6,34 +6,34 @@ import { Section } from "@/components/ui/Section";
 
 const projects = [
   {
-    name: "Aurora Banking",
+    name: "Projeto 01 — Em breve",
     description:
-      "Redesigned a digital banking experience with a cleaner information architecture and frictionless onboarding.",
-    outcome: "Increased onboarding completion by 31%.",
+      "Case de UX/UI em preparação para publicação no portfólio.",
+    outcome: "Upload em breve.",
   },
   {
-    name: "Nexa Commerce",
+    name: "Projeto 02 — Em breve",
     description:
-      "Built a modular product discovery flow blending editorial storytelling with high-conversion UX patterns.",
-    outcome: "Raised product page conversion by 24%.",
+      "Projeto de produto digital com foco em experiência e interface.",
+    outcome: "Upload em breve.",
   },
   {
-    name: "Pulse Health",
+    name: "Projeto 03 — Em breve",
     description:
-      "Created a patient-first mobile platform focused on clarity, trust, and accessible interaction design.",
-    outcome: "Reduced task completion time by 37%.",
+      "Detalhamento visual e processo de design serão adicionados em breve.",
+    outcome: "Upload em breve.",
   },
 ];
 
 const skills = [
-  "Product Strategy",
-  "UX Research",
-  "Interaction Design",
-  "Design Systems",
-  "Prototyping",
-  "Usability Testing",
-  "Visual Design",
-  "Cross-functional Leadership",
+  "UX/UI Design",
+  "Figma",
+  "Flutter",
+  "Adobe Illustrator",
+  "Adobe Photoshop",
+  "Web Design",
+  "Design Digital",
+  "Branding e Social Media",
 ];
 
 export default function Home() {
@@ -44,13 +44,13 @@ export default function Home() {
         <Section id="home" className="min-h-screen pt-32 md:pt-40">
           <Reveal>
             <p className="mb-8 text-sm font-medium tracking-[0.2em] uppercase text-muted">
-              David Kim — Portfolio
+              Blumenau, SC — Brasil
             </p>
             <h1 className="mb-8 max-w-5xl font-title text-6xl leading-[0.95] tracking-tight text-text md:text-8xl">
               David Kim
             </h1>
             <h2 className="max-w-3xl text-2xl font-medium text-text/85 md:text-4xl">
-              Product Designer &amp; UX/UI
+              UX/UI Designer
             </h2>
             <div className="mt-12 flex flex-wrap gap-4">
               <Button href="#projects">View Projects</Button>
@@ -65,15 +65,18 @@ export default function Home() {
           <Reveal>
             <div className="grid gap-10 md:grid-cols-12">
               <h3 className="md:col-span-4 text-2xl font-semibold text-text md:text-3xl">
-                Building elegant products with intention.
+                Disciplina, foco e evolução constante em design.
               </h3>
               <p className="md:col-span-8 text-lg leading-relaxed text-text/85">
-                I design digital products that balance utility, emotion, and
-                clarity. My work sits at the intersection of product thinking,
-                interface craft, and user-centered systems. Over the past 8
-                years, I have partnered with startups and enterprise teams to
-                create experiences that feel effortless while solving complex
-                business challenges.
+                Ao longo da minha trajetória, desenvolvi disciplina e foco como
+                atleta, e depois ampliei minha formação para tecnologia e
+                design. Atualmente atuo como Designer Freelancer (desde 2023),
+                com experiência em branding, criação de logotipos, criativos e
+                gestão de redes sociais. Também atuei como Tutor de Tecnologia,
+                ensinando Web Design e Design Digital, além de suporte em
+                laboratório e manutenção de computadores e servidores. Hoje,
+                busco desafios em UX/UI Design, conectando visão estética,
+                clareza de interface e experiência prática multidisciplinar.
               </p>
             </div>
           </Reveal>
@@ -108,14 +111,19 @@ export default function Home() {
           <Reveal>
             <div className="rounded-3xl border border-border bg-surface p-8 shadow-soft md:p-12">
               <h3 className="font-title text-3xl text-text md:text-5xl">
-                Let&apos;s create something exceptional.
+                Vamos construir algo incrível.
               </h3>
               <p className="mt-5 max-w-2xl text-lg text-text/80">
-                Open for select collaborations in product design, UX strategy,
-                and design systems.
+                Disponível para oportunidades e colaborações em UX/UI, produto
+                digital e design visual.
               </p>
+              <div className="mt-8 space-y-2 text-base text-text/85">
+                <p>Email: david8.escola@gmail.com</p>
+                <p>Telefone: (47) 99629-5564</p>
+                <p>Localização: Blumenau, SC</p>
+              </div>
               <div className="mt-8 flex flex-wrap gap-4">
-                <Button href="mailto:hello@davidkim.design">hello@davidkim.design</Button>
+                <Button href="mailto:david8.escola@gmail.com">david8.escola@gmail.com</Button>
                 <Button href="https://www.linkedin.com" variant="secondary">
                   LinkedIn
                 </Button>
