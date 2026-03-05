@@ -21,14 +21,14 @@ const dictionaries: Record<Locale, Dictionary> = {
 const I18nContext = createContext<I18nContextValue | null>(null);
 
 export function I18nProvider({ children }: { children: ReactNode }) {
-  const [locale, setLocale] = useState<Locale>("en");
-
-  useEffect(() => {
-    const storedLocale = window.localStorage.getItem("locale") as Locale | null;
-    if (storedLocale === "en" || storedLocale === "pt") {
-      setLocale(storedLocale);
+  const [locale, setLocale] = useState<Locale>(() => {
+    if (typeof window === "undefined") {
+      return "en";
     }
-  }, []);
+
+    const storedLocale = window.localStorage.getItem("locale") as Locale | null;
+    return storedLocale === "en" || storedLocale === "pt" ? storedLocale : "en";
+  });
 
   useEffect(() => {
     document.documentElement.lang = locale === "pt" ? "pt-BR" : "en";

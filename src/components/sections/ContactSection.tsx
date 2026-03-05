@@ -21,6 +21,9 @@ export function ContactSection() {
 
           <div className="mt-8 space-y-2 text-base text-text/85">
             <p>
+              {dictionary.contact.emailLabel}: {dictionary.contact.email}
+            </p>
+            <p>
               {dictionary.contact.phoneLabel}: {dictionary.contact.phone}
             </p>
             <p>

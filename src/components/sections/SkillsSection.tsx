@@ -7,12 +7,13 @@ import { useI18n } from "@/i18n/I18nProvider";
 
 export function SkillsSection() {
   const { dictionary } = useI18n();
+  const allSkills = dictionary.technologies.groups.flatMap((group) => group.items);
 
   return (
-    <Section id="skills" title={dictionary.skills.title}>
+    <Section id="skills" title={dictionary.technologies.title}>
       <Reveal>
         <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-          {dictionary.skills.items.map((skill) => (
+          {allSkills.map((skill) => (
             <SkillCard key={skill} label={skill} />
           ))}
         </div>

@@ -1,15 +1,18 @@
 {
   "meta": {
-    "title": "David Kim | UX/UI Designer",
-    "description": "Portfolio of David Kim, UX/UI Designer with experience in branding, digital design, and product development.",
-    "keywords": ["David Kim", "UX/UI Designer", "UX/UI", "Portfolio", "UI Design", "UX Design"]
+    "title": "David Kim | Digital Designer",
+    "description": "Portfolio of David Kim, Digital Designer focused on UX/UI, branding, social media, web design, and digital products.",
+    "keywords": ["David Kim", "Digital Designer", "Branding", "Web Design", "UX/UI", "Portfolio"]
   },
   "nav": {
     "brand": "David Kim",
     "items": [
       { "label": "Home", "href": "#home" },
       { "label": "About", "href": "#about" },
+      { "label": "Areas", "href": "#areas" },
       { "label": "Projects", "href": "#projects" },
+      { "label": "Process", "href": "#process" },
+      { "label": "Tools", "href": "#tools" },
       { "label": "Contact", "href": "#contact" }
     ]
   },
@@ -23,91 +26,171 @@
     "dark": "Dark"
   },
   "hero": {
-    "location": "Blumenau, SC — Brazil",
-    "name": "David Kim",
-    "title": "UX/UI Designer",
+    "location": "Blumenau, SC - Brazil",
+    "name": "Digital Designer creating brands and experiences that convert.",
+    "title": "UX/UI, branding, social media, and web design with strategic direction, strong aesthetics, and measurable outcomes.",
+    "imageSrc": "/images/david-kim-profile.jpg",
+    "imageAlt": "David Kim profile photo",
     "buttons": {
       "projects": "View Projects",
-      "contact": "Contact"
+      "contact": "Talk to Me"
     }
   },
   "about": {
     "title": "About",
-    "heading": "Flutter Developer and UX/UI Designer focused on digital products.",
-    "imageSrc": "https://images.unsplash.com/photo-1545239351-1141bd82e8a6?auto=format&fit=crop&w=1400&q=80",
-    "imageAlt": "Designer workspace",
-    "description": "I build projects that connect design and technology with a strong focus on usability, clarity, and outcomes. On GitHub, I work across Flutter, web, and backend stacks (TypeScript, Dart, Java, HTML/CSS). On Behance, I publish Graphic Design, Branding, and Social Media pieces, frequently using Adobe Illustrator."
+    "heading": "I am David Kim, a Digital Designer specialized in building consistent visual presence from branding to digital products.",
+    "imageSrc": "/images/david-kim-profile.jpg",
+    "imageAlt": "Professional portrait of David Kim",
+    "description": "I work across branding, visual identity, UX/UI, social media, and web design, connecting strategy and execution to build memorable brands and efficient interfaces.",
+    "skillsTitle": "Core Skills",
+    "skills": [
+      "Figma",
+      "Photoshop",
+      "Illustrator",
+      "UX Research",
+      "Prototyping",
+      "Web Design"
+    ]
   },
-  "projects": {
-    "title": "Projects",
-    "caseStudyLabel": "View Case Study",
-    "list": [
+  "areas": {
+    "title": "Areas of Expertise",
+    "subtitle": "Core services that blend brand positioning with digital performance.",
+    "items": [
       {
-        "name": "davidkim.github.io",
-        "description": "Personal portfolio built with Next.js, focused on UX/UI, clean architecture, and digital project presentation.",
-        "image": "https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&w=1200&q=80",
-        "tags": ["TypeScript", "Next.js", "UX/UI"],
-        "caseStudyHref": "https://github.com/VidaRealDoKim/davidkim.github.io"
+        "title": "UX/UI Design",
+        "description": "Intuitive interfaces focused on experience clarity and conversion."
       },
       {
-        "name": "ProjetoIEQSede",
-        "description": "Dart/Flutter project focused on mobile development and user-oriented feature structure.",
-        "image": "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1200&q=80",
-        "tags": ["Flutter", "Dart", "Mobile"],
-        "caseStudyHref": "https://github.com/VidaRealDoKim/ProjetoIEQSede"
+        "title": "Branding & Visual Identity",
+        "description": "Consistent visual systems that strengthen brand perception and authority."
       },
       {
-        "name": "To-do-Backend",
-        "description": "Java backend built in a Rocketseat learning track, focused on API fundamentals and code organization.",
-        "image": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1200&q=80",
-        "tags": ["Java", "Backend", "API"],
-        "caseStudyHref": "https://github.com/VidaRealDoKim/To-do-Backend"
+        "title": "Social Media Design",
+        "description": "Creative content pieces designed to improve recognition and engagement."
       },
       {
-        "name": "IBK Brasil",
-        "description": "Bilingual institutional website for Instituto Brasil Koréia, focused on content clarity and digital presence.",
-        "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80",
-        "tags": ["HTML", "Website", "Visual Design"],
-        "caseStudyHref": "https://github.com/VidaRealDoKim/ibk-brasil"
+        "title": "Web Design",
+        "description": "Modern websites with clear visual hierarchy and business-oriented storytelling."
       },
       {
-        "name": "Oversized - Maturity",
-        "description": "Visual identity project published on Behance, centered on branding and graphic direction.",
-        "image": "https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/708312211565359.Y3JvcCw4MTAsNjM0LDAsMA.png",
-        "tags": ["Branding", "Graphic Design", "Illustrator"],
-        "caseStudyHref": "https://www.behance.net/gallery/211565359/Oversized-Maturity"
-      },
-      {
-        "name": "Aula 23 - Design com Vc - Promoção",
-        "description": "Social media design piece focused on promotional communication and visual marketing.",
-        "image": "https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/1a01be211005521.Y3JvcCwxMDgwLDg0NCwwLDExNw.png",
-        "tags": ["Social Media", "Graphic Design", "Illustrator"],
-        "caseStudyHref": "https://www.behance.net/gallery/211005521/Aula-23-Design-com-Vc-Promocao"
+        "title": "Digital Products",
+        "description": "Digital product design balancing visual quality and usability."
       }
     ]
   },
-  "skills": {
-    "title": "Skills & Technologies",
-    "items": [
-      "TypeScript",
-      "Dart",
-      "Java",
-      "Next.js",
-      "Flutter",
-      "HTML/CSS",
-      "Git & GitHub",
-      "Vercel",
-      "UX/UI Design",
-      "Branding",
-      "Visual Design",
-      "Adobe Illustrator",
-      "Social Media Design"
+  "projects": {
+    "title": "Projects",
+    "subtitle": "Projects organized by specialty to show both depth and range across digital design work.",
+    "imageLabel": "Mockup",
+    "caseStudyLabel": "View Case Study",
+    "labels": {
+      "problem": "Problem",
+      "solution": "Solution",
+      "result": "Result"
+    },
+    "categories": [
+      { "id": "uxui", "label": "UX/UI" },
+      { "id": "branding", "label": "Branding" },
+      { "id": "social-media", "label": "Social Media" },
+      { "id": "web-design", "label": "Web Design" }
+    ],
+    "list": [
+      {
+        "name": "Real Estate Platform",
+        "category": "uxui",
+        "image": "https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&w=1200&q=80",
+        "tags": ["UX/UI", "Figma", "Digital Product"],
+        "problem": "Confusing interface and low qualified lead conversion.",
+        "solution": "Full journey redesign with simplified navigation, clear filters, and decision-oriented visual hierarchy.",
+        "result": "More intuitive experience and stronger commercial lead generation.",
+        "caseStudyHref": "https://www.behance.net/davidkim115"
+      },
+      {
+        "name": "Studio Move Rebranding",
+        "category": "branding",
+        "image": "https://images.unsplash.com/photo-1634942537034-2531766767d1?auto=format&fit=crop&w=1200&q=80",
+        "tags": ["Branding", "Logo", "Visual Identity"],
+        "problem": "Brand lacked differentiation and visual language consistency across channels.",
+        "solution": "Complete visual repositioning with a new logo, color system, typography, and application guide.",
+        "result": "Stronger premium perception and more consistent brand communication.",
+        "caseStudyHref": "https://www.behance.net/davidkim115"
+      },
+      {
+        "name": "Launch Week Social Campaign",
+        "category": "social-media",
+        "image": "https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&w=1200&q=80",
+        "tags": ["Social Media", "Content", "Graphic Design"],
+        "problem": "Low engagement and campaign pieces disconnected from the offer narrative.",
+        "solution": "Created a campaign-driven visual system with modular templates and staged storytelling.",
+        "result": "Higher visual consistency, better reach performance, and improved engagement rates.",
+        "caseStudyHref": "https://www.behance.net/davidkim115"
+      },
+      {
+        "name": "IBK Institutional Website",
+        "category": "web-design",
+        "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80",
+        "tags": ["Web Design", "UI", "Front-End"],
+        "problem": "Previous website had weak structure, poor readability, and unclear navigation.",
+        "solution": "Redesigned core pages with stronger visual hierarchy and improved information clarity.",
+        "result": "More fluid navigation and a more professional institutional presence.",
+        "caseStudyHref": "https://www.behance.net/davidkim115"
+      }
+    ]
+  },
+  "process": {
+    "title": "Process",
+    "description": "A clear framework that turns business goals into strong visual and digital solutions.",
+    "steps": [
+      { "title": "Research", "description": "Understand brand context, audience, and business goals." },
+      { "title": "Strategy", "description": "Define direction, priorities, and visual opportunities." },
+      { "title": "Concept", "description": "Build concepts aligned with positioning and usability." },
+      { "title": "Design", "description": "Develop high-quality visual assets and interface systems." },
+      { "title": "Delivery", "description": "Finalize files, guidelines, and implementation support." }
+    ]
+  },
+  "technologies": {
+    "title": "Technologies & Tools",
+    "groups": [
+      {
+        "title": "Design",
+        "items": ["Figma", "Adobe Photoshop", "Adobe Illustrator", "After Effects", "Design Systems"]
+      },
+      {
+        "title": "Front-end",
+        "items": ["HTML", "CSS", "JavaScript"]
+      },
+      {
+        "title": "Mobile / Cross-platform",
+        "items": ["Flutter", "Dart"]
+      },
+      {
+        "title": "Backend & Integrations",
+        "items": ["Supabase", "API Integration", "Databases"]
+      },
+      {
+        "title": "UX & Product",
+        "items": ["UX Research", "Wireframes", "Prototyping", "User Flows"]
+      }
+    ]
+  },
+  "testimonials": {
+    "title": "Testimonials",
+    "list": [
+      {
+        "quote": "David delivered highly professional and strategic work.",
+        "author": "Client"
+      },
+      {
+        "quote": "The new visual direction made our brand clearer and more valuable.",
+        "author": "Marketing Lead"
+      }
     ]
   },
   "contact": {
     "title": "Contact",
-    "heading": "Let’s build something exceptional.",
-    "description": "Available for opportunities and collaborations in UX/UI, digital product, and visual design.",
+    "heading": "Let us create your next project.",
+    "description": "Reach out by email or social links to discuss branding, social, web, or digital product design.",
+    "emailLabel": "Email",
     "phoneLabel": "Phone",
     "locationLabel": "Location",
     "email": "david8.escola@gmail.com",
@@ -120,7 +203,8 @@
     "links": [
       { "label": "LinkedIn", "href": "https://www.linkedin.com/in/davidluiskim/" },
       { "label": "GitHub", "href": "https://github.com/VidaRealDoKim" },
-      { "label": "Behance", "href": "https://www.behance.net/davidkim115" }
+      { "label": "Behance", "href": "https://www.behance.net/davidkim115" },
+      { "label": "Instagram", "href": "https://www.instagram.com/" }
     ]
   },
   "footer": {

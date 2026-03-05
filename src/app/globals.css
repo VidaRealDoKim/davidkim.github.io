@@ -2,28 +2,16 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
-@font-face {
-  font-family: "Quincy CF";
-  src: url("/fonts/QuincyCF-Regular.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Quincy CF";
-  src: url("/fonts/QuincyCF-Bold.woff2") format("woff2");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-
 :root {
   --background: #f0eee6;
   --foreground: #1f1f1f;
   --surface: #f6f4ec;
   --border: rgb(31 31 31 / 0.12);
   --muted: rgb(31 31 31 / 0.68);
+  --accent: #bf9453;
+  --accent-strong: #d2ab6e;
+  --accent-soft: rgb(191 148 83 / 0.2);
+  --accent-line: rgb(191 148 83 / 0.42);
   --accent-gradient: linear-gradient(135deg, #bf9453, #f3e196);
   --shadow-soft: 0 14px 48px rgb(31 31 31 / 0.08);
 }
@@ -34,6 +22,7 @@
   --color-surface: var(--surface);
   --color-border: var(--border);
   --color-muted: var(--muted);
+  --color-accent: var(--accent);
   --font-sans: var(--font-poppins);
   --font-title: "Quincy CF", "Iowan Old Style", "Times New Roman", serif;
   --background-image-accent-gradient: var(--accent-gradient);
@@ -46,6 +35,8 @@
   --surface: #1d1c19;
   --border: rgb(240 238 230 / 0.18);
   --muted: rgb(240 238 230 / 0.72);
+  --accent-soft: rgb(210 171 110 / 0.24);
+  --accent-line: rgb(210 171 110 / 0.52);
   --shadow-soft: 0 18px 52px rgb(0 0 0 / 0.35);
 }
 
@@ -85,4 +76,15 @@ li {
 .reveal-visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+.accent-divider {
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    var(--accent-line) 18%,
+    var(--border) 52%,
+    var(--accent-line) 82%,
+    transparent 100%
+  );
 }
