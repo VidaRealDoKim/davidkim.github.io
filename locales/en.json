@@ -13,7 +13,8 @@
       { "label": "Projects", "href": "#projects" },
       { "label": "Process", "href": "#process" },
       { "label": "Tools", "href": "#tools" },
-      { "label": "Contact", "href": "#contact" }
+      { "label": "Contact", "href": "#contact" },
+      { "label": "Admin", "href": "/admin" }
     ]
   },
   "language": {
