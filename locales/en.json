@@ -208,7 +208,10 @@
     ]
   },
   "footer": {
-    "rights": "All rights reserved.",
-    "tagline": "Designed with focus, precision, and intent."
+    "brand": "SOLV3D",
+    "legalName": "SOLV3D Tecnologia LTDA",
+    "cnpj": "64.851.851/0001-20",
+    "email": "contato@solv3d.com.br",
+    "rights": "All rights reserved"
   }
 }
