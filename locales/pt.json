@@ -14,8 +14,7 @@
       { "label": "Projetos", "href": "#projects" },
       { "label": "Processo", "href": "#process" },
       { "label": "Ferramentas", "href": "#tools" },
-      { "label": "Contato", "href": "#contact" },
-      { "label": "Admin", "href": "/admin" }
+      { "label": "Contato", "href": "#contact" }
     ]
   },
   "language": {

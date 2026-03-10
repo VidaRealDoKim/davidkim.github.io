@@ -10,7 +10,9 @@ export function NavBar() {
   const [activeHref, setActiveHref] = useState("#home");
 
   useEffect(() => {
-    const sections = dictionary.nav.items
+    const sectionItems = dictionary.nav.items.filter((item) => item.href.startsWith("#"));
+
+    const sections = sectionItems
       .map((item) => document.querySelector(item.href))
       .filter((section): section is HTMLElement => Boolean(section));
 
