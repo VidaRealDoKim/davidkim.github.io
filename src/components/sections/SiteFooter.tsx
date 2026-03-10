@@ -8,8 +8,6 @@ export function SiteFooter() {
   return (
     <footer className="border-t border-border py-8">
       <div className="mx-auto flex w-[min(1120px,92vw)] flex-col gap-1 text-sm text-muted">
-        <p>{dictionary.footer.legalName}</p>
-        <p>CNPJ: {dictionary.footer.cnpj}</p>
         <p>{dictionary.footer.email}</p>
         <p>
           © {new Date().getFullYear()} {dictionary.footer.brand} - {dictionary.footer.rights}
