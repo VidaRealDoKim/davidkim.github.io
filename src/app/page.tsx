@@ -5,6 +5,7 @@ import { ContactSection } from "@/components/sections/ContactSection";
 import { DesignProcessSection } from "@/components/sections/DesignProcessSection";
 import { HeroSection } from "@/components/sections/HeroSection";
 import { ProjectsSection } from "@/components/sections/ProjectsSection";
+import { ResumeSection } from "@/components/sections/ResumeSection";
 import { SiteFooter } from "@/components/sections/SiteFooter";
 import { TechnologiesSection } from "@/components/sections/TechnologiesSection";
 import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
@@ -18,6 +19,8 @@ export default function Home() {
         <HeroSection />
         <SectionDivider />
         <AboutSection />
+        <SectionDivider />
+        <ResumeSection />
         <SectionDivider />
         <AreasSection />
         <SectionDivider />

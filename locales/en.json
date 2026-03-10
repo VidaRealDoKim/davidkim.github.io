@@ -9,6 +9,7 @@
     "items": [
       { "label": "Home", "href": "#home" },
       { "label": "About", "href": "#about" },
+      { "label": "Resume", "href": "#resume" },
       { "label": "Areas", "href": "#areas" },
       { "label": "Projects", "href": "#projects" },
       { "label": "Process", "href": "#process" },
@@ -52,6 +53,194 @@
       "Prototyping",
       "Web Design"
     ]
+  },
+  "resume": {
+    "title": "Professional Resume",
+    "summary": {
+      "title": "About / Professional Summary",
+      "text": "UX/UI and Product Designer with experience in digital design and web and mobile product development. Working as a freelance designer since 2021, creating interfaces, visual identities, and digital solutions for a range of clients and projects. Also has experience developing web and mobile applications, with front-end, back-end, and database knowledge, enabling end-to-end participation in digital product creation, from concept to delivery. Focused on creating intuitive, scalable, and visually consistent digital experiences by connecting design, technology, and product strategy."
+    },
+    "professionalExperience": {
+      "title": "Professional Experience",
+      "items": [
+        {
+          "role": "Digital Designer - Freelancer",
+          "organization": "Freelancer",
+          "period": "2021 - Present",
+          "bullets": [
+            "Created visual and digital solutions for different clients and projects.",
+            "Developed visual identities, logos, and branding assets.",
+            "Produced creative materials for social media and digital campaigns.",
+            "Designed layouts for websites and landing pages.",
+            "Built digital interfaces focused on user experience.",
+            "Used Adobe Creative Cloud tools such as Photoshop, Illustrator, and After Effects.",
+            "Integrated design, digital marketing, and user experience practices."
+          ]
+        },
+        {
+          "role": "Junior Application Developer (Flutter)",
+          "organization": "+Devs2Blu - ACATE / Blusoft",
+          "period": "Professional Training",
+          "bullets": [
+            "Developed cross-platform applications using Flutter and Dart.",
+            "Created interfaces and features for mobile and web applications.",
+            "Integrated applications with APIs and backend services.",
+            "Worked with databases such as Firebase and Supabase.",
+            "Applied software development and architecture best practices."
+          ]
+        },
+        {
+          "role": "Junior Product Designer (UX/UI)",
+          "organization": "Entra21 - Blusoft",
+          "period": "Professional Training",
+          "bullets": [
+            "Designed user-centered digital interfaces and experiences.",
+            "Created wireframes, prototypes, and high-fidelity layouts.",
+            "Structured navigation flows and information architecture.",
+            "Applied user-centered design methodologies.",
+            "Developed interactive prototypes for web and mobile applications."
+          ]
+        },
+        {
+          "role": "Tutor and Teacher",
+          "organization": "VMF School",
+          "period": "Educational Experience",
+          "bullets": [
+            "Worked as a tutor and teacher supporting students in their learning process.",
+            "Provided educational guidance and monitored academic activities.",
+            "Developed communication, teaching, and student interaction skills.",
+            "Provided technical support and maintenance activities."
+          ]
+        }
+      ]
+    },
+    "designExperience": {
+      "title": "Design Experience",
+      "items": [
+        "Created digital interfaces focused on UX/UI and navigation clarity.",
+        "Developed wireframes, prototypes, and high-fidelity layouts.",
+        "Built visual identity, branding systems, and communication assets.",
+        "Produced creative content for social media and digital campaigns.",
+        "Applied design systems and visual consistency across platforms."
+      ]
+    },
+    "developmentExperience": {
+      "title": "Development Experience",
+      "items": [
+        "Built responsive websites using HTML, CSS, and JavaScript.",
+        "Created and customized WordPress websites.",
+        "Used JavaScript and TypeScript for dynamic interactions.",
+        "Developed cross-platform applications with Flutter and Dart.",
+        "Integrated REST APIs and handled JSON data workflows.",
+        "Used Firebase, Supabase, and MySQL in backend and data scenarios.",
+        "Connected front-end, back-end, and database layers in web and mobile products."
+      ]
+    },
+    "education": {
+      "title": "Education",
+      "items": [
+        {
+          "course": "UX/UI Design",
+          "institution": "Entra21 - Blusoft",
+          "year": "2024",
+          "description": "Training in user experience and digital interface design, including user research, information architecture, wireframes, and prototyping."
+        }
+      ]
+    },
+    "certifications": {
+      "title": "Certifications",
+      "items": [
+        {
+          "title": "HTML",
+          "provider": "Evolua Educacao",
+          "year": "2022",
+          "description": "HTML language fundamentals, web page structuring, and markup best practices."
+        },
+        {
+          "title": "CSS",
+          "provider": "Evolua Educacao",
+          "year": "2022",
+          "description": "Web page styling with CSS, including colors, typography, layout, and visual organization."
+        },
+        {
+          "title": "JavaScript",
+          "provider": "Evolua Educacao",
+          "year": "2022",
+          "description": "JavaScript fundamentals for interactive web pages, including events and interface element manipulation."
+        },
+        {
+          "title": "WordPress",
+          "provider": "Evolua Educacao",
+          "year": "2022",
+          "description": "Website creation and management using WordPress, including pages, themes, and plugins."
+        },
+        {
+          "title": "Conectar",
+          "provider": "Rocketseat",
+          "description": "Introduction to programming, computer fundamentals, and internet basics."
+        },
+        {
+          "title": "Java Course",
+          "provider": "Rocketseat",
+          "year": "2023",
+          "description": "Backend application development in Java using Spring Boot, Maven, REST API, Lombok, H2 Database integration, and security and exception handling implementation."
+        },
+        {
+          "title": "Complete Figma Course - UX/UI",
+          "provider": "Udemy",
+          "year": "2023",
+          "description": "Figma usage for interface creation, design systems, wireframes, and interactive prototypes."
+        },
+        {
+          "title": "Graphic Design for Social Media",
+          "provider": "Hotmart",
+          "year": "2023",
+          "description": "Creation of visual content for social media using graphic design and visual identity principles."
+        },
+        {
+          "title": "Flutter Development",
+          "provider": "+Devs2Blu (ACATE / Blusoft)",
+          "description": "480-hour training in cross-platform application development using Flutter and Dart."
+        }
+      ]
+    },
+    "technicalSkills": {
+      "title": "Technical Skills",
+      "groups": [
+        {
+          "title": "Design",
+          "items": [
+            "Figma",
+            "Adobe Photoshop",
+            "Adobe Illustrator",
+            "After Effects",
+            "Design Systems",
+            "UI Design",
+            "UX Design"
+          ]
+        },
+        {
+          "title": "Development",
+          "items": ["HTML", "CSS", "JavaScript", "TypeScript", "Flutter", "Dart", "WordPress"]
+        },
+        {
+          "title": "Databases",
+          "items": ["Firebase", "Supabase", "MySQL"]
+        },
+        {
+          "title": "Other",
+          "items": ["REST APIs", "JSON", "Responsive Design", "Mobile Development", "Web Development"]
+        }
+      ]
+    },
+    "additionalExperience": {
+      "title": "Additional Experience",
+      "role": "Federated Athlete",
+      "organization": "Santa Catarina Athletics Federation",
+      "description": "Registered athlete with the Santa Catarina Athletics Federation, representing the Blumenau Athletics Association Club.",
+      "events": ["Decathlon", "400m dash", "400m hurdles", "4x400 relay"],
+      "achievement": "Won several medals in regional and state competitions, developing discipline, performance focus, teamwork, and goal achievement."
+    }
   },
   "areas": {
     "title": "Areas of Expertise",
