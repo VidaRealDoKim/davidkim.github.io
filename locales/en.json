@@ -150,56 +150,82 @@
       "title": "Certifications",
       "items": [
         {
-          "title": "HTML",
-          "provider": "Evolua Educacao",
-          "year": "2022",
-          "description": "HTML language fundamentals, web page structuring, and markup best practices."
+          "title": "Cross-Platform App Development with Flutter",
+          "provider": "+Devs2Blu (ACATE / Blusoft)",
+          "year": "2025",
+          "description": "Complete 480-hour training in cross-platform mobile and web applications using Flutter and Dart, with focus on scalable architecture, API integration, and databases."
         },
         {
-          "title": "CSS",
-          "provider": "Evolua Educacao",
-          "year": "2022",
-          "description": "Web page styling with CSS, including colors, typography, layout, and visual organization."
+          "title": "UX/UI Design and User Experience",
+          "provider": "Entra21 - Blusoft",
+          "year": "2024",
+          "description": "Competencies in user research, information architecture, user-centered design, wireframes, and interactive prototyping."
         },
         {
-          "title": "JavaScript",
-          "provider": "Evolua Educacao",
-          "year": "2022",
-          "description": "JavaScript fundamentals for interactive web pages, including events and interface element manipulation."
-        },
-        {
-          "title": "WordPress",
-          "provider": "Evolua Educacao",
-          "year": "2022",
-          "description": "Website creation and management using WordPress, including pages, themes, and plugins."
-        },
-        {
-          "title": "Conectar",
-          "provider": "Rocketseat",
-          "description": "Introduction to programming, computer fundamentals, and internet basics."
-        },
-        {
-          "title": "Java Course",
-          "provider": "Rocketseat",
+          "title": "Interface Design with Adobe Illustrator",
+          "provider": "Autodesk / Adobe Systems",
           "year": "2023",
-          "description": "Backend application development in Java using Spring Boot, Maven, REST API, Lombok, H2 Database integration, and security and exception handling implementation."
+          "description": "Proficiency in vector design, visual identity creation, icons, illustrations, and graphic elements for branding and digital marketing."
         },
         {
-          "title": "Complete Figma Course - UX/UI",
+          "title": "Motion Graphics and Animation with Adobe After Effects",
+          "provider": "Autodesk / Adobe Systems",
+          "year": "2023",
+          "description": "Expertise in motion graphics, visual effects, interface animations, and video production for social media."
+        },
+        {
+          "title": "Digital Image Editing with Adobe Photoshop",
+          "provider": "Autodesk / Adobe Systems",
+          "year": "2023",
+          "description": "Proficiency in photo editing, image manipulation, digital composition, and graphic design for web and print."
+        },
+        {
+          "title": "Complete Figma Course - UX/UI Basics to Advanced",
           "provider": "Udemy",
           "year": "2023",
-          "description": "Figma usage for interface creation, design systems, wireframes, and interactive prototypes."
+          "description": "Modern interface design, design systems creation, wireframes development, and interactive prototyping with Figma."
         },
         {
           "title": "Graphic Design for Social Media",
           "provider": "Hotmart",
           "year": "2023",
-          "description": "Creation of visual content for social media using graphic design and visual identity principles."
+          "description": "Visual content creation optimized for social media with application of visual design principles and brand identity."
         },
         {
-          "title": "Flutter Development",
-          "provider": "+Devs2Blu (ACATE / Blusoft)",
-          "description": "480-hour training in cross-platform application development using Flutter and Dart."
+          "title": "Backend Development with Java and Spring Boot",
+          "provider": "Rocketseat",
+          "year": "2023",
+          "description": "REST API development, Maven, Lombok, H2 Database integration, security implementation, and exception handling in Java."
+        },
+        {
+          "title": "Introduction to Programming and Web Fundamentals",
+          "provider": "Rocketseat",
+          "year": "2023",
+          "description": "Programming logic fundamentals, computer architecture, and internet infrastructure basics."
+        },
+        {
+          "title": "Web Development with WordPress",
+          "provider": "Evolua Educacao",
+          "year": "2022",
+          "description": "Creation and management of dynamic websites with WordPress, including pages, themes, plugins, and customization."
+        },
+        {
+          "title": "Web Development with JavaScript and Interactivity",
+          "provider": "Evolua Educacao",
+          "year": "2022",
+          "description": "JavaScript fundamentals, event handling, DOM manipulation, and dynamic interactions in web applications."
+        },
+        {
+          "title": "Web Styling with CSS",
+          "provider": "Evolua Educacao",
+          "year": "2022",
+          "description": "Advanced CSS for interface styling, responsive layouts, typography, visual composition, and component organization."
+        },
+        {
+          "title": "Web Page Structure with HTML",
+          "provider": "Evolua Educacao",
+          "year": "2022",
+          "description": "HTML fundamentals, semantic page structure, and markup best practices for accessibility."
         }
       ]
     },

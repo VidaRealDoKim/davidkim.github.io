@@ -150,56 +150,82 @@
       "title": "Certificações",
       "items": [
         {
-          "title": "HTML",
-          "provider": "Evolua Educação",
-          "year": "2022",
-          "description": "Fundamentos da linguagem HTML, estruturação de páginas web e boas práticas de marcação."
+          "title": "Desenvolvimento de Aplicações Multiplataforma com Flutter",
+          "provider": "+Devs2Blu (ACATE / Blusoft)",
+          "year": "2025",
+          "description": "Formação completa com 480 horas em desenvolvimento de aplicações cross-platform usando Flutter e Dart, com foco em arquitetura escalável, APIs e bancos de dados."
         },
         {
-          "title": "CSS",
-          "provider": "Evolua Educação",
-          "year": "2022",
-          "description": "Estilização de páginas web utilizando CSS, incluindo cores, tipografia, layout e organização visual."
+          "title": "UX/UI Design e Design de Experiência",
+          "provider": "Entra21 - Blusoft",
+          "year": "2024",
+          "description": "Competências em pesquisa de usuário, arquitetura da informação, design centrado no usuário, wireframes e prototipação interativa."
         },
         {
-          "title": "JavaScript",
-          "provider": "Evolua Educação",
-          "year": "2022",
-          "description": "Fundamentos de JavaScript para criação de interatividade em páginas web, manipulação de eventos e elementos da interface."
-        },
-        {
-          "title": "WordPress",
-          "provider": "Evolua Educação",
-          "year": "2022",
-          "description": "Criação e gerenciamento de websites utilizando WordPress, configuração de páginas, temas e plugins."
-        },
-        {
-          "title": "Conectar",
-          "provider": "Rocketseat",
-          "description": "Introdução à programação, funcionamento de computadores e fundamentos da internet."
-        },
-        {
-          "title": "Curso de Java",
-          "provider": "Rocketseat",
+          "title": "Design de Interfaces com Adobe Illustrator",
+          "provider": "Autodesk / Adobe Systems",
           "year": "2023",
-          "description": "Desenvolvimento de aplicação backend em Java utilizando Spring Boot, Maven, API REST, Lombok, integração com H2 Database e implementação de segurança e tratamento de exceções."
+          "description": "Proficiência em design vetorial, criação de identidades visuais, ícones, ilustrações e elementos gráficos para branding e marketing digital."
         },
         {
-          "title": "Curso Completo de Figma - UX/UI",
+          "title": "Edição e Animação com Adobe After Effects",
+          "provider": "Autodesk / Adobe Systems",
+          "year": "2023",
+          "description": "Conhecimento em grafismo em movimento, efeitos visuais, animações de interface e produção de vídeos para redes sociais."
+        },
+        {
+          "title": "Manipulação de Imagens com Adobe Photoshop",
+          "provider": "Autodesk / Adobe Systems",
+          "year": "2023",
+          "description": "Domínio em retoque fotográfico, tratamento de imagens, composição digital e design gráfico para web e print."
+        },
+        {
+          "title": "Curso Completo de Figma - UX/UI do Básico ao Avançado",
           "provider": "Udemy",
           "year": "2023",
-          "description": "Utilização do Figma para criação de interfaces, design systems, wireframes e protótipos interativos."
+          "description": "Design de interfaces modernas, criação de design systems, desenvolvimento de wireframes e protótipos interativos com Figma."
         },
         {
           "title": "Design Gráfico para Social Media",
           "provider": "Hotmart",
           "year": "2023",
-          "description": "Criação de conteúdos visuais para redes sociais, aplicando princípios de design gráfico e identidade visual."
+          "description": "Criação de conteúdos visuais otimizados para redes sociais com aplicação de princípios de visual design e identidade visual."
         },
         {
-          "title": "Desenvolvimento Flutter",
-          "provider": "+Devs2Blu (ACATE / Blusoft)",
-          "description": "Formação com 480 horas em desenvolvimento de aplicações multiplataforma com Flutter e Dart."
+          "title": "Desenvolvimento Backend com Java e Spring Boot",
+          "provider": "Rocketseat",
+          "year": "2023",
+          "description": "API REST, Maven, Lombok, integração com H2 Database, implementação de segurança e tratamento de exceções em Java."
+        },
+        {
+          "title": "Introdução à Programação e Fundamentos Web",
+          "provider": "Rocketseat",
+          "year": "2023",
+          "description": "Fundamentos de lógica de programação, funcionamento de computadores e arquitetura da internet."
+        },
+        {
+          "title": "Desenvolvimento Web com WordPress",
+          "provider": "Evolua Educação",
+          "year": "2022",
+          "description": "Criação e gerenciamento de websites dinâmicos com WordPress, configuração de páginas, temas, plugins e personalização."
+        },
+        {
+          "title": "Desenvolvimento Web com JavaScript e Interatividade",
+          "provider": "Evolua Educação",
+          "year": "2022",
+          "description": "Fundamentos de JavaScript, manipulação de eventos, DOM e criação de interações dinâmicas em aplicações web."
+        },
+        {
+          "title": "Estilização Web com CSS",
+          "provider": "Evolua Educação",
+          "year": "2022",
+          "description": "CSS avançado para estilização de interfaces, layout responsivo, tipografia, composição visual e organização de componentes."
+        },
+        {
+          "title": "Estruturação de Páginas Web com HTML",
+          "provider": "Evolua Educação",
+          "year": "2022",
+          "description": "Fundamentos de HTML, estruturação semântica de páginas web e boas práticas de marcação para acessibilidade."
         }
       ]
     },
