@@ -1,50 +1,50 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
+import en from "../../../../locales/en.json";
 import { ProjectDetailPage } from "@/components/projects/ProjectDetailPage";
-import { getProjectSlugs } from "@/lib/project-catalog";
-import { getManagedProjectBySlug } from "@/lib/project-storage";
 
 type PageProps = {
   params: Promise<{ slug: string }>;
 };
 
+const projects = en.projects.list;
+
 export function generateStaticParams() {
-  return getProjectSlugs().map((slug) => ({ slug }));
+  return projects.map((project) => ({ slug: project.slug }));
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { slug } = await params;
-  const project = await getManagedProjectBySlug(slug);
+  const project = projects.find((item) => item.slug === slug);
 
   if (!project) {
     return {};
   }
 
   return {
-    title: `${project.en.name} | David Kim`,
-    description: project.en.summary,
+    title: `${project.name} | David Kim`,
+    description: project.solution,
     openGraph: {
-      title: `${project.en.name} | David Kim`,
-      description: project.en.summary,
-      images: [{ url: project.media.coverImage }],
+      title: `${project.name} | David Kim`,
+      description: project.solution,
+      images: [{ url: project.image }],
     },
     twitter: {
       card: "summary_large_image",
-      title: `${project.en.name} | David Kim`,
-      description: project.en.summary,
-      images: [project.media.coverImage],
+      title: `${project.name} | David Kim`,
+      description: project.solution,
+      images: [project.image],
     },
   };
 }
 
 export default async function ProjectDetailRoute({ params }: PageProps) {
   const { slug } = await params;
-  const project = await getManagedProjectBySlug(slug);
 
-  if (!project) {
+  if (!projects.some((project) => project.slug === slug)) {
     notFound();
   }
 
-  return <ProjectDetailPage project={project} />;
+  return <ProjectDetailPage slug={slug} />;
 }

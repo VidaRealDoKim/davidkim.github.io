@@ -4,17 +4,12 @@ import { ProjectCard } from "@/components/ProjectCard";
 import { Reveal } from "@/components/ui/Reveal";
 import { Section } from "@/components/ui/Section";
 import { useI18n } from "@/i18n/I18nProvider";
-import type { ManagedProjectRecord } from "@/lib/project-catalog";
 
-type ProjectsSectionProps = {
-  managedProjects: ManagedProjectRecord[];
-};
-
-export function ProjectsSection({ managedProjects }: ProjectsSectionProps) {
-  const { dictionary, locale } = useI18n();
+export function ProjectsSection() {
+  const { dictionary } = useI18n();
   const groupedProjects = dictionary.projects.categories.map((category) => ({
     ...category,
-    projects: managedProjects.filter((project) => project.category === category.id),
+    projects: dictionary.projects.list.filter((project) => project.category === category.id),
   }));
 
   return (
@@ -44,19 +39,13 @@ export function ProjectsSection({ managedProjects }: ProjectsSectionProps) {
             <div className="grid gap-7 md:grid-cols-2 lg:grid-cols-3">
               {category.projects.map((project, index) => (
                 <Reveal key={project.slug} delay={index * 70}>
-                  {(() => {
-                    const content = locale === "pt" ? project.pt : project.en;
-
-                    return (
                   <ProjectCard
                     slug={project.slug}
-                    name={content.name}
-                    image={project.media.coverImage}
-                    summary={content.summary}
+                    name={project.name}
+                    image={project.image}
+                    summary={project.solution}
                     caseStudyLabel={dictionary.projects.caseStudyLabel}
                   />
-                    );
-                  })()}
                 </Reveal>
               ))}
             </div>

@@ -10,11 +10,8 @@ import { SiteFooter } from "@/components/sections/SiteFooter";
 import { TechnologiesSection } from "@/components/sections/TechnologiesSection";
 import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
 import { SectionDivider } from "@/components/ui/SectionDivider";
-import { listManagedProjects } from "@/lib/project-storage";
 
-export default async function Home() {
-  const managedProjects = await listManagedProjects();
-
+export default function Home() {
   return (
     <>
       <NavBar />
@@ -27,7 +24,7 @@ export default async function Home() {
         <SectionDivider />
         <AreasSection />
         <SectionDivider />
-        <ProjectsSection managedProjects={managedProjects} />
+        <ProjectsSection />
         <SectionDivider />
         <DesignProcessSection />
         <SectionDivider />
