@@ -36,14 +36,11 @@ export function ProjectsSection() {
               <h3 className="mb-5 text-2xl font-semibold text-text">{category.label}</h3>
             </Reveal>
 
-            <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+            <div className="grid gap-7 md:grid-cols-2 lg:grid-cols-3">
               {category.projects.map((project, index) => (
                 <Reveal key={project.name} delay={index * 70}>
                   <ProjectCard
                     {...project}
-                    categoryLabel={category.label}
-                    imageLabel={dictionary.projects.imageLabel}
-                    labels={dictionary.projects.labels}
                     caseStudyLabel={dictionary.projects.caseStudyLabel}
                   />
                 </Reveal>
