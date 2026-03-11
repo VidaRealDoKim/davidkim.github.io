@@ -39,7 +39,6 @@ export function ProjectDetailPage({ project }: ProjectDetailPageProps) {
   const content = locale === "pt" ? project.pt : project.en;
 
   const category = dictionary.projects.categories.find((item) => item.id === project.category);
-  const isExternalLink = project.caseStudyHref.startsWith("http://") || project.caseStudyHref.startsWith("https://");
   const video = getVideoEmbed(project.media.videoUrl);
   const gallery = project.media.gallery.length > 0 ? project.media.gallery : [project.media.coverImage];
 
@@ -91,14 +90,6 @@ export function ProjectDetailPage({ project }: ProjectDetailPageProps) {
                 >
                   {dictionary.projects.backToProjectsLabel}
                 </Link>
-                <a
-                  href={project.caseStudyHref}
-                  target={isExternalLink ? "_blank" : undefined}
-                  rel={isExternalLink ? "noreferrer" : undefined}
-                  className="inline-flex items-center rounded-full bg-accent-gradient px-5 py-3 text-sm font-semibold uppercase tracking-[0.08em] text-text shadow-[0_8px_22px_rgba(191,148,83,0.22)] transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_12px_26px_rgba(191,148,83,0.34)]"
-                >
-                  {dictionary.projects.externalProjectLabel}
-                </a>
               </div>
             </div>
           </Reveal>
