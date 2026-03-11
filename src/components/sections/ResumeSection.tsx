@@ -4,6 +4,13 @@ import { Reveal } from "@/components/ui/Reveal";
 import { Section } from "@/components/ui/Section";
 import { useI18n } from "@/i18n/I18nProvider";
 
+type ResumeExperienceItem = {
+  role: string;
+  period: string;
+  organization?: string;
+  bullets: string[];
+};
+
 type ResumeListSection = {
   title: string;
   items: string[];
