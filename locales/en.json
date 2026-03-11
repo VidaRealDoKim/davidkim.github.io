@@ -141,25 +141,76 @@
       "defaultCredentialUrl": "https://www.linkedin.com/in/davidluiskim/details/certifications/",
       "items": [
         {
-          "title": "Cross-Platform App Development with Flutter",
-          "provider": "+Devs2Blu (ACATE / Blusoft)",
+          "title": "Hackweek 1st Place",
+          "provider": "ACATE - Santa Catarina Association of Technology",
           "year": "2025",
-          "description": "Complete 480-hour training in cross-platform mobile and web applications using Flutter and Dart, with focus on scalable architecture, API integration, and databases.",
-          "certificateUrl": "https://app.rocketseat.com.br/certificates/21fe7a1b-d765-48a7-930a-2453143aa84b"
+          "description": "Innovation and technology development competition promoted by the technology association of Santa Catarina, focused on creative solutions and practical implementation."
+        },
+        {
+          "title": "Management and IT Project Management",
+          "provider": "+Devs2Blu",
+          "year": "2025",
+          "description": "Project management methodologies in IT, planning, execution, monitoring, and control of technology projects."
+        },
+        {
+          "title": "Containerization and Orchestration",
+          "provider": "+Devs2Blu",
+          "year": "2025",
+          "description": "Containerization knowledge with Docker, container orchestration with Kubernetes, and application deployment in cloud environments."
+        },
+        {
+          "title": "React Native Development",
+          "provider": "+Devs2Blu",
+          "year": "2025",
+          "description": "Cross-platform mobile applications development using React Native, integrating JavaScript with native components."
+        },
+        {
+          "title": "Advanced Flutter Development",
+          "provider": "+Devs2Blu",
+          "year": "2025",
+          "description": "Advanced development of cross-platform applications with Flutter, advanced patterns, state management, performance optimization, and deployment."
+        },
+        {
+          "title": "Object-Oriented Programming",
+          "provider": "+Devs2Blu",
+          "year": "2025",
+          "description": "Fundamental and advanced OOP concepts: classes, inheritance, polymorphism, encapsulation, and design patterns in object-oriented languages."
+        },
+        {
+          "title": "Databases in Mobile Applications",
+          "provider": "+Devs2Blu",
+          "year": "2025",
+          "description": "Database integration in mobile applications, SQLite, Firebase, Supabase, and data synchronization between client and server."
+        },
+        {
+          "title": "Version Control with Git and Github",
+          "provider": "+Devs2Blu",
+          "year": "2025",
+          "description": "Fundamentals and best practices for version control with Git, branches, commits, pull requests, and GitHub collaboration."
+        },
+        {
+          "title": "Agile Methodologies for Software Development",
+          "provider": "+Devs2Blu",
+          "year": "2025",
+          "description": "Agile methodologies like Scrum and Kanban applied to software development, sprints, retrospectives, and continuous delivery."
+        },
+        {
+          "title": "Introduction to Mobile Development",
+          "provider": "+Devs2Blu",
+          "year": "2025",
+          "description": "Mobile application development introduction, app architecture, lifecycle, navigation, and API integration."
         },
         {
           "title": "UX/UI Design and User Experience",
           "provider": "Entra21 - Blusoft",
           "year": "2024",
-          "description": "Competencies in user research, information architecture, user-centered design, wireframes, and interactive prototyping.",
-          "certificateUrl": "https://assinador.somosb4.com.br/validate/LMLWS-WE9MJ-W4XMM-5MB7R"
+          "description": "Competencies in user research, information architecture, user-centered design, wireframes, and interactive prototyping."
         },
         {
           "title": "Interface Design with Adobe Illustrator",
-          "provider": "Autodesk / Adobe Systems",
+          "provider": "Evolua Educacao",
           "year": "2023",
-          "description": "Proficiency in vector design, visual identity creation, icons, illustrations, and graphic elements for branding and digital marketing.",
-          "certificateUrl": "https://app.evoluaeducacao.com.br/Certificado?Hash=C2D37946969404F0"
+          "description": "Proficiency in vector design, visual identity creation, icons, illustrations, and graphic elements for branding and digital marketing."
         },
         {
           "title": "Motion Graphics and Animation with Adobe After Effects",
@@ -171,92 +222,79 @@
           "title": "Video Editing with Adobe Premiere",
           "provider": "Evolua Educacao",
           "year": "2023",
-          "description": "Professional video editing techniques including timeline editing, effects, transitions, and audiovisual production finalization.",
-          "certificateUrl": "https://app.evoluaeducacao.com.br/Certificado?Hash=CF25AC097B95041C"
+          "description": "Professional video editing techniques including timeline editing, effects, transitions, and audiovisual production finalization."
         },
         {
           "title": "Vector Design with CorelDRAW - Graphics Suite",
           "provider": "Evolua Educacao",
           "year": "2023",
-          "description": "Mastery of vector design, logo creation, illustrations, and visual composition with advanced layer and drawing tool usage.",
-          "certificateUrl": "https://app.evoluaeducacao.com.br/Certificado?Hash=C73B05DC15A7A44C"
+          "description": "Mastery of vector design, logo creation, illustrations, and visual composition with advanced layer and drawing tool usage."
         },
         {
           "title": "Adobe Photoshop - Essential",
           "provider": "Evolua Educacao",
           "year": "2023",
-          "description": "Core image editing and composition skills focused on visual treatment, color correction, and digital media asset creation.",
-          "certificateUrl": "https://app.evoluaeducacao.com.br/Certificado?Hash=C62B73B7624B84BD"
+          "description": "Core image editing and composition skills focused on visual treatment, color correction, and digital media asset creation."
         },
         {
           "title": "Adobe Photoshop - Advanced",
-          "provider": "Autodesk / Adobe Systems",
+          "provider": "Evolua Educacao",
           "year": "2023",
-          "description": "Advanced retouching, image manipulation, creative composition, and professional workflow techniques for graphic design.",
-          "certificateUrl": "https://app.evoluaeducacao.com.br/Certificado?Hash=C747D8B12F5A8466"
+          "description": "Advanced retouching, image manipulation, creative composition, and professional workflow techniques for graphic design."
         },
         {
           "title": "Complete Figma Course - UX/UI Basics to Advanced",
           "provider": "Udemy",
           "year": "2023",
-          "description": "Modern interface design, design systems creation, wireframes development, and interactive prototyping with Figma.",
-          "certificateUrl": "https://www.udemy.com/certificate/UC-ae1c0768-61a3-4bfb-bf1e-50a9e4931b2d/"
+          "description": "Modern interface design, design systems creation, wireframes development, and interactive prototyping with Figma."
         },
         {
           "title": "Graphic Design for Social Media",
           "provider": "Hotmart",
           "year": "2023",
-          "description": "Visual content creation optimized for social media with application of visual design principles and brand identity.",
-          "certificateUrl": "https://hotmart.com/pt-br/club/design/product/1198198/certificate/a65d4cf1-5540-4f9c-9396-11fe97ed1d1c--1794344727/validate"
+          "description": "Visual content creation optimized for social media with application of visual design principles and brand identity."
         },
         {
           "title": "Backend Development with Java and Spring Boot",
           "provider": "Rocketseat",
           "year": "2023",
-          "description": "REST API development, Maven, Lombok, H2 Database integration, security implementation, and exception handling in Java.",
-          "certificateUrl": "https://app.rocketseat.com.br/certificates/72d3ef95-a816-4b5c-935c-570cdc3c3080"
+          "description": "REST API development, Maven, Lombok, H2 Database integration, security implementation, and exception handling in Java."
         },
         {
           "title": "Introduction to Programming and Web Fundamentals",
           "provider": "Rocketseat",
           "year": "2023",
-          "description": "Programming logic fundamentals, computer architecture, and internet infrastructure basics.",
-          "certificateUrl": "https://app.rocketseat.com.br/certificates/82578c87-8e4c-479b-b068-c288f91bb947"
+          "description": "Programming logic fundamentals, computer architecture, and internet infrastructure basics."
         },
         {
-          "title": "Introduction to Mobile Development",
-          "provider": "SESI SENAI / +Devs2Blu",
-          "year": "2023",
-          "description": "Mobile development fundamentals with focus on application architecture, navigation, and API integration.",
-          "certificateUrl": "https://ecommerce.sesisenai.org.br/documentos/validar"
+          "title": "DashEm7 Challenge",
+          "provider": "Doutores do Excel",
+          "year": "2024",
+          "description": "Excel dashboard development with focus on data analysis and information visualization for decision-making."
         },
         {
           "title": "Web Development with WordPress",
           "provider": "Evolua Educacao",
           "year": "2022",
-          "description": "Creation and management of dynamic websites with WordPress, including pages, themes, plugins, and customization.",
-          "certificateUrl": "https://app.evoluaeducacao.com.br/Certificado?Hash=C666296B4C9794C4"
+          "description": "Creation and management of dynamic websites with WordPress, including pages, themes, plugins, and customization."
         },
         {
           "title": "Web Development with JavaScript and Interactivity",
           "provider": "Evolua Educacao",
           "year": "2022",
-          "description": "JavaScript fundamentals, event handling, DOM manipulation, and dynamic interactions in web applications.",
-          "certificateUrl": "https://app.evoluaeducacao.com.br/Certificado?Hash=C16E26DCFC2AD4BE"
+          "description": "JavaScript fundamentals, event handling, DOM manipulation, and dynamic interactions in web applications."
         },
         {
           "title": "Web Styling with CSS",
           "provider": "Evolua Educacao",
           "year": "2022",
-          "description": "Advanced CSS for interface styling, responsive layouts, typography, visual composition, and component organization.",
-          "certificateUrl": "https://app.evoluaeducacao.com.br/Certificado?Hash=CAA5C02D12817446"
+          "description": "Advanced CSS for interface styling, responsive layouts, typography, visual composition, and component organization."
         },
         {
           "title": "Web Page Structure with HTML",
           "provider": "Evolua Educacao",
           "year": "2022",
-          "description": "HTML fundamentals, semantic page structure, and markup best practices for accessibility.",
-          "certificateUrl": "https://app.evoluaeducacao.com.br/Certificado?Hash=CE3EBB417072C424"
+          "description": "HTML fundamentals, semantic page structure, and markup best practices for accessibility."
         }
       ]
     },
