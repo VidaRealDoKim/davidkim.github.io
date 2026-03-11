@@ -7,7 +7,7 @@ import { Section } from "@/components/ui/Section";
 import { useI18n } from "@/i18n/I18nProvider";
 
 const HERO_FALLBACK_IMAGE =
-  "https://images.unsplash.com/photo-1545239351-1141bd82e8a6?auto=format&fit=crop&w=1400&q=80";
+  "https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=1200&q=80";
 
 export function HeroSection() {
   const { dictionary } = useI18n();
