@@ -144,79 +144,119 @@
           "title": "Cross-Platform App Development with Flutter",
           "provider": "+Devs2Blu (ACATE / Blusoft)",
           "year": "2025",
-          "description": "Complete 480-hour training in cross-platform mobile and web applications using Flutter and Dart, with focus on scalable architecture, API integration, and databases."
+          "description": "Complete 480-hour training in cross-platform mobile and web applications using Flutter and Dart, with focus on scalable architecture, API integration, and databases.",
+          "certificateUrl": "https://app.rocketseat.com.br/certificates/21fe7a1b-d765-48a7-930a-2453143aa84b"
         },
         {
           "title": "UX/UI Design and User Experience",
           "provider": "Entra21 - Blusoft",
           "year": "2024",
-          "description": "Competencies in user research, information architecture, user-centered design, wireframes, and interactive prototyping."
+          "description": "Competencies in user research, information architecture, user-centered design, wireframes, and interactive prototyping.",
+          "certificateUrl": "https://assinador.somosb4.com.br/validate/LMLWS-WE9MJ-W4XMM-5MB7R"
         },
         {
           "title": "Interface Design with Adobe Illustrator",
           "provider": "Autodesk / Adobe Systems",
           "year": "2023",
-          "description": "Proficiency in vector design, visual identity creation, icons, illustrations, and graphic elements for branding and digital marketing."
+          "description": "Proficiency in vector design, visual identity creation, icons, illustrations, and graphic elements for branding and digital marketing.",
+          "certificateUrl": "https://app.evoluaeducacao.com.br/Certificado?Hash=C2D37946969404F0"
         },
         {
           "title": "Motion Graphics and Animation with Adobe After Effects",
-          "provider": "Autodesk / Adobe Systems",
+          "provider": "Evolua Educacao",
           "year": "2023",
           "description": "Expertise in motion graphics, visual effects, interface animations, and video production for social media."
         },
         {
-          "title": "Digital Image Editing with Adobe Photoshop",
+          "title": "Video Editing with Adobe Premiere",
+          "provider": "Evolua Educacao",
+          "year": "2023",
+          "description": "Professional video editing techniques including timeline editing, effects, transitions, and audiovisual production finalization.",
+          "certificateUrl": "https://app.evoluaeducacao.com.br/Certificado?Hash=CF25AC097B95041C"
+        },
+        {
+          "title": "Vector Design with CorelDRAW - Graphics Suite",
+          "provider": "Evolua Educacao",
+          "year": "2023",
+          "description": "Mastery of vector design, logo creation, illustrations, and visual composition with advanced layer and drawing tool usage.",
+          "certificateUrl": "https://app.evoluaeducacao.com.br/Certificado?Hash=C73B05DC15A7A44C"
+        },
+        {
+          "title": "Adobe Photoshop - Essential",
+          "provider": "Evolua Educacao",
+          "year": "2023",
+          "description": "Core image editing and composition skills focused on visual treatment, color correction, and digital media asset creation.",
+          "certificateUrl": "https://app.evoluaeducacao.com.br/Certificado?Hash=C62B73B7624B84BD"
+        },
+        {
+          "title": "Adobe Photoshop - Advanced",
           "provider": "Autodesk / Adobe Systems",
           "year": "2023",
-          "description": "Proficiency in photo editing, image manipulation, digital composition, and graphic design for web and print."
+          "description": "Advanced retouching, image manipulation, creative composition, and professional workflow techniques for graphic design.",
+          "certificateUrl": "https://app.evoluaeducacao.com.br/Certificado?Hash=C747D8B12F5A8466"
         },
         {
           "title": "Complete Figma Course - UX/UI Basics to Advanced",
           "provider": "Udemy",
           "year": "2023",
-          "description": "Modern interface design, design systems creation, wireframes development, and interactive prototyping with Figma."
+          "description": "Modern interface design, design systems creation, wireframes development, and interactive prototyping with Figma.",
+          "certificateUrl": "https://www.udemy.com/certificate/UC-ae1c0768-61a3-4bfb-bf1e-50a9e4931b2d/"
         },
         {
           "title": "Graphic Design for Social Media",
           "provider": "Hotmart",
           "year": "2023",
-          "description": "Visual content creation optimized for social media with application of visual design principles and brand identity."
+          "description": "Visual content creation optimized for social media with application of visual design principles and brand identity.",
+          "certificateUrl": "https://hotmart.com/pt-br/club/design/product/1198198/certificate/a65d4cf1-5540-4f9c-9396-11fe97ed1d1c--1794344727/validate"
         },
         {
           "title": "Backend Development with Java and Spring Boot",
           "provider": "Rocketseat",
           "year": "2023",
-          "description": "REST API development, Maven, Lombok, H2 Database integration, security implementation, and exception handling in Java."
+          "description": "REST API development, Maven, Lombok, H2 Database integration, security implementation, and exception handling in Java.",
+          "certificateUrl": "https://app.rocketseat.com.br/certificates/72d3ef95-a816-4b5c-935c-570cdc3c3080"
         },
         {
           "title": "Introduction to Programming and Web Fundamentals",
           "provider": "Rocketseat",
           "year": "2023",
-          "description": "Programming logic fundamentals, computer architecture, and internet infrastructure basics."
+          "description": "Programming logic fundamentals, computer architecture, and internet infrastructure basics.",
+          "certificateUrl": "https://app.rocketseat.com.br/certificates/82578c87-8e4c-479b-b068-c288f91bb947"
+        },
+        {
+          "title": "Introduction to Mobile Development",
+          "provider": "SESI SENAI / +Devs2Blu",
+          "year": "2023",
+          "description": "Mobile development fundamentals with focus on application architecture, navigation, and API integration.",
+          "certificateUrl": "https://ecommerce.sesisenai.org.br/documentos/validar"
         },
         {
           "title": "Web Development with WordPress",
           "provider": "Evolua Educacao",
           "year": "2022",
-          "description": "Creation and management of dynamic websites with WordPress, including pages, themes, plugins, and customization."
+          "description": "Creation and management of dynamic websites with WordPress, including pages, themes, plugins, and customization.",
+          "certificateUrl": "https://app.evoluaeducacao.com.br/Certificado?Hash=C666296B4C9794C4"
         },
         {
           "title": "Web Development with JavaScript and Interactivity",
           "provider": "Evolua Educacao",
           "year": "2022",
-          "description": "JavaScript fundamentals, event handling, DOM manipulation, and dynamic interactions in web applications."
+          "description": "JavaScript fundamentals, event handling, DOM manipulation, and dynamic interactions in web applications.",
+          "certificateUrl": "https://app.evoluaeducacao.com.br/Certificado?Hash=C16E26DCFC2AD4BE"
         },
         {
           "title": "Web Styling with CSS",
           "provider": "Evolua Educacao",
           "year": "2022",
-          "description": "Advanced CSS for interface styling, responsive layouts, typography, visual composition, and component organization."
+          "description": "Advanced CSS for interface styling, responsive layouts, typography, visual composition, and component organization.",
+          "certificateUrl": "https://app.evoluaeducacao.com.br/Certificado?Hash=CAA5C02D12817446"
         },
         {
           "title": "Web Page Structure with HTML",
           "provider": "Evolua Educacao",
           "year": "2022",
-          "description": "HTML fundamentals, semantic page structure, and markup best practices for accessibility."
+          "description": "HTML fundamentals, semantic page structure, and markup best practices for accessibility.",
+          "certificateUrl": "https://app.evoluaeducacao.com.br/Certificado?Hash=CE3EBB417072C424"
         }
       ]
     },
