@@ -8,21 +8,40 @@ import { ThemeToggle } from "@/components/ThemeToggle";
 import { SiteFooter } from "@/components/sections/SiteFooter";
 import { Reveal } from "@/components/ui/Reveal";
 import { useI18n } from "@/i18n/I18nProvider";
+import type { ManagedProjectRecord } from "@/lib/project-catalog";
 
 type ProjectDetailPageProps = {
-  slug: string;
+  project: ManagedProjectRecord;
 };
 
-export function ProjectDetailPage({ slug }: ProjectDetailPageProps) {
-  const { dictionary } = useI18n();
-  const project = dictionary.projects.list.find((item) => item.slug === slug);
-
-  if (!project) {
+function getVideoEmbed(url: string): { kind: "iframe" | "video"; src: string } | null {
+  if (!url) {
     return null;
   }
 
+  if (url.includes("youtube.com/watch?v=")) {
+    return { kind: "iframe", src: url.replace("watch?v=", "embed/") };
+  }
+
+  if (url.includes("youtu.be/")) {
+    return { kind: "iframe", src: `https://www.youtube.com/embed/${url.split("youtu.be/")[1].split("?")[0]}` };
+  }
+
+  if (url.includes("vimeo.com/")) {
+    return { kind: "iframe", src: `https://player.vimeo.com/video/${url.split("vimeo.com/")[1].split("?")[0]}` };
+  }
+
+  return { kind: "video", src: url };
+}
+
+export function ProjectDetailPage({ project }: ProjectDetailPageProps) {
+  const { dictionary, locale } = useI18n();
+  const content = locale === "pt" ? project.pt : project.en;
+
   const category = dictionary.projects.categories.find((item) => item.id === project.category);
   const isExternalLink = project.caseStudyHref.startsWith("http://") || project.caseStudyHref.startsWith("https://");
+  const video = getVideoEmbed(project.media.videoUrl);
+  const gallery = project.media.gallery.length > 0 ? project.media.gallery : [project.media.coverImage];
 
   return (
     <>
@@ -54,15 +73,15 @@ export function ProjectDetailPage({ slug }: ProjectDetailPageProps) {
               ) : null}
 
               <h1 className="font-title text-4xl leading-[0.95] tracking-tight text-text md:text-6xl">
-                {project.name}
+                {content.name}
               </h1>
 
               <p className="mt-6 max-w-2xl text-lg leading-relaxed text-text/78 md:text-xl">
-                {project.solution}
+                {content.summary}
               </p>
 
               <p className="mt-5 max-w-2xl text-sm leading-relaxed text-text/68 md:text-base">
-                {project.result}
+                {content.result}
               </p>
 
               <div className="mt-8 flex flex-wrap gap-3">
@@ -88,8 +107,8 @@ export function ProjectDetailPage({ slug }: ProjectDetailPageProps) {
             <div className="overflow-hidden rounded-[32px] border border-border bg-surface shadow-soft">
               <div className="relative aspect-[16/11] overflow-hidden">
                 <Image
-                  src={project.image}
-                  alt={project.name}
+                  src={project.media.coverImage}
+                  alt={content.name}
                   fill
                   sizes="(max-width: 1023px) 100vw, 55vw"
                   className="object-cover"
@@ -106,7 +125,7 @@ export function ProjectDetailPage({ slug }: ProjectDetailPageProps) {
                 <p className="text-xs font-semibold uppercase tracking-[0.12em] text-[color:var(--accent-strong)]">
                   {dictionary.projects.labels.problem}
                 </p>
-                <p className="mt-4 text-sm leading-relaxed text-text/80 md:text-base">{project.problem}</p>
+                <p className="mt-4 text-sm leading-relaxed text-text/80 md:text-base">{content.problem}</p>
               </article>
             </Reveal>
 
@@ -115,7 +134,7 @@ export function ProjectDetailPage({ slug }: ProjectDetailPageProps) {
                 <p className="text-xs font-semibold uppercase tracking-[0.12em] text-[color:var(--accent-strong)]">
                   {dictionary.projects.labels.solution}
                 </p>
-                <p className="mt-4 text-sm leading-relaxed text-text/80 md:text-base">{project.solution}</p>
+                <p className="mt-4 text-sm leading-relaxed text-text/80 md:text-base">{content.solution}</p>
               </article>
             </Reveal>
 
@@ -124,7 +143,7 @@ export function ProjectDetailPage({ slug }: ProjectDetailPageProps) {
                 <p className="text-xs font-semibold uppercase tracking-[0.12em] text-[color:var(--accent-strong)]">
                   {dictionary.projects.labels.result}
                 </p>
-                <p className="mt-4 text-sm leading-relaxed text-text/80 md:text-base">{project.result}</p>
+                <p className="mt-4 text-sm leading-relaxed text-text/80 md:text-base">{content.result}</p>
               </article>
             </Reveal>
           </div>
@@ -136,7 +155,7 @@ export function ProjectDetailPage({ slug }: ProjectDetailPageProps) {
               <p className="text-xs font-semibold uppercase tracking-[0.16em] text-[color:var(--accent-strong)]">
                 {dictionary.projects.showroomLabel}
               </p>
-              <h2 className="mt-3 font-title text-3xl tracking-tight text-text md:text-5xl">{project.name}</h2>
+              <h2 className="mt-3 font-title text-3xl tracking-tight text-text md:text-5xl">{content.name}</h2>
             </div>
           </Reveal>
 
@@ -144,13 +163,48 @@ export function ProjectDetailPage({ slug }: ProjectDetailPageProps) {
             <div className="overflow-hidden rounded-[36px] border border-border bg-surface shadow-soft">
               <div className="relative aspect-[16/9] overflow-hidden">
                 <Image
-                  src={project.image}
-                  alt={project.name}
+                  src={project.media.coverImage}
+                  alt={content.name}
                   fill
                   sizes="100vw"
                   className="object-cover"
                 />
               </div>
+            </div>
+          </Reveal>
+
+          {video ? (
+            <Reveal delay={130}>
+              <div className="mt-8 overflow-hidden rounded-[32px] border border-border bg-surface p-3 shadow-soft md:p-4">
+                <div className="relative aspect-[16/9] overflow-hidden rounded-[24px] bg-background">
+                  {video.kind === "iframe" ? (
+                    <iframe
+                      src={video.src}
+                      title={content.name}
+                      className="h-full w-full"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                    />
+                  ) : (
+                    <video src={video.src} controls className="h-full w-full object-cover" />
+                  )}
+                </div>
+              </div>
+            </Reveal>
+          ) : null}
+
+          <Reveal delay={180}>
+            <div className="mt-8 flex snap-x gap-4 overflow-x-auto pb-2">
+              {gallery.map((item, index) => (
+                <div
+                  key={`${item}-${index}`}
+                  className="min-w-[82%] snap-start overflow-hidden rounded-[28px] border border-border bg-surface shadow-soft md:min-w-[46%] lg:min-w-[32%]"
+                >
+                  <div className="relative aspect-[4/3] overflow-hidden">
+                    <Image src={item} alt={`${content.name} ${index + 1}`} fill sizes="33vw" className="object-cover" />
+                  </div>
+                </div>
+              ))}
             </div>
           </Reveal>
         </section>

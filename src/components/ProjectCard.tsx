@@ -5,8 +5,7 @@ type ProjectCardProps = {
   slug: string;
   name: string;
   image: string;
-  solution: string;
-  caseStudyHref: string;
+  summary: string;
   caseStudyLabel: string;
 };
 
@@ -14,7 +13,7 @@ export function ProjectCard({
   slug,
   name,
   image,
-  solution,
+  summary,
   caseStudyLabel,
 }: ProjectCardProps) {
   return (
@@ -34,7 +33,7 @@ export function ProjectCard({
         <div className="flex flex-1 flex-col p-6 md:p-7">
           <h3 className="text-xl font-semibold leading-tight text-text md:text-2xl">{name}</h3>
           <p className="mt-4 max-w-[40ch] text-sm leading-relaxed text-text/72 md:text-base">
-            {solution}
+            {summary}
           </p>
 
           <span className="mt-8 inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.08em] text-text transition-transform duration-300 group-hover:translate-x-1 group-hover:text-[color:var(--accent-strong)]">
