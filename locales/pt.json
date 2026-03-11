@@ -137,6 +137,8 @@
     },
     "educationAndCertifications": {
       "title": "Formação e Certificações",
+      "viewCredentialLabel": "Ver certificado",
+      "defaultCredentialUrl": "https://www.linkedin.com/in/davidluiskim/details/certifications/",
       "items": [
         {
           "title": "Desenvolvimento de Aplicações Multiplataforma com Flutter",

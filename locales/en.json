@@ -137,6 +137,8 @@
     },
     "educationAndCertifications": {
       "title": "Education and Certifications",
+      "viewCredentialLabel": "View certificate",
+      "defaultCredentialUrl": "https://www.linkedin.com/in/davidluiskim/details/certifications/",
       "items": [
         {
           "title": "Cross-Platform App Development with Flutter",

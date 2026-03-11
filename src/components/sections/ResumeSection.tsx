@@ -21,11 +21,13 @@ type ResumeCertificationItem = {
   provider: string;
   year?: string;
   description: string;
+  certificateUrl?: string;
 };
 
 export function ResumeSection() {
   const { dictionary } = useI18n();
   const resume = dictionary.resume;
+  const educationAndCertifications = resume.educationAndCertifications;
 
   return (
     <Section id="resume" title={resume.title}>
@@ -79,10 +81,10 @@ export function ResumeSection() {
 
         <Reveal delay={120}>
           <article>
-            <h3 className="text-2xl font-semibold tracking-tight text-text md:text-3xl">{resume.educationAndCertifications.title}</h3>
+            <h3 className="text-2xl font-semibold tracking-tight text-text md:text-3xl">{educationAndCertifications.title}</h3>
             <div className="mt-4 h-px w-16 accent-divider" />
             <div className="mt-6 space-y-4">
-              {resume.educationAndCertifications.items.map((item: ResumeCertificationItem) => (
+              {educationAndCertifications.items.map((item: ResumeCertificationItem) => (
                 <div key={`${item.title}-${item.provider}`} className="rounded-2xl border border-border bg-surface p-5 shadow-soft">
                   <div className="flex flex-wrap items-baseline justify-between gap-2">
                     <h4 className="text-base font-semibold text-text md:text-lg">{item.title}</h4>
@@ -92,6 +94,16 @@ export function ResumeSection() {
                   </div>
                   <p className="mt-1 text-sm text-muted">{item.provider}</p>
                   <p className="mt-3 text-sm leading-relaxed text-text/85">{item.description}</p>
+                  {item.certificateUrl || educationAndCertifications.defaultCredentialUrl ? (
+                    <a
+                      href={item.certificateUrl ?? educationAndCertifications.defaultCredentialUrl}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="mt-4 inline-flex rounded-full border border-border bg-background px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.08em] text-text transition-colors hover:border-[color:var(--accent-line)] hover:text-[color:var(--accent-strong)]"
+                    >
+                      {educationAndCertifications.viewCredentialLabel}
+                    </a>
+                  ) : null}
                 </div>
               ))}
             </div>
