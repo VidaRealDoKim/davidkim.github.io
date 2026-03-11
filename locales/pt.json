@@ -57,14 +57,13 @@
     "title": "Currículo Profissional",
     "summary": {
       "title": "Sobre / Resumo Profissional",
-      "text": "UX/UI e Product Designer com experiência em design digital e desenvolvimento de produtos web e mobile. Atua como designer freelancer desde 2021, criando interfaces, identidades visuais e soluções digitais para diferentes clientes e projetos. Possui experiência em desenvolvimento de aplicações web e mobile, com conhecimento em front-end, back-end e banco de dados, permitindo atuar em todo o ciclo de criação de produtos digitais, da concepção ao desenvolvimento. Trabalha na criação de experiências digitais intuitivas, escaláveis e visualmente consistentes, conectando design, tecnologia e estratégia de produto."
+      "text": "UX/UI e Product Designer com experiência em design digital e desenvolvimento de produtos web e mobile. Atua como designer digital desde 2021, criando interfaces, identidades visuais e soluções digitais para diferentes clientes e projetos. Possui experiência em desenvolvimento de aplicações web e mobile, com conhecimento em front-end, back-end e banco de dados, permitindo atuar em todo o ciclo de criação de produtos digitais, da concepção ao desenvolvimento. Trabalha na criação de experiências digitais intuitivas, escaláveis e visualmente consistentes, conectando design, tecnologia e estratégia de produto."
     },
     "professionalExperience": {
       "title": "Experiência Profissional",
       "items": [
         {
-          "role": "Designer Digital - Freelancer",
-          "organization": "Freelancer",
+          "role": "Designer Digital",
           "period": "2021 - Atual",
           "bullets": [
             "Criação de soluções visuais e digitais para diferentes clientes e projetos.",
@@ -140,6 +139,11 @@
       "viewCredentialLabel": "Ver certificado",
       "defaultCredentialUrl": "https://www.linkedin.com/in/davidluiskim/details/certifications/",
       "items": [
+        {
+          "title": "Formação Complementar",
+          "provider": "Uniavan",
+          "description": "Graduação em Nutrição como formação complementar, ampliando repertório interdisciplinar em saúde, bem-estar, comportamento humano e visão sistêmica."
+        },
         {
           "title": "Hackweek 1° Lugar",
           "provider": "ACATE - Associação Catarinense de Tecnologia",
@@ -477,7 +481,7 @@
     "emailLabel": "Email",
     "phoneLabel": "Telefone",
     "locationLabel": "Localização",
-    "email": "david8.escola@gmail.com",
+    "email": "kim449212@gmail.com",
     "phone": "(47) 99629-5564",
     "location": "Blumenau, SC",
     "buttons": {
@@ -493,7 +497,7 @@
   },
   "footer": {
     "brand": "SOLV3D",
-    "email": "contato@solv3d.com.br",
+    "email": "kim449212@gmail.com",
     "rights": "Todos os direitos reservados"
   }
 }

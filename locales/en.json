@@ -57,14 +57,13 @@
     "title": "Professional Resume",
     "summary": {
       "title": "About / Professional Summary",
-      "text": "UX/UI and Product Designer with experience in digital design and web and mobile product development. Working as a freelance designer since 2021, creating interfaces, visual identities, and digital solutions for a range of clients and projects. Also has experience developing web and mobile applications, with front-end, back-end, and database knowledge, enabling end-to-end participation in digital product creation, from concept to delivery. Focused on creating intuitive, scalable, and visually consistent digital experiences by connecting design, technology, and product strategy."
+      "text": "UX/UI and Product Designer with experience in digital design and web and mobile product development. Working as a digital designer since 2021, creating interfaces, visual identities, and digital solutions for a range of clients and projects. Also has experience developing web and mobile applications, with front-end, back-end, and database knowledge, enabling end-to-end participation in digital product creation, from concept to delivery. Focused on creating intuitive, scalable, and visually consistent digital experiences by connecting design, technology, and product strategy."
     },
     "professionalExperience": {
       "title": "Professional Experience",
       "items": [
         {
-          "role": "Digital Designer - Freelancer",
-          "organization": "Freelancer",
+          "role": "Digital Designer",
           "period": "2021 - Present",
           "bullets": [
             "Created visual and digital solutions for different clients and projects.",
@@ -140,6 +139,11 @@
       "viewCredentialLabel": "View certificate",
       "defaultCredentialUrl": "https://www.linkedin.com/in/davidluiskim/details/certifications/",
       "items": [
+        {
+          "title": "Complementary Education",
+          "provider": "Uniavan",
+          "description": "Nutrition degree studies as complementary education, expanding interdisciplinary knowledge in health, well-being, human behavior, and systemic thinking."
+        },
         {
           "title": "Hackweek 1st Place",
           "provider": "ACATE - Santa Catarina Association of Technology",
@@ -477,7 +481,7 @@
     "emailLabel": "Email",
     "phoneLabel": "Phone",
     "locationLabel": "Location",
-    "email": "david8.escola@gmail.com",
+    "email": "kim449212@gmail.com",
     "phone": "(47) 99629-5564",
     "location": "Blumenau, SC",
     "buttons": {
@@ -493,7 +497,7 @@
   },
   "footer": {
     "brand": "SOLV3D",
-    "email": "contato@solv3d.com.br",
+    "email": "kim449212@gmail.com",
     "rights": "All rights reserved"
   }
 }
