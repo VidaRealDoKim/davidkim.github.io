@@ -479,13 +479,14 @@
     "heading": "Pronto para o próximo projeto?",
     "description": "Me chame por email ou redes para discutir seu produto digital.",
     "emailLabel": "Email",
-    "phoneLabel": "Telefone",
+    "phoneLabel": "WhatsApp",
     "locationLabel": "Localização",
     "email": "kim449212@gmail.com",
     "phone": "(47) 99629-5564",
     "location": "Blumenau, SC",
     "buttons": {
       "email": "Enviar E-mail",
+      "whatsapp": "Chamar no WhatsApp",
       "backToTop": "Voltar ao Topo"
     },
     "links": [

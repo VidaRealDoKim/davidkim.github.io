@@ -7,6 +7,7 @@ import { useI18n } from "@/i18n/I18nProvider";
 
 export function ContactSection() {
   const { dictionary } = useI18n();
+  const whatsappNumber = dictionary.contact.phone.replace(/\D/g, "");
 
   return (
     <Section id="contact" title={dictionary.contact.title}>
@@ -33,6 +34,9 @@ export function ContactSection() {
 
           <div className="mt-8 flex flex-wrap gap-4">
             <Button href={`mailto:${dictionary.contact.email}`}>{dictionary.contact.buttons.email}</Button>
+            <Button href={`https://wa.me/55${whatsappNumber}`} variant="secondary">
+              {dictionary.contact.buttons.whatsapp}
+            </Button>
             {dictionary.contact.links.map((link) => (
               <Button key={link.label} href={link.href} variant="secondary">
                 {link.label}

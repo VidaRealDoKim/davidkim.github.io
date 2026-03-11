@@ -479,13 +479,14 @@
     "heading": "Let us create your next project.",
     "description": "Reach out by email or social links to discuss branding, social, web, or digital product design.",
     "emailLabel": "Email",
-    "phoneLabel": "Phone",
+    "phoneLabel": "WhatsApp",
     "locationLabel": "Location",
     "email": "kim449212@gmail.com",
     "phone": "(47) 99629-5564",
     "location": "Blumenau, SC",
     "buttons": {
       "email": "Send Email",
+      "whatsapp": "Message on WhatsApp",
       "backToTop": "Back to Top"
     },
     "links": [
