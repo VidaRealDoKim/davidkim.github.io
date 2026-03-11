@@ -79,36 +79,46 @@ export function ResumeSection() {
           ))}
         </div>
 
-        <Reveal delay={120}>
-          <article>
-            <h3 className="text-2xl font-semibold tracking-tight text-text md:text-3xl">{educationAndCertifications.title}</h3>
-            <div className="mt-4 h-px w-16 accent-divider" />
-            <div className="mt-6 space-y-4">
-              {educationAndCertifications.items.map((item: ResumeCertificationItem) => (
-                <div key={`${item.title}-${item.provider}`} className="rounded-2xl border border-border bg-surface p-5 shadow-soft">
-                  <div className="flex flex-wrap items-baseline justify-between gap-2">
-                    <h4 className="text-base font-semibold text-text md:text-lg">{item.title}</h4>
-                    {item.year ? (
-                      <span className="text-xs font-medium uppercase tracking-[0.08em] text-muted">{item.year}</span>
-                    ) : null}
-                  </div>
-                  <p className="mt-1 text-sm text-muted">{item.provider}</p>
-                  <p className="mt-3 text-sm leading-relaxed text-text/85">{item.description}</p>
-                  {item.certificateUrl ? (
-                    <a
-                      href={item.certificateUrl}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="mt-4 inline-flex rounded-full border border-border bg-background px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.08em] text-text transition-colors hover:border-[color:var(--accent-line)] hover:text-[color:var(--accent-strong)]"
-                    >
-                      {educationAndCertifications.viewCredentialLabel}
-                    </a>
-                  ) : null}
-                </div>
-              ))}
+        <article>
+          <Reveal delay={80}>
+            <div>
+              <h3 className="text-2xl font-semibold tracking-tight text-text md:text-3xl">{educationAndCertifications.title}</h3>
+              <div className="mt-4 h-px w-16 accent-divider" />
             </div>
-          </article>
-        </Reveal>
+          </Reveal>
+          <div className="relative mt-10">
+            <div
+              className="absolute left-[5px] top-1 bottom-1 w-0.5 rounded-full bg-border"
+              aria-hidden="true"
+            />
+            {educationAndCertifications.items.map((item: ResumeCertificationItem, index: number) => (
+              <Reveal key={`${item.title}-${item.provider}`} delay={index < 6 ? index * 60 : 0}>
+                <div className="relative pl-9 pb-7">
+                  <span
+                    className="absolute left-0 top-[6px] block h-3 w-3 rounded-full border-2 bg-background"
+                    style={{ borderColor: "var(--accent-line)" }}
+                    aria-hidden="true"
+                  />
+                  {item.year ? (
+                    <span
+                      className="text-[10px] font-bold tracking-[0.12em] uppercase"
+                      style={{ color: "var(--accent-strong)" }}
+                    >
+                      {item.year}
+                    </span>
+                  ) : null}
+                  <h4 className="mt-0.5 text-sm font-semibold leading-snug text-text md:text-base">
+                    {item.title}
+                  </h4>
+                  <p className="mt-0.5 text-xs font-medium text-muted">{item.provider}</p>
+                  <p className="mt-1.5 text-xs leading-relaxed text-text/70 md:text-sm">
+                    {item.description}
+                  </p>
+                </div>
+              </Reveal>
+            ))}
+          </div>
+        </article>
 
         <Reveal delay={200}>
           <article>
