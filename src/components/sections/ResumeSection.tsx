@@ -4,23 +4,9 @@ import { Reveal } from "@/components/ui/Reveal";
 import { Section } from "@/components/ui/Section";
 import { useI18n } from "@/i18n/I18nProvider";
 
-type ResumeExperienceItem = {
-  role: string;
-  period: string;
-  organization?: string;
-  bullets: string[];
-};
-
 type ResumeListSection = {
   title: string;
   items: string[];
-};
-
-type ResumeEducationItem = {
-  course: string;
-  institution: string;
-  year: string;
-  description: string;
 };
 
 type ResumeCertificationItem = {
@@ -84,47 +70,26 @@ export function ResumeSection() {
           ))}
         </div>
 
-        <div className="grid gap-10 lg:grid-cols-2">
-          <Reveal delay={120}>
-            <article>
-              <h3 className="text-2xl font-semibold tracking-tight text-text md:text-3xl">{resume.education.title}</h3>
-              <div className="mt-4 h-px w-16 accent-divider" />
-              <div className="mt-6 space-y-4">
-                {resume.education.items.map((item: ResumeEducationItem) => (
-                  <div key={`${item.course}-${item.year}`} className="rounded-2xl border border-border bg-surface p-5 shadow-soft">
-                    <div className="flex flex-wrap items-baseline justify-between gap-2">
-                      <h4 className="text-base font-semibold text-text md:text-lg">{item.course}</h4>
+        <Reveal delay={120}>
+          <article>
+            <h3 className="text-2xl font-semibold tracking-tight text-text md:text-3xl">{resume.educationAndCertifications.title}</h3>
+            <div className="mt-4 h-px w-16 accent-divider" />
+            <div className="mt-6 space-y-4">
+              {resume.educationAndCertifications.items.map((item: ResumeCertificationItem) => (
+                <div key={`${item.title}-${item.provider}`} className="rounded-2xl border border-border bg-surface p-5 shadow-soft">
+                  <div className="flex flex-wrap items-baseline justify-between gap-2">
+                    <h4 className="text-base font-semibold text-text md:text-lg">{item.title}</h4>
+                    {item.year ? (
                       <span className="text-xs font-medium uppercase tracking-[0.08em] text-muted">{item.year}</span>
-                    </div>
-                    <p className="mt-1 text-sm text-muted">{item.institution}</p>
-                    <p className="mt-3 text-sm leading-relaxed text-text/85">{item.description}</p>
+                    ) : null}
                   </div>
-                ))}
-              </div>
-            </article>
-          </Reveal>
-
-          <Reveal delay={160}>
-            <article>
-              <h3 className="text-2xl font-semibold tracking-tight text-text md:text-3xl">{resume.certifications.title}</h3>
-              <div className="mt-4 h-px w-16 accent-divider" />
-              <div className="mt-6 space-y-4">
-                {resume.certifications.items.map((item: ResumeCertificationItem) => (
-                  <div key={`${item.title}-${item.provider}`} className="rounded-2xl border border-border bg-surface p-5 shadow-soft">
-                    <div className="flex flex-wrap items-baseline justify-between gap-2">
-                      <h4 className="text-base font-semibold text-text md:text-lg">{item.title}</h4>
-                      {item.year ? (
-                        <span className="text-xs font-medium uppercase tracking-[0.08em] text-muted">{item.year}</span>
-                      ) : null}
-                    </div>
-                    <p className="mt-1 text-sm text-muted">{item.provider}</p>
-                    <p className="mt-3 text-sm leading-relaxed text-text/85">{item.description}</p>
-                  </div>
-                ))}
-              </div>
-            </article>
-          </Reveal>
-        </div>
+                  <p className="mt-1 text-sm text-muted">{item.provider}</p>
+                  <p className="mt-3 text-sm leading-relaxed text-text/85">{item.description}</p>
+                </div>
+              ))}
+            </div>
+          </article>
+        </Reveal>
 
         <Reveal delay={200}>
           <article>

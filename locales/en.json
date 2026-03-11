@@ -135,19 +135,8 @@
         "Connected front-end, back-end, and database layers in web and mobile products."
       ]
     },
-    "education": {
-      "title": "Education",
-      "items": [
-        {
-          "course": "UX/UI Design",
-          "institution": "Entra21 - Blusoft",
-          "year": "2024",
-          "description": "Training in user experience and digital interface design, including user research, information architecture, wireframes, and prototyping."
-        }
-      ]
-    },
-    "certifications": {
-      "title": "Certifications",
+    "educationAndCertifications": {
+      "title": "Education and Certifications",
       "items": [
         {
           "title": "Cross-Platform App Development with Flutter",

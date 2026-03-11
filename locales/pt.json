@@ -135,19 +135,8 @@
         "Integração entre front-end, back-end e banco de dados em produtos web e mobile."
       ]
     },
-    "education": {
-      "title": "Formação",
-      "items": [
-        {
-          "course": "UX/UI Design",
-          "institution": "Entra21 - Blusoft",
-          "year": "2024",
-          "description": "Formação em design de experiência do usuário e interfaces digitais, incluindo pesquisa de usuário, arquitetura da informação, wireframes e prototipação."
-        }
-      ]
-    },
-    "certifications": {
-      "title": "Certificações",
+    "educationAndCertifications": {
+      "title": "Formação e Certificações",
       "items": [
         {
           "title": "Desenvolvimento de Aplicações Multiplataforma com Flutter",
