@@ -23,6 +23,14 @@ export function ProjectDetailPage({ slug }: ProjectDetailPageProps) {
 
   const category = dictionary.projects.categories.find((item) => item.id === project.category);
   const gallery: string[] = [project.image];
+  const processText = "process" in project ? project.process : undefined;
+  const overviewText = "overview" in project ? project.overview : undefined;
+  const challengeText = "challenge" in project ? project.challenge : undefined;
+  const roleTitle = "roleTitle" in project ? project.roleTitle : undefined;
+  const roleItems = "roleItems" in project ? project.roleItems : undefined;
+  const strategyItems = "strategyItems" in project ? project.strategyItems : undefined;
+  const learningsItems = "learningsItems" in project ? project.learningsItems : undefined;
+  const detailLabels = "detailLabels" in dictionary.projects ? dictionary.projects.detailLabels : undefined;
 
   return (
     <>
@@ -91,8 +99,36 @@ export function ProjectDetailPage({ slug }: ProjectDetailPageProps) {
           </Reveal>
         </section>
 
+        {overviewText || challengeText ? (
+          <section className="mx-auto mt-14 w-[min(1120px,92vw)] md:mt-16">
+            <div className="grid gap-5 md:grid-cols-2">
+              {overviewText ? (
+                <Reveal>
+                  <article className="rounded-[28px] border border-border bg-surface p-6 shadow-soft">
+                    <p className="text-xs font-semibold uppercase tracking-[0.12em] text-[color:var(--accent-strong)]">
+                      {detailLabels?.overview ?? "Overview"}
+                    </p>
+                    <p className="mt-4 text-sm leading-relaxed text-text/80 md:text-base">{overviewText}</p>
+                  </article>
+                </Reveal>
+              ) : null}
+
+              {challengeText ? (
+                <Reveal delay={70}>
+                  <article className="rounded-[28px] border border-border bg-surface p-6 shadow-soft">
+                    <p className="text-xs font-semibold uppercase tracking-[0.12em] text-[color:var(--accent-strong)]">
+                      {detailLabels?.challenge ?? "Challenge"}
+                    </p>
+                    <p className="mt-4 text-sm leading-relaxed text-text/80 md:text-base">{challengeText}</p>
+                  </article>
+                </Reveal>
+              ) : null}
+            </div>
+          </section>
+        ) : null}
+
         <section className="mx-auto mt-16 w-[min(1120px,92vw)] md:mt-20">
-          <div className="grid gap-5 md:grid-cols-3">
+          <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-4">
             <Reveal>
               <article className="rounded-[28px] border border-border bg-surface p-6 shadow-soft">
                 <p className="text-xs font-semibold uppercase tracking-[0.12em] text-[color:var(--accent-strong)]">
@@ -101,6 +137,17 @@ export function ProjectDetailPage({ slug }: ProjectDetailPageProps) {
                 <p className="mt-4 text-sm leading-relaxed text-text/80 md:text-base">{project.problem}</p>
               </article>
             </Reveal>
+
+            {processText ? (
+              <Reveal delay={50}>
+                <article className="rounded-[28px] border border-border bg-surface p-6 shadow-soft">
+                  <p className="text-xs font-semibold uppercase tracking-[0.12em] text-[color:var(--accent-strong)]">
+                    {dictionary.projects.labels.process}
+                  </p>
+                  <p className="mt-4 text-sm leading-relaxed text-text/80 md:text-base">{processText}</p>
+                </article>
+              </Reveal>
+            ) : null}
 
             <Reveal delay={70}>
               <article className="rounded-[28px] border border-border bg-surface p-6 shadow-soft">
@@ -114,13 +161,69 @@ export function ProjectDetailPage({ slug }: ProjectDetailPageProps) {
             <Reveal delay={140}>
               <article className="rounded-[28px] border border-border bg-surface p-6 shadow-soft">
                 <p className="text-xs font-semibold uppercase tracking-[0.12em] text-[color:var(--accent-strong)]">
-                  {dictionary.projects.labels.result}
+                  {dictionary.projects.labels.impact}
                 </p>
                 <p className="mt-4 text-sm leading-relaxed text-text/80 md:text-base">{project.result}</p>
               </article>
             </Reveal>
           </div>
         </section>
+
+        {roleTitle || (Array.isArray(roleItems) && roleItems.length > 0) ? (
+          <section className="mx-auto mt-14 w-[min(1120px,92vw)] md:mt-16">
+            <Reveal>
+              <article className="rounded-[28px] border border-border bg-surface p-6 shadow-soft md:p-8">
+                <p className="text-xs font-semibold uppercase tracking-[0.12em] text-[color:var(--accent-strong)]">
+                  {detailLabels?.role ?? "Role"}
+                </p>
+                {roleTitle ? <h3 className="mt-3 text-xl font-semibold text-text md:text-2xl">{roleTitle}</h3> : null}
+                {Array.isArray(roleItems) && roleItems.length > 0 ? (
+                  <ul className="mt-4 list-disc space-y-2 pl-5 text-sm leading-relaxed text-text/80 md:text-base">
+                    {roleItems.map((item) => (
+                      <li key={item}>{item}</li>
+                    ))}
+                  </ul>
+                ) : null}
+              </article>
+            </Reveal>
+          </section>
+        ) : null}
+
+        {(Array.isArray(strategyItems) && strategyItems.length > 0) || (Array.isArray(learningsItems) && learningsItems.length > 0) ? (
+          <section className="mx-auto mt-14 w-[min(1120px,92vw)] md:mt-16">
+            <div className="grid gap-5 md:grid-cols-2">
+              {Array.isArray(strategyItems) && strategyItems.length > 0 ? (
+                <Reveal>
+                  <article className="rounded-[28px] border border-border bg-surface p-6 shadow-soft">
+                    <p className="text-xs font-semibold uppercase tracking-[0.12em] text-[color:var(--accent-strong)]">
+                      {detailLabels?.strategy ?? "Strategy"}
+                    </p>
+                    <ul className="mt-4 list-disc space-y-2 pl-5 text-sm leading-relaxed text-text/80 md:text-base">
+                      {strategyItems.map((item) => (
+                        <li key={item}>{item}</li>
+                      ))}
+                    </ul>
+                  </article>
+                </Reveal>
+              ) : null}
+
+              {Array.isArray(learningsItems) && learningsItems.length > 0 ? (
+                <Reveal delay={70}>
+                  <article className="rounded-[28px] border border-border bg-surface p-6 shadow-soft">
+                    <p className="text-xs font-semibold uppercase tracking-[0.12em] text-[color:var(--accent-strong)]">
+                      {detailLabels?.learnings ?? "Learnings"}
+                    </p>
+                    <ul className="mt-4 list-disc space-y-2 pl-5 text-sm leading-relaxed text-text/80 md:text-base">
+                      {learningsItems.map((item) => (
+                        <li key={item}>{item}</li>
+                      ))}
+                    </ul>
+                  </article>
+                </Reveal>
+              ) : null}
+            </div>
+          </section>
+        ) : null}
 
         <section className="mx-auto mt-16 w-[min(1120px,92vw)] md:mt-20">
           <Reveal>

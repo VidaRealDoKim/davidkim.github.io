@@ -378,8 +378,17 @@
     "externalProjectLabel": "Abrir projeto completo",
     "labels": {
       "problem": "Problema",
+      "process": "Processo",
       "solution": "Solução",
-      "result": "Resultado"
+      "result": "Resultado",
+      "impact": "Impacto"
+    },
+    "detailLabels": {
+      "overview": "Visão Geral",
+      "challenge": "O Desafio",
+      "role": "Meu Papel",
+      "strategy": "Estratégia de Desenvolvimento",
+      "learnings": "Aprendizados"
     },
     "categories": [
       { "id": "uxui", "label": "UX/UI" },
@@ -388,6 +397,39 @@
       { "id": "web-design", "label": "Web Design" }
     ],
     "list": [
+      {
+        "slug": "buddytech-acate",
+        "name": "BuddyTech",
+        "category": "uxui",
+        "image": "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1200&q=80",
+        "tags": ["UX/UI", "Product Design", "MVP"],
+        "problem": "Times comerciais perdem tempo com leads frios por falta de priorização inteligente baseada em dados de interação.",
+        "process": "Mapeamos o fluxo comercial, priorizamos funcionalidades de alto impacto para MVP e testamos uma interface direta para orientar a tomada de decisão do vendedor.",
+        "solution": "Desenvolvemos um AI Sales Buddy que analisa interações, calcula Lead Score e recomenda próximos passos estratégicos para cada oportunidade.",
+        "result": "MVP vencedor do Hackathon +Devs2Blu da ACATE, validado pela banca pela clareza do problema, aplicabilidade real e potencial de impacto em conversão.",
+        "overview": "A BuddyTech e um MVP de assistente inteligente de vendas criado durante o hackathon +Devs2Blu da ACATE. O produto foi pensado para analisar interacoes com clientes e ajudar vendedores a priorizar os leads com maior potencial de conversao.",
+        "challenge": "Criar um MVP funcional de AI Sales Assistant capaz de cruzar dados de interacao (emails, reunioes, anotacoes e CRM) com historico de vendas para gerar Lead Score e sugerir proximas acoes estrategicas.",
+        "roleTitle": "Lider de equipe / UX & Product Design",
+        "roleItems": [
+          "Lideranca de time multidisciplinar",
+          "Definicao da estrategia do MVP",
+          "Estruturacao da experiencia do usuario",
+          "Priorizacao de funcionalidades criticas",
+          "Alinhamento continuo entre design e desenvolvimento"
+        ],
+        "strategyItems": [
+          "Simplicidade: manter foco na priorizacao de leads",
+          "Experiencia do usuario: clareza sobre o que fazer, quando e por que",
+          "Inteligencia orientada a dados: recomendacoes baseadas em padroes de conversao"
+        ],
+        "learningsItems": [
+          "Lideranca em ambiente de alta velocidade",
+          "Priorizacao de produto com foco em valor de negocio",
+          "Tomada de decisao rapida em contexto de inovacao",
+          "Conexao entre UX, dados e resultado comercial"
+        ],
+        "caseStudyHref": "https://www.behance.net/davidkim115"
+      },
       {
         "slug": "plataforma-imobiliaria",
         "name": "Plataforma Imobiliária",
