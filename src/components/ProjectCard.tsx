@@ -1,6 +1,8 @@
+import Link from "next/link";
 import Image from "next/image";
 
 type ProjectCardProps = {
+  slug: string;
   name: string;
   image: string;
   solution: string;
@@ -9,22 +11,15 @@ type ProjectCardProps = {
 };
 
 export function ProjectCard({
+  slug,
   name,
   image,
   solution,
-  caseStudyHref,
   caseStudyLabel,
 }: ProjectCardProps) {
-  const isExternalLink = caseStudyHref.startsWith("http://") || caseStudyHref.startsWith("https://");
-
   return (
     <article className="group h-full cursor-pointer overflow-hidden rounded-[28px] border border-border bg-surface shadow-soft transition-all duration-500 hover:-translate-y-1 hover:border-[color:var(--accent-line)] hover:shadow-[0_22px_60px_rgba(31,31,31,0.12)] dark:hover:shadow-[0_24px_60px_rgba(0,0,0,0.42)]">
-      <a
-        href={caseStudyHref}
-        target={isExternalLink ? "_blank" : undefined}
-        rel={isExternalLink ? "noreferrer" : undefined}
-        className="flex h-full flex-col"
-      >
+      <Link href={`/projects/${slug}`} className="flex h-full flex-col">
         <div className="relative aspect-[16/10] overflow-hidden">
           <Image
             src={image}
@@ -47,7 +42,7 @@ export function ProjectCard({
             <span aria-hidden="true">→</span>
           </span>
         </div>
-      </a>
+      </Link>
     </article>
   );
 }

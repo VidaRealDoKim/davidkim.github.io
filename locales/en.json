@@ -372,7 +372,10 @@
     "title": "Projects",
     "subtitle": "Projects organized by specialty to show both depth and range across digital design work.",
     "imageLabel": "Mockup",
-    "caseStudyLabel": "View Case Study",
+    "caseStudyLabel": "View Details",
+    "backToProjectsLabel": "Back to projects",
+    "showroomLabel": "Project Showroom",
+    "externalProjectLabel": "Open full project",
     "labels": {
       "problem": "Problem",
       "solution": "Solution",
@@ -386,6 +389,7 @@
     ],
     "list": [
       {
+        "slug": "plataforma-imobiliaria",
         "name": "Real Estate Platform",
         "category": "uxui",
         "image": "https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&w=1200&q=80",
@@ -396,6 +400,7 @@
         "caseStudyHref": "https://www.behance.net/davidkim115"
       },
       {
+        "slug": "rebranding-studio-move",
         "name": "Studio Move Rebranding",
         "category": "branding",
         "image": "https://images.unsplash.com/photo-1634942537034-2531766767d1?auto=format&fit=crop&w=1200&q=80",
@@ -406,6 +411,7 @@
         "caseStudyHref": "https://www.behance.net/davidkim115"
       },
       {
+        "slug": "campanha-social-launch-week",
         "name": "Launch Week Social Campaign",
         "category": "social-media",
         "image": "https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&w=1200&q=80",
@@ -416,6 +422,7 @@
         "caseStudyHref": "https://www.behance.net/davidkim115"
       },
       {
+        "slug": "website-institucional-ibk",
         "name": "IBK Institutional Website",
         "category": "web-design",
         "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80",
