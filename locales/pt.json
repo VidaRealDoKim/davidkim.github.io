@@ -336,9 +336,10 @@
       "title": "Experiências Adicionais",
       "role": "Atleta Federado",
       "organization": "Federação Catarinense de Atletismo",
-      "description": "Registrado pela Federação Catarinense de Atletismo representando o Clube Associação de Atletismo de Blumenau.",
+      "description": "Registrado pela Federação Catarinense de Atletismo representando o Clube Associação de Atletismo de Blumenau, competindo nas modalidades:",
       "events": ["Decatlo", "400 metros rasos", "400 metros com barreiras", "Revezamento 4x400"],
-      "achievement": "Conquista de diversas medalhas em competições regionais e estaduais, desenvolvendo disciplina, foco em desempenho, trabalho em equipe e superação de metas."
+      "achievement": "Conquistei diversas medalhas em competições regionais e estaduais, desenvolvendo habilidades como disciplina, foco em desempenho, trabalho em equipe e superação de metas.",
+      "connection": "Essa vivência no esporte de alto rendimento despertou meu interesse pelo impacto da nutrição e da ciência do esporte na performance, o que me levou a aprofundar meus estudos na área de Nutrição, complementando minha formação acadêmica."
     }
   },
   "areas": {

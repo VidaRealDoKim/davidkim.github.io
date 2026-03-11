@@ -151,6 +151,9 @@ export function ResumeSection() {
               ))}
             </ul>
             <p className="mt-5 text-sm leading-relaxed text-text/85 md:text-base">{resume.additionalExperience.achievement}</p>
+            {resume.additionalExperience.connection ? (
+              <p className="mt-4 text-sm leading-relaxed text-text/70 md:text-base">{resume.additionalExperience.connection}</p>
+            ) : null}
           </article>
         </Reveal>
       </div>

@@ -336,9 +336,10 @@
       "title": "Additional Experience",
       "role": "Federated Athlete",
       "organization": "Santa Catarina Athletics Federation",
-      "description": "Registered athlete with the Santa Catarina Athletics Federation, representing the Blumenau Athletics Association Club.",
+      "description": "Registered athlete with the Santa Catarina Athletics Federation, representing the Blumenau Athletics Association Club, competing in:",
       "events": ["Decathlon", "400m dash", "400m hurdles", "4x400 relay"],
-      "achievement": "Won several medals in regional and state competitions, developing discipline, performance focus, teamwork, and goal achievement."
+      "achievement": "Won several medals in regional and state competitions, developing discipline, performance focus, teamwork, and goal achievement.",
+      "connection": "This high-performance sports background sparked my interest in the impact of nutrition and sports science on athletic performance, leading me to deepen my studies in Nutrition as a complementary academic pursuit."
     }
   },
   "areas": {
