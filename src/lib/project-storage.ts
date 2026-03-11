@@ -31,9 +31,8 @@ async function readIndex(): Promise<ManagedProjectRecord[]> {
     return Array.isArray(data) ? data : [];
   }
 
-  await ensureStorageReady();
-
   try {
+    await ensureStorageReady();
     const raw = await readFile(INDEX_PATH, "utf-8");
     const parsed = JSON.parse(raw) as ManagedProjectRecord[];
     return Array.isArray(parsed) ? parsed : [];
@@ -48,8 +47,16 @@ async function writeIndex(projects: ManagedProjectRecord[]) {
     return;
   }
 
-  await ensureStorageReady();
-  await writeFile(INDEX_PATH, `${JSON.stringify(projects, null, 2)}\n`, "utf-8");
+  try {
+    await ensureStorageReady();
+    await writeFile(INDEX_PATH, `${JSON.stringify(projects, null, 2)}\n`, "utf-8");
+  } catch {
+    if (shouldRequirePersistentStorage()) {
+      throw new Error(
+        "Armazenamento persistente nao configurado. Defina KV_REST_API_URL e KV_REST_API_TOKEN na Vercel."
+      );
+    }
+  }
 }
 
 function mergeProject(base: ManagedProjectRecord, override?: ManagedProjectRecord): ManagedProjectRecord {

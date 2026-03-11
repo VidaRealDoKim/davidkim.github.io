@@ -47,9 +47,8 @@ async function readIndex(): Promise<StoredQuote[]> {
     return Array.isArray(data) ? data : [];
   }
 
-  await ensureStorageReady();
-
   try {
+    await ensureStorageReady();
     const raw = await readFile(INDEX_PATH, "utf-8");
     const parsed = JSON.parse(raw) as StoredQuote[];
     if (!Array.isArray(parsed)) {
@@ -67,8 +66,16 @@ async function writeIndex(quotes: StoredQuote[]) {
     return;
   }
 
-  await ensureStorageReady();
-  await writeFile(INDEX_PATH, `${JSON.stringify(quotes, null, 2)}\n`, "utf-8");
+  try {
+    await ensureStorageReady();
+    await writeFile(INDEX_PATH, `${JSON.stringify(quotes, null, 2)}\n`, "utf-8");
+  } catch {
+    if (shouldRequirePersistentStorage()) {
+      throw new Error(
+        "Armazenamento persistente nao configurado. Defina KV_REST_API_URL e KV_REST_API_TOKEN na Vercel."
+      );
+    }
+  }
 }
 
 export async function saveQuoteRecord(record: StoredQuote, pdfBytes: Uint8Array) {
