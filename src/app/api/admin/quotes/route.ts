@@ -135,6 +135,10 @@ export async function POST(request: NextRequest) {
     return new NextResponse(Buffer.from(pdfBytes), { status: 200, headers });
   } catch (error) {
     console.error("Quote generation failed", error);
+    const message = error instanceof Error ? error.message : null;
+    if (message?.includes("Armazenamento persistente")) {
+      return NextResponse.json({ error: message }, { status: 500 });
+    }
     return NextResponse.json(
       { error: "Nao foi possivel gerar o PDF do orcamento." },
       { status: 500 }
