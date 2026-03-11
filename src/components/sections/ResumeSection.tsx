@@ -94,9 +94,9 @@ export function ResumeSection() {
                   </div>
                   <p className="mt-1 text-sm text-muted">{item.provider}</p>
                   <p className="mt-3 text-sm leading-relaxed text-text/85">{item.description}</p>
-                  {item.certificateUrl || educationAndCertifications.defaultCredentialUrl ? (
+                  {item.certificateUrl ? (
                     <a
-                      href={item.certificateUrl ?? educationAndCertifications.defaultCredentialUrl}
+                      href={item.certificateUrl}
                       target="_blank"
                       rel="noreferrer"
                       className="mt-4 inline-flex rounded-full border border-border bg-background px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.08em] text-text transition-colors hover:border-[color:var(--accent-line)] hover:text-[color:var(--accent-strong)]"
