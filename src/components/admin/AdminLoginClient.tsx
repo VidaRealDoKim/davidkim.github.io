@@ -52,7 +52,7 @@ export function AdminLoginClient({ protectionConfigured }: AdminLoginClientProps
 
         {!protectionConfigured ? (
           <div className="mt-6 rounded-2xl border border-amber-400/40 bg-amber-100/40 p-4 text-sm text-text dark:bg-amber-500/10">
-            `ADMIN_ACCESS_PASSWORD` nao esta configurada. O admin permanece aberto ate essa variavel ser definida no ambiente.
+            `ADMIN_ACCESS_PASSWORD` nao esta configurada. O admin esta bloqueado ate essa variavel ser definida no ambiente.
           </div>
         ) : null}
 

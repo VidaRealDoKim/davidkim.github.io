@@ -12,7 +12,7 @@ export function isAdminProtectionConfigured(): boolean {
 
 export async function isAdminAuthenticated(): Promise<boolean> {
   if (!isAdminProtectionConfigured()) {
-    return true;
+    return false;
   }
 
   const cookieStore = await cookies();

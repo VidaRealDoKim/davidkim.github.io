@@ -20,27 +20,28 @@ export function NavBar() {
       return;
     }
 
-    const observer = new IntersectionObserver(
-      (entries) => {
-        const visible = entries
-          .filter((entry) => entry.isIntersecting)
-          .sort((a, b) => b.intersectionRatio - a.intersectionRatio);
+    const resolveActiveSection = () => {
+      const scrollAnchor = window.scrollY + 180;
+      let nextActive = `#${sections[0].id}`;
 
-        if (visible[0]) {
-          setActiveHref(`#${visible[0].target.id}`);
+      for (const section of sections) {
+        if (scrollAnchor >= section.offsetTop) {
+          nextActive = `#${section.id}`;
         }
-      },
-      {
-        rootMargin: "-35% 0px -55% 0px",
-        threshold: [0.2, 0.45, 0.7],
       }
-    );
 
-    sections.forEach((section) => observer.observe(section));
+      setActiveHref((current) => (current === nextActive ? current : nextActive));
+    };
+
+    resolveActiveSection();
+    window.addEventListener("scroll", resolveActiveSection, { passive: true });
+    window.addEventListener("resize", resolveActiveSection);
+    window.addEventListener("hashchange", resolveActiveSection);
 
     return () => {
-      sections.forEach((section) => observer.unobserve(section));
-      observer.disconnect();
+      window.removeEventListener("scroll", resolveActiveSection);
+      window.removeEventListener("resize", resolveActiveSection);
+      window.removeEventListener("hashchange", resolveActiveSection);
     };
   }, [dictionary.nav.items]);
 
