@@ -249,20 +249,22 @@ type ShowroomCarouselProps = {
 };
 
 function ShowroomCarousel({ images, projectName, showroomLabel }: ShowroomCarouselProps) {
+  const featuredImage = images[0];
+  const carouselImages = images.length > 1 ? images.slice(1) : images;
   const [current, setCurrent] = useState(0);
   const [paused, setPaused] = useState(false);
   const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
-  const prev = useCallback(() => setCurrent((c) => (c - 1 + images.length) % images.length), [images.length]);
-  const next = useCallback(() => setCurrent((c) => (c + 1) % images.length), [images.length]);
+  const prev = useCallback(() => setCurrent((c) => (c - 1 + carouselImages.length) % carouselImages.length), [carouselImages.length]);
+  const next = useCallback(() => setCurrent((c) => (c + 1) % carouselImages.length), [carouselImages.length]);
 
   useEffect(() => {
-    if (paused || images.length <= 1) return;
+    if (paused || carouselImages.length <= 1) return;
     intervalRef.current = setInterval(next, 4000);
     return () => {
       if (intervalRef.current) clearInterval(intervalRef.current);
     };
-  }, [paused, next, images.length]);
+  }, [paused, next, carouselImages.length]);
 
   if (images.length === 0) return null;
 
@@ -278,14 +280,29 @@ function ShowroomCarousel({ images, projectName, showroomLabel }: ShowroomCarous
       </Reveal>
 
       <Reveal delay={80}>
+        <div className="overflow-hidden rounded-[36px] border border-border bg-surface shadow-soft">
+          <div className="relative aspect-[16/10] overflow-hidden">
+            <Image
+              src={featuredImage}
+              alt={`${projectName} 1`}
+              fill
+              sizes="(max-width: 1023px) 100vw, 1120px"
+              className="object-cover"
+              priority
+            />
+          </div>
+        </div>
+      </Reveal>
+
+      <Reveal delay={160}>
         <div
-          className="group relative overflow-hidden rounded-[36px] border border-border bg-surface shadow-soft"
+          className="group relative mt-6 overflow-hidden rounded-[36px] border border-border bg-surface shadow-soft"
           onMouseEnter={() => setPaused(true)}
           onMouseLeave={() => setPaused(false)}
         >
           {/* Slides */}
-          <div className="relative aspect-[16/9] overflow-hidden">
-            {images.map((src, i) => (
+          <div className="relative aspect-[16/10] overflow-hidden">
+            {carouselImages.map((src, i) => (
               <div
                 key={src}
                 className="absolute inset-0 transition-opacity duration-700"
@@ -304,7 +321,7 @@ function ShowroomCarousel({ images, projectName, showroomLabel }: ShowroomCarous
           </div>
 
           {/* Arrows */}
-          {images.length > 1 && (
+          {carouselImages.length > 1 && (
             <>
               <button
                 onClick={prev}
@@ -328,9 +345,9 @@ function ShowroomCarousel({ images, projectName, showroomLabel }: ShowroomCarous
           )}
 
           {/* Dots */}
-          {images.length > 1 && (
+          {carouselImages.length > 1 && (
             <div className="absolute bottom-4 left-1/2 z-10 flex -translate-x-1/2 gap-2">
-              {images.map((_, i) => (
+              {carouselImages.map((_, i) => (
                 <button
                   key={i}
                   onClick={() => { setCurrent(i); setPaused(true); }}

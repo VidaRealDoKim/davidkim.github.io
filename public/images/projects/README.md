@@ -35,8 +35,8 @@ For other projects, keep the same pattern:
 - Aspect ratio: `1:1`
 
 2. Showroom images (`*_showroom_XX.png`)
-- Recommended: `1600 x 900`
-- Aspect ratio: `16:9`
+- Recommended: `1600 x 1000`
+- Aspect ratio: `16:10`
 
 3. Optional gallery cards
 - Recommended: `1200 x 900`
