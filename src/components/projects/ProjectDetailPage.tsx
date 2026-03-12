@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { useCallback, useEffect, useRef, useState } from "react";
 
 import { LanguageToggle } from "@/components/LanguageToggle";
 import { ThemeToggle } from "@/components/ThemeToggle";
@@ -230,48 +231,117 @@ export function ProjectDetailPage({ slug }: ProjectDetailPageProps) {
           </section>
         ) : null}
 
-        <section className="mx-auto mt-16 w-[min(1120px,92vw)] md:mt-20">
-          <Reveal>
-            <div className="mb-8">
-              <p className="text-xs font-semibold uppercase tracking-[0.16em] text-[color:var(--accent-strong)]">
-                {dictionary.projects.showroomLabel}
-              </p>
-              <h2 className="mt-3 font-title text-3xl tracking-tight text-text md:text-5xl">{project.name}</h2>
-            </div>
-          </Reveal>
+        <ShowroomCarousel images={gallery} projectName={project.name} showroomLabel={dictionary.projects.showroomLabel} />
 
-          <Reveal delay={80}>
-            <div className="overflow-hidden rounded-[36px] border border-border bg-surface shadow-soft">
-              <div className="relative aspect-[16/9] overflow-hidden">
-                <Image
-                  src={project.image}
-                  alt={project.name}
-                  fill
-                  sizes="100vw"
-                  className="object-cover"
-                />
-              </div>
-            </div>
-          </Reveal>
-
-          <Reveal delay={180}>
-            <div className="mt-8 flex snap-x gap-4 overflow-x-auto pb-2">
-              {gallery.map((item, index) => (
-                <div
-                  key={`${item}-${index}`}
-                  className="min-w-[82%] snap-start overflow-hidden rounded-[28px] border border-border bg-surface shadow-soft md:min-w-[46%] lg:min-w-[32%]"
-                >
-                  <div className="relative aspect-[4/3] overflow-hidden">
-                    <Image src={item} alt={`${project.name} ${index + 1}`} fill sizes="33vw" className="object-cover" />
-                  </div>
-                </div>
-              ))}
-            </div>
-          </Reveal>
-        </section>
       </main>
 
       <SiteFooter />
     </>
+  );
+}
+
+// ─── Showroom Carousel ────────────────────────────────────────────────────────
+
+type ShowroomCarouselProps = {
+  images: string[];
+  projectName: string;
+  showroomLabel: string;
+};
+
+function ShowroomCarousel({ images, projectName, showroomLabel }: ShowroomCarouselProps) {
+  const [current, setCurrent] = useState(0);
+  const [paused, setPaused] = useState(false);
+  const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
+
+  const prev = useCallback(() => setCurrent((c) => (c - 1 + images.length) % images.length), [images.length]);
+  const next = useCallback(() => setCurrent((c) => (c + 1) % images.length), [images.length]);
+
+  useEffect(() => {
+    if (paused || images.length <= 1) return;
+    intervalRef.current = setInterval(next, 4000);
+    return () => {
+      if (intervalRef.current) clearInterval(intervalRef.current);
+    };
+  }, [paused, next, images.length]);
+
+  if (images.length === 0) return null;
+
+  return (
+    <section className="mx-auto mt-16 w-[min(1120px,92vw)] md:mt-20">
+      <Reveal>
+        <div className="mb-8">
+          <p className="text-xs font-semibold uppercase tracking-[0.16em] text-[color:var(--accent-strong)]">
+            {showroomLabel}
+          </p>
+          <h2 className="mt-3 font-title text-3xl tracking-tight text-text md:text-5xl">{projectName}</h2>
+        </div>
+      </Reveal>
+
+      <Reveal delay={80}>
+        <div
+          className="group relative overflow-hidden rounded-[36px] border border-border bg-surface shadow-soft"
+          onMouseEnter={() => setPaused(true)}
+          onMouseLeave={() => setPaused(false)}
+        >
+          {/* Slides */}
+          <div className="relative aspect-[16/9] overflow-hidden">
+            {images.map((src, i) => (
+              <div
+                key={src}
+                className="absolute inset-0 transition-opacity duration-700"
+                style={{ opacity: i === current ? 1 : 0, zIndex: i === current ? 1 : 0 }}
+              >
+                <Image
+                  src={src}
+                  alt={`${projectName} ${i + 1}`}
+                  fill
+                  sizes="(max-width: 1023px) 100vw, 1120px"
+                  className="object-cover"
+                  priority={i === 0}
+                />
+              </div>
+            ))}
+          </div>
+
+          {/* Arrows */}
+          {images.length > 1 && (
+            <>
+              <button
+                onClick={prev}
+                aria-label="Anterior"
+                className="absolute left-4 top-1/2 z-10 -translate-y-1/2 rounded-full border border-white/20 bg-black/40 p-2.5 text-white opacity-0 backdrop-blur-sm transition-all duration-300 hover:bg-black/60 group-hover:opacity-100"
+              >
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                  <path d="M12.5 15L7.5 10L12.5 5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+              </button>
+              <button
+                onClick={next}
+                aria-label="Próximo"
+                className="absolute right-4 top-1/2 z-10 -translate-y-1/2 rounded-full border border-white/20 bg-black/40 p-2.5 text-white opacity-0 backdrop-blur-sm transition-all duration-300 hover:bg-black/60 group-hover:opacity-100"
+              >
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                  <path d="M7.5 5L12.5 10L7.5 15" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+              </button>
+            </>
+          )}
+
+          {/* Dots */}
+          {images.length > 1 && (
+            <div className="absolute bottom-4 left-1/2 z-10 flex -translate-x-1/2 gap-2">
+              {images.map((_, i) => (
+                <button
+                  key={i}
+                  onClick={() => { setCurrent(i); setPaused(true); }}
+                  aria-label={`Slide ${i + 1}`}
+                  className={`h-2 rounded-full transition-all duration-300 ${i === current ? "w-6 bg-white" : "w-2 bg-white/50"}`}
+                />
+              ))}
+            </div>
+          )}
+        </div>
+      </Reveal>
+    </section>
   );
 }
