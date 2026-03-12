@@ -401,7 +401,12 @@
         "slug": "buddytech-acate",
         "name": "BuddyTech",
         "category": "uxui",
-        "image": "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1200&q=80",
+        "image": "/images/projects/buddytech/Buddytech_capa.png",
+        "gallery": [
+          "/images/projects/buddytech/Buddytech_showroom_01.png",
+          "/images/projects/buddytech/Buddytech_showroom_02.png",
+          "/images/projects/buddytech/Buddytech_showroom_03.png"
+        ],
         "tags": ["UX/UI", "Product Design", "MVP"],
         "problem": "Times comerciais perdem tempo com leads frios por falta de priorização inteligente baseada em dados de interação.",
         "process": "Mapeamos o fluxo comercial, priorizamos funcionalidades de alto impacto para MVP e testamos uma interface direta para orientar a tomada de decisão do vendedor.",

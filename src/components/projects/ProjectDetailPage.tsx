@@ -22,7 +22,9 @@ export function ProjectDetailPage({ slug }: ProjectDetailPageProps) {
   }
 
   const category = dictionary.projects.categories.find((item) => item.id === project.category);
-  const gallery: string[] = [project.image];
+  const gallery: string[] = "gallery" in project && Array.isArray(project.gallery) && project.gallery.length > 0
+    ? project.gallery
+    : [project.image];
   const processText = "process" in project ? project.process : undefined;
   const overviewText = "overview" in project ? project.overview : undefined;
   const challengeText = "challenge" in project ? project.challenge : undefined;
