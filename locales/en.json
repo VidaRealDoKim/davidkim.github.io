@@ -401,7 +401,8 @@
         "slug": "buddytech-acate",
         "name": "BuddyTech",
         "category": "uxui",
-        "image": "/images/projects/buddytech/Buddytech_capa.png",
+        "image": "/images/projects/buddytech/Buddytech_showroom_01.png",
+        "detailImage": "/images/projects/buddytech/Buddytech_capa.png",
         "gallery": [
           "/images/projects/buddytech/Buddytech_showroom_01.png",
           "/images/projects/buddytech/Buddytech_showroom_02.png",
@@ -440,7 +441,8 @@
         "slug": "evolution",
         "name": "Evolution",
         "category": "uxui",
-        "image": "/images/projects/evolution/Evolution_capa.png",
+        "image": "/images/projects/evolution/Evolution_showroom_01.png",
+        "detailImage": "/images/projects/evolution/Evolution_capa.png",
         "gallery": [
           "/images/projects/evolution/Evolution_showroom_01.png",
           "/images/projects/evolution/Evolution_showroom_02.png"

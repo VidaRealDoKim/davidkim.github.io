@@ -22,6 +22,9 @@ export function ProjectDetailPage({ slug }: ProjectDetailPageProps) {
   }
 
   const category = dictionary.projects.categories.find((item) => item.id === project.category);
+  const detailImage = "detailImage" in project && typeof project.detailImage === "string"
+    ? project.detailImage
+    : project.image;
   const gallery: string[] = "gallery" in project && Array.isArray(project.gallery) && project.gallery.length > 0
     ? project.gallery
     : [project.image];
@@ -88,9 +91,9 @@ export function ProjectDetailPage({ slug }: ProjectDetailPageProps) {
 
           <Reveal delay={80}>
             <div className="overflow-hidden rounded-[32px] border border-border bg-surface shadow-soft">
-              <div className="relative aspect-[16/11] overflow-hidden">
+              <div className="relative aspect-square overflow-hidden">
                 <Image
-                  src={project.image}
+                  src={detailImage}
                   alt={project.name}
                   fill
                   sizes="(max-width: 1023px) 100vw, 55vw"

@@ -31,8 +31,8 @@ For other projects, keep the same pattern:
 ## Recommended Sizes
 
 1. Cover image (`*_capa.png`)
-- Recommended: `1600 x 1000`
-- Aspect ratio: `16:10`
+- Recommended: `1080 x 1080`
+- Aspect ratio: `1:1`
 
 2. Showroom images (`*_showroom_XX.png`)
 - Recommended: `1600 x 900`
@@ -52,8 +52,25 @@ For other projects, keep the same pattern:
 
 Example path in `locales/pt.json` and `locales/en.json`:
 
-- `/images/projects/buddytech/Buddytech_capa.png`
 - `/images/projects/buddytech/Buddytech_showroom_01.png`
+- `/images/projects/buddytech/Buddytech_capa.png`
+
+Recommended structure:
+
+```json
+{
+	"image": "/images/projects/buddytech/Buddytech_showroom_01.png",
+	"detailImage": "/images/projects/buddytech/Buddytech_capa.png",
+	"gallery": [
+		"/images/projects/buddytech/Buddytech_showroom_01.png",
+		"/images/projects/buddytech/Buddytech_showroom_02.png"
+	]
+}
+```
+
+- `image`: project card image
+- `detailImage`: square image used only on the project details page
+- `gallery`: showroom sequence used inside the case study
 
 ## Quick Example for BuddyTech
 
