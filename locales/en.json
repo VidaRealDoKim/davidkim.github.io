@@ -410,7 +410,7 @@
           "/images/projects/buddytech/Buddytech_showroom_04.png",
           "/images/projects/buddytech/Buddytech_showroom_05.png"
         ],
-        "tags": ["UX/UI", "Product Design", "MVP"],
+        "tags": ["UX/UI", "Product Design", "MVP", "1st place at the 5th +Devs2Blu Hackathon (Blusoft, 2025)"],
         "problem": "Sales teams lose time on low-potential leads due to lack of smart prioritization based on interaction data.",
         "process": "We mapped the sales journey, prioritized high-impact MVP features, and validated a straightforward interface to support faster decision-making.",
         "solution": "We built an AI Sales Buddy that analyzes interactions, calculates lead score, and recommends strategic next steps for each opportunity.",
@@ -487,32 +487,36 @@
           "/images/projects/uxtreme/Uxtreme_showroom_02.png",
           "/images/projects/uxtreme/Uxtreme_showroom_03.png"
         ],
-        "tags": ["UX/UI", "Product Design", "SaaS", "Design System"],
-        "problem": "Product teams struggled to maintain interface consistency and delivery speed across multiple squads.",
-        "process": "We mapped bottlenecks in design and handoff workflows, defined reusable patterns, and structured a scalable base of components and guidelines.",
-        "solution": "We built Uxtreme as a visual and operational framework to standardize UX/UI decisions, speed up delivery, and reduce rework between design and development.",
-        "result": "More predictable design execution, higher cross-screen consistency, and better collaboration efficiency across teams.",
-        "overview": "Uxtreme is a project focused on increasing UX maturity in digital products through strong interface standards, visual governance, and continuous cross-functional collaboration.",
-        "challenge": "Create a model that balanced standardization and flexibility, enabling faster delivery without limiting specific product needs.",
-        "roleTitle": "Design Lead / UX & Product",
+        "tags": ["UX/UI", "Product Design", "Entra21", "Final Project 2024", "Figma", "No Code"],
+        "problem": "Many digital products fail in usability because they do not follow a complete UX process, leading to confusing flows, low accessibility, and poorly validated interfaces.",
+        "process": "We applied a full UX/UI workflow: problem discovery, experience structuring (user flows and architecture), low-fidelity wireframes, mid and high-fidelity prototypes, plus usability and accessibility validation.",
+        "solution": "We built a user-centered digital solution with an end-to-end prototype, product design methodology, and strong focus on clarity, intuitive navigation, and visual consistency.",
+        "result": "Uxtreme consolidated all Entra21 UX/UI methodologies in practice, demonstrating full-process execution, product thinking, and real application of usability and accessibility best practices in Figma.",
+        "overview": "Uxtreme was developed in 2024 as the final project of the Entra21 UX/UI program, combining all methods and practices learned during the course. The project goes through every product design stage, from problem discovery to high-fidelity prototyping, focused on UX/UI process in Figma (without code implementation).",
+        "challenge": "Build a complete user-centered digital solution while applying market-standard methodology across all phases: research, problem definition, experience structure, prototyping, validation, and accessibility.",
+        "roleTitle": "UX/UI Designer",
         "roleItems": [
-          "Experience architecture definition",
-          "Component and pattern structuring",
-          "Design and front-end alignment",
-          "Usability improvement prioritization",
-          "Visual consistency governance"
+          "Research and problem definition",
+          "User flow and information architecture design",
+          "Low-fidelity wireframes",
+          "Interface design and interactive prototyping",
+          "Accessibility best-practice application"
         ],
         "strategyItems": [
-          "Progressive standardization of critical screens",
-          "Component system with clear documentation",
-          "Continuous UX reviews to maintain quality at scale"
+          "Discovery: research, problem framing, persona, and benchmarking",
+          "Ideation: HMW, moodboard, and UX Writing",
+          "Experience structuring: user journey, information architecture, user flow, and wireflow",
+          "Prototyping and validation: wireframes, forms, and usability testing",
+          "Collaborative channel-based organization to document design decisions"
         ],
         "learningsItems": [
-          "Scaling design requires process, not only visual quality",
-          "Documentation reduces cross-team friction",
-          "Consistency strengthens product quality perception",
-          "Impact-oriented UX decisions accelerate delivery"
-        ]
+          "End-to-end digital experience structuring",
+          "From wireframes to high-fidelity prototypes",
+          "User-centered product thinking",
+          "Practical accessibility and usability execution",
+          "Design process organization in team environments"
+        ],
+        "caseStudyHref": "https://www.canva.com/design/DAF85ptVXSo/_TGSGXZHI14QRvt5S13eZA/edit"
       },
       {
         "slug": "timeroom",

@@ -410,7 +410,7 @@
           "/images/projects/buddytech/Buddytech_showroom_04.png",
           "/images/projects/buddytech/Buddytech_showroom_05.png"
         ],
-        "tags": ["UX/UI", "Product Design", "MVP"],
+        "tags": ["UX/UI", "Product Design", "MVP", "1º lugar Hackathon +Devs2Blu 5ª edição (Blusoft, 2025)"],
         "problem": "Times comerciais perdem tempo com leads frios por falta de priorização inteligente baseada em dados de interação.",
         "process": "Mapeamos o fluxo comercial, priorizamos funcionalidades de alto impacto para MVP e testamos uma interface direta para orientar a tomada de decisão do vendedor.",
         "solution": "Desenvolvemos um AI Sales Buddy que analisa interações, calcula Lead Score e recomenda próximos passos estratégicos para cada oportunidade.",
@@ -487,32 +487,36 @@
           "/images/projects/uxtreme/Uxtreme_showroom_02.png",
           "/images/projects/uxtreme/Uxtreme_showroom_03.png"
         ],
-        "tags": ["UX/UI", "Product Design", "SaaS", "Design System"],
-        "problem": "Times de produto tinham dificuldade para manter consistência de interface e velocidade de entrega entre diferentes squads.",
-        "process": "Mapeamos gargalos no fluxo de design e handoff, definimos padrões reutilizáveis e estruturamos uma base escalável de componentes e guidelines.",
-        "solution": "Criamos o Uxtreme como um framework visual e operacional para padronizar decisões de UX/UI, acelerar entregas e reduzir retrabalho entre design e desenvolvimento.",
-        "result": "Processo de design mais previsível, melhoria na consistência entre telas e maior eficiência na colaboração entre times.",
-        "overview": "Uxtreme é um projeto focado em elevar maturidade de UX em produtos digitais por meio de padrões sólidos de interface, governança visual e colaboração contínua entre áreas.",
-        "challenge": "Construir um modelo que equilibrasse padronização e flexibilidade, permitindo ganho de velocidade sem engessar as necessidades específicas de cada produto.",
-        "roleTitle": "Líder de Design / UX & Product",
+        "tags": ["UX/UI", "Product Design", "Entra21", "Projeto Final 2024", "Figma", "Sem Código"],
+        "problem": "Muitos produtos digitais falham em usabilidade por não seguirem um processo completo de UX, o que gera fluxos confusos, baixa acessibilidade e interfaces pouco validadas.",
+        "process": "Aplicamos o processo completo de UX/UI: descoberta do problema, estruturação da experiência (user flow e arquitetura), wireframes de baixa fidelidade, protótipos de média e alta fidelidade, testes e refinamentos de usabilidade e acessibilidade.",
+        "solution": "Desenvolvemos uma solução digital centrada no usuário com protótipo completo, decisões orientadas por método de Product Design e foco em clareza, navegação intuitiva e consistência visual.",
+        "result": "O Uxtreme consolidou na prática todas as metodologias aprendidas no Entra21, demonstrando domínio de processo, pensamento de produto e aplicação de boas práticas de UX/UI em um case de ponta a ponta no Figma.",
+        "overview": "O Uxtreme foi desenvolvido em 2024 como projeto final do curso de UX/UI do Entra21, reunindo todas as práticas e metodologias aplicadas durante a formação. O projeto percorre todas as etapas do design de produto, da descoberta do problema ao protótipo de alta fidelidade, com foco em processo de UX/UI no Figma (sem implementação em código).",
+        "challenge": "Construir uma solução digital completa e centrada no usuário, aplicando metodologia de mercado em todas as fases: pesquisa, definição do problema, estruturação da experiência, prototipação, validação e acessibilidade.",
+        "roleTitle": "UX/UI Designer",
         "roleItems": [
-          "Definição de arquitetura de experiência",
-          "Estruturação de componentes e padrões",
-          "Alinhamento entre design e front-end",
-          "Priorização de melhorias de usabilidade",
-          "Governança de consistência visual"
+          "Pesquisa e definição de problema",
+          "Criação de fluxos de usuário e arquitetura da informação",
+          "Wireframes de baixa fidelidade",
+          "Design de interface e prototipação interativa",
+          "Aplicação de boas práticas de acessibilidade"
         ],
         "strategyItems": [
-          "Padronização progressiva de telas críticas",
-          "Sistema de componentes com documentação clara",
-          "Revisões contínuas de UX para manter qualidade em escala"
+          "Descoberta: pesquisa, problema, persona e benchmarking",
+          "Ideação: HMW, moodboard e UX Writing",
+          "Estruturação: jornada do usuário, arquitetura da informação, user flow e wireflow",
+          "Prototipação e validação: wireframes, formulário e teste de usabilidade",
+          "Organização colaborativa por canais para registrar decisões de design"
         ],
         "learningsItems": [
-          "Escala de design exige processo além de estética",
-          "Documentação reduz fricção entre squads",
-          "Consistência melhora percepção de qualidade do produto",
-          "Decisões de UX orientadas por impacto aceleram entregas"
-        ]
+          "Estruturação de experiências digitais ponta a ponta",
+          "Evolução de wireframes para protótipos de alta fidelidade",
+          "Pensamento de produto orientado ao usuário",
+          "Aplicação prática de acessibilidade e usabilidade",
+          "Organização de processo de design em equipe"
+        ],
+        "caseStudyHref": "https://www.canva.com/design/DAF85ptVXSo/_TGSGXZHI14QRvt5S13eZA/edit"
       },
       {
         "slug": "timeroom",
