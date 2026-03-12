@@ -405,7 +405,8 @@
         "gallery": [
           "/images/projects/buddytech/Buddytech_showroom_01.png",
           "/images/projects/buddytech/Buddytech_showroom_02.png",
-          "/images/projects/buddytech/Buddytech_showroom_03.png"
+          "/images/projects/buddytech/Buddytech_showroom_03.png",
+          "/images/projects/buddytech/Buddytech_showroom_04.png"
         ],
         "tags": ["UX/UI", "Product Design", "MVP"],
         "problem": "Sales teams lose time on low-potential leads due to lack of smart prioritization based on interaction data.",
@@ -434,6 +435,42 @@
           "Connection between UX, data, and commercial outcomes"
         ],
         "caseStudyHref": "https://www.behance.net/davidkim115"
+      },
+      {
+        "slug": "evolution",
+        "name": "Evolution",
+        "category": "uxui",
+        "image": "/images/projects/evolution/Evolution_capa.png",
+        "gallery": [
+          "/images/projects/evolution/Evolution_showroom_01.png",
+          "/images/projects/evolution/Evolution_showroom_02.png"
+        ],
+        "tags": ["UX/UI", "Mobile", "Flutter", "Gamification"],
+        "problem": "People with clear goals struggle to maintain consistency over time without proper tracking and motivational feedback.",
+        "process": "We identified core user pain points, structured a gamification approach based on XP and levels, and organized the MVP around usability and daily motivation.",
+        "solution": "A mobile app with a gamified habit system: task logging, XP points, level progression, consistency streaks, and visual progress tracking.",
+        "result": "Positive evaluation from the course panel, highlighted for the topic's relevance, clarity of the gamification concept, and simple yet functional design.",
+        "overview": "Evolution is a mobile app developed to help people build consistency in their habits and personal goals. The solution transforms daily objectives into gamified tasks, allowing users to track their progress through XP, levels, and visual evolution metrics.",
+        "challenge": "Build a functional mobile MVP in Flutter that made habit tracking motivating and consistent — combining gamification mechanics with visual progress metrics to overcome lack of discipline and difficulty perceiving real growth.",
+        "roleTitle": "Team Lead / UX & Product Design",
+        "roleItems": [
+          "Development team leadership",
+          "Product value proposition definition",
+          "User experience structure",
+          "MVP core features organization",
+          "Interface and usability direction"
+        ],
+        "strategyItems": [
+          "Gamification: turn tasks into achievements with XP, levels, and streaks",
+          "Progress visualization: clear and motivating graphs and visual indicators",
+          "Motivation and purpose: integration with inspirational content and daily quotes"
+        ],
+        "learningsItems": [
+          "Team leadership in digital product projects",
+          "Mobile app design focused on user behavior",
+          "Applying gamification as a UX strategy",
+          "Building behavior-focused MVPs"
+        ]
       },
       {
         "slug": "plataforma-imobiliaria",
