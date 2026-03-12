@@ -250,7 +250,7 @@ type ShowroomCarouselProps = {
 
 function ShowroomCarousel({ images, projectName, showroomLabel }: ShowroomCarouselProps) {
   const featuredImage = images[0];
-  const carouselImages = images.length > 1 ? images.slice(1) : images;
+  const carouselImages = images.slice(1);
   const [current, setCurrent] = useState(0);
   const [paused, setPaused] = useState(false);
   const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
@@ -294,71 +294,73 @@ function ShowroomCarousel({ images, projectName, showroomLabel }: ShowroomCarous
         </div>
       </Reveal>
 
-      <Reveal delay={160}>
-        <div
-          className="group relative mt-6 overflow-hidden rounded-[36px] border border-border bg-surface shadow-soft"
-          onMouseEnter={() => setPaused(true)}
-          onMouseLeave={() => setPaused(false)}
-        >
-          {/* Slides */}
-          <div className="relative aspect-[16/10] overflow-hidden">
-            {carouselImages.map((src, i) => (
-              <div
-                key={src}
-                className="absolute inset-0 transition-opacity duration-700"
-                style={{ opacity: i === current ? 1 : 0, zIndex: i === current ? 1 : 0 }}
-              >
-                <Image
-                  src={src}
-                  alt={`${projectName} ${i + 1}`}
-                  fill
-                  sizes="(max-width: 1023px) 100vw, 1120px"
-                  className="object-cover"
-                  priority={i === 0}
-                />
-              </div>
-            ))}
-          </div>
-
-          {/* Arrows */}
-          {carouselImages.length > 1 && (
-            <>
-              <button
-                onClick={prev}
-                aria-label="Anterior"
-                className="absolute left-4 top-1/2 z-10 -translate-y-1/2 rounded-full border border-white/20 bg-black/40 p-2.5 text-white opacity-0 backdrop-blur-sm transition-all duration-300 hover:bg-black/60 group-hover:opacity-100"
-              >
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
-                  <path d="M12.5 15L7.5 10L12.5 5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                </svg>
-              </button>
-              <button
-                onClick={next}
-                aria-label="Próximo"
-                className="absolute right-4 top-1/2 z-10 -translate-y-1/2 rounded-full border border-white/20 bg-black/40 p-2.5 text-white opacity-0 backdrop-blur-sm transition-all duration-300 hover:bg-black/60 group-hover:opacity-100"
-              >
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
-                  <path d="M7.5 5L12.5 10L7.5 15" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                </svg>
-              </button>
-            </>
-          )}
-
-          {/* Dots */}
-          {carouselImages.length > 1 && (
-            <div className="absolute bottom-4 left-1/2 z-10 flex -translate-x-1/2 gap-2">
-              {carouselImages.map((_, i) => (
-                <button
-                  key={i}
-                  onClick={() => { setCurrent(i); setPaused(true); }}
-                  aria-label={`Slide ${i + 1}`}
-                  className={`h-2 rounded-full transition-all duration-300 ${i === current ? "w-6 bg-white" : "w-2 bg-white/50"}`}
-                />
+      {carouselImages.length > 0 ? (
+        <Reveal delay={160}>
+          <div
+            className="group relative mt-6 overflow-hidden rounded-[36px] border border-border bg-surface shadow-soft"
+            onMouseEnter={() => setPaused(true)}
+            onMouseLeave={() => setPaused(false)}
+          >
+            {/* Slides */}
+            <div className="relative aspect-[16/10] overflow-hidden">
+              {carouselImages.map((src, i) => (
+                <div
+                  key={src}
+                  className="absolute inset-0 transition-opacity duration-700"
+                  style={{ opacity: i === current ? 1 : 0, zIndex: i === current ? 1 : 0 }}
+                >
+                  <Image
+                    src={src}
+                    alt={`${projectName} ${i + 2}`}
+                    fill
+                    sizes="(max-width: 1023px) 100vw, 1120px"
+                    className="object-cover"
+                    priority={i === 0}
+                  />
+                </div>
               ))}
             </div>
-          )}
-        </div>
-      </Reveal>
+
+            {/* Arrows */}
+            {carouselImages.length > 1 ? (
+              <>
+                <button
+                  onClick={prev}
+                  aria-label="Anterior"
+                  className="absolute left-4 top-1/2 z-10 -translate-y-1/2 rounded-full border border-white/20 bg-black/40 p-2.5 text-white opacity-0 backdrop-blur-sm transition-all duration-300 hover:bg-black/60 group-hover:opacity-100"
+                >
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                    <path d="M12.5 15L7.5 10L12.5 5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                  </svg>
+                </button>
+                <button
+                  onClick={next}
+                  aria-label="Próximo"
+                  className="absolute right-4 top-1/2 z-10 -translate-y-1/2 rounded-full border border-white/20 bg-black/40 p-2.5 text-white opacity-0 backdrop-blur-sm transition-all duration-300 hover:bg-black/60 group-hover:opacity-100"
+                >
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                    <path d="M7.5 5L12.5 10L7.5 15" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                  </svg>
+                </button>
+              </>
+            ) : null}
+
+            {/* Dots */}
+            {carouselImages.length > 1 ? (
+              <div className="absolute bottom-4 left-1/2 z-10 flex -translate-x-1/2 gap-2">
+                {carouselImages.map((_, i) => (
+                  <button
+                    key={i}
+                    onClick={() => { setCurrent(i); setPaused(true); }}
+                    aria-label={`Slide ${i + 2}`}
+                    className={`h-2 rounded-full transition-all duration-300 ${i === current ? "w-6 bg-white" : "w-2 bg-white/50"}`}
+                  />
+                ))}
+              </div>
+            ) : null}
+          </div>
+        </Reveal>
+      ) : null}
     </section>
   );
 }

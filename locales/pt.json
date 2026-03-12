@@ -407,7 +407,8 @@
           "/images/projects/buddytech/Buddytech_showroom_01.png",
           "/images/projects/buddytech/Buddytech_showroom_02.png",
           "/images/projects/buddytech/Buddytech_showroom_03.png",
-          "/images/projects/buddytech/Buddytech_showroom_04.png"
+          "/images/projects/buddytech/Buddytech_showroom_04.png",
+          "/images/projects/buddytech/Buddytech_showroom_05.png"
         ],
         "tags": ["UX/UI", "Product Design", "MVP"],
         "problem": "Times comerciais perdem tempo com leads frios por falta de priorização inteligente baseada em dados de interação.",
@@ -445,7 +446,8 @@
         "detailImage": "/images/projects/evolution/Evolution_capa.png",
         "gallery": [
           "/images/projects/evolution/Evolution_showroom_01.png",
-          "/images/projects/evolution/Evolution_showroom_02.png"
+          "/images/projects/evolution/Evolution_showroom_02.png",
+          "/images/projects/evolution/Evolution_showroom_03.png"
         ],
         "tags": ["UX/UI", "Mobile", "Flutter", "Gamificação"],
         "problem": "Pessoas com objetivos claros enfrentam dificuldades em manter consistência ao longo do tempo sem acompanhamento e reforço motivacional adequados.",
@@ -472,6 +474,82 @@
           "Design de aplicativos mobile com foco em comportamento do usuário",
           "Aplicação de gamificação como estratégia de UX",
           "Construção de MVPs orientados à mudança de comportamento"
+        ]
+      },
+      {
+        "slug": "uxtreme",
+        "name": "Uxtreme",
+        "category": "uxui",
+        "image": "/images/projects/uxtreme/Uxtreme_showroom_01.png",
+        "detailImage": "/images/projects/uxtreme/Uxtreme_capa.png",
+        "gallery": [
+          "/images/projects/uxtreme/Uxtreme_showroom_01.png",
+          "/images/projects/uxtreme/Uxtreme_showroom_02.png",
+          "/images/projects/uxtreme/Uxtreme_showroom_03.png"
+        ],
+        "tags": ["UX/UI", "Product Design", "SaaS", "Design System"],
+        "problem": "Times de produto tinham dificuldade para manter consistência de interface e velocidade de entrega entre diferentes squads.",
+        "process": "Mapeamos gargalos no fluxo de design e handoff, definimos padrões reutilizáveis e estruturamos uma base escalável de componentes e guidelines.",
+        "solution": "Criamos o Uxtreme como um framework visual e operacional para padronizar decisões de UX/UI, acelerar entregas e reduzir retrabalho entre design e desenvolvimento.",
+        "result": "Processo de design mais previsível, melhoria na consistência entre telas e maior eficiência na colaboração entre times.",
+        "overview": "Uxtreme é um projeto focado em elevar maturidade de UX em produtos digitais por meio de padrões sólidos de interface, governança visual e colaboração contínua entre áreas.",
+        "challenge": "Construir um modelo que equilibrasse padronização e flexibilidade, permitindo ganho de velocidade sem engessar as necessidades específicas de cada produto.",
+        "roleTitle": "Líder de Design / UX & Product",
+        "roleItems": [
+          "Definição de arquitetura de experiência",
+          "Estruturação de componentes e padrões",
+          "Alinhamento entre design e front-end",
+          "Priorização de melhorias de usabilidade",
+          "Governança de consistência visual"
+        ],
+        "strategyItems": [
+          "Padronização progressiva de telas críticas",
+          "Sistema de componentes com documentação clara",
+          "Revisões contínuas de UX para manter qualidade em escala"
+        ],
+        "learningsItems": [
+          "Escala de design exige processo além de estética",
+          "Documentação reduz fricção entre squads",
+          "Consistência melhora percepção de qualidade do produto",
+          "Decisões de UX orientadas por impacto aceleram entregas"
+        ]
+      },
+      {
+        "slug": "timeroom",
+        "name": "Timeroom",
+        "category": "uxui",
+        "image": "/images/projects/timeroom/Timeroom_showroom_01.png",
+        "detailImage": "/images/projects/timeroom/Timeroom_capa.png",
+        "gallery": [
+          "/images/projects/timeroom/Timeroom_showroom_01.png",
+          "/images/projects/timeroom/Timeroom_showroom_02.png",
+          "/images/projects/timeroom/Timeroom_showroom_03.png"
+        ],
+        "tags": ["UX/UI", "Product Design", "Scheduling", "Mobile"],
+        "problem": "Usuários e equipes perdiam tempo para organizar agendas e reservar horários em fluxos confusos e com pouca visibilidade.",
+        "process": "Investigamos as etapas de agendamento, mapeamos conflitos mais frequentes e simplificamos o fluxo em uma jornada objetiva com feedback em tempo real.",
+        "solution": "Desenvolvemos o Timeroom com foco em agendamento inteligente, visualização clara de disponibilidade e confirmação rápida de horários.",
+        "result": "Redução de fricção no processo de reserva, menos conflitos de agenda e experiência mais fluida para usuários finais.",
+        "overview": "Timeroom é um projeto de produto digital voltado para otimizar gestão de tempo e reservas com uma interface intuitiva, priorizando clareza e rapidez na tomada de decisão.",
+        "challenge": "Transformar um processo naturalmente complexo de agenda em uma experiência simples, confiável e fácil de usar em diferentes dispositivos.",
+        "roleTitle": "UX/UI Designer & Product Strategist",
+        "roleItems": [
+          "Mapeamento de jornada de agendamento",
+          "Definição de fluxos e arquitetura da informação",
+          "Criação de interface mobile-first",
+          "Validação de usabilidade em cenários reais",
+          "Ajuste de hierarquia para decisões rápidas"
+        ],
+        "strategyItems": [
+          "Fluxo de agendamento em poucos passos",
+          "Visibilidade imediata de horários disponíveis",
+          "Feedback visual para reduzir erros e retrabalho"
+        ],
+        "learningsItems": [
+          "Simplicidade é fator crítico em produtos de agenda",
+          "Microinterações reduzem insegurança do usuário",
+          "Clareza de disponibilidade evita conflitos operacionais",
+          "UX bem estruturada impacta eficiência do negócio"
         ]
       },
       {

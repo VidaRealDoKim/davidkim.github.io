@@ -407,7 +407,8 @@
           "/images/projects/buddytech/Buddytech_showroom_01.png",
           "/images/projects/buddytech/Buddytech_showroom_02.png",
           "/images/projects/buddytech/Buddytech_showroom_03.png",
-          "/images/projects/buddytech/Buddytech_showroom_04.png"
+          "/images/projects/buddytech/Buddytech_showroom_04.png",
+          "/images/projects/buddytech/Buddytech_showroom_05.png"
         ],
         "tags": ["UX/UI", "Product Design", "MVP"],
         "problem": "Sales teams lose time on low-potential leads due to lack of smart prioritization based on interaction data.",
@@ -445,7 +446,8 @@
         "detailImage": "/images/projects/evolution/Evolution_capa.png",
         "gallery": [
           "/images/projects/evolution/Evolution_showroom_01.png",
-          "/images/projects/evolution/Evolution_showroom_02.png"
+          "/images/projects/evolution/Evolution_showroom_02.png",
+          "/images/projects/evolution/Evolution_showroom_03.png"
         ],
         "tags": ["UX/UI", "Mobile", "Flutter", "Gamification"],
         "problem": "People with clear goals struggle to maintain consistency over time without proper tracking and motivational feedback.",
@@ -472,6 +474,82 @@
           "Mobile app design focused on user behavior",
           "Applying gamification as a UX strategy",
           "Building behavior-focused MVPs"
+        ]
+      },
+      {
+        "slug": "uxtreme",
+        "name": "Uxtreme",
+        "category": "uxui",
+        "image": "/images/projects/uxtreme/Uxtreme_showroom_01.png",
+        "detailImage": "/images/projects/uxtreme/Uxtreme_capa.png",
+        "gallery": [
+          "/images/projects/uxtreme/Uxtreme_showroom_01.png",
+          "/images/projects/uxtreme/Uxtreme_showroom_02.png",
+          "/images/projects/uxtreme/Uxtreme_showroom_03.png"
+        ],
+        "tags": ["UX/UI", "Product Design", "SaaS", "Design System"],
+        "problem": "Product teams struggled to maintain interface consistency and delivery speed across multiple squads.",
+        "process": "We mapped bottlenecks in design and handoff workflows, defined reusable patterns, and structured a scalable base of components and guidelines.",
+        "solution": "We built Uxtreme as a visual and operational framework to standardize UX/UI decisions, speed up delivery, and reduce rework between design and development.",
+        "result": "More predictable design execution, higher cross-screen consistency, and better collaboration efficiency across teams.",
+        "overview": "Uxtreme is a project focused on increasing UX maturity in digital products through strong interface standards, visual governance, and continuous cross-functional collaboration.",
+        "challenge": "Create a model that balanced standardization and flexibility, enabling faster delivery without limiting specific product needs.",
+        "roleTitle": "Design Lead / UX & Product",
+        "roleItems": [
+          "Experience architecture definition",
+          "Component and pattern structuring",
+          "Design and front-end alignment",
+          "Usability improvement prioritization",
+          "Visual consistency governance"
+        ],
+        "strategyItems": [
+          "Progressive standardization of critical screens",
+          "Component system with clear documentation",
+          "Continuous UX reviews to maintain quality at scale"
+        ],
+        "learningsItems": [
+          "Scaling design requires process, not only visual quality",
+          "Documentation reduces cross-team friction",
+          "Consistency strengthens product quality perception",
+          "Impact-oriented UX decisions accelerate delivery"
+        ]
+      },
+      {
+        "slug": "timeroom",
+        "name": "Timeroom",
+        "category": "uxui",
+        "image": "/images/projects/timeroom/Timeroom_showroom_01.png",
+        "detailImage": "/images/projects/timeroom/Timeroom_capa.png",
+        "gallery": [
+          "/images/projects/timeroom/Timeroom_showroom_01.png",
+          "/images/projects/timeroom/Timeroom_showroom_02.png",
+          "/images/projects/timeroom/Timeroom_showroom_03.png"
+        ],
+        "tags": ["UX/UI", "Product Design", "Scheduling", "Mobile"],
+        "problem": "Users and teams lost time managing schedules and booking slots through confusing workflows with low visibility.",
+        "process": "We investigated booking journey steps, mapped recurring conflicts, and simplified the flow into a focused journey with real-time feedback.",
+        "solution": "We designed Timeroom with intelligent scheduling, clear availability visualization, and fast time-slot confirmation.",
+        "result": "Lower friction in booking flows, fewer scheduling conflicts, and a smoother experience for end users.",
+        "overview": "Timeroom is a digital product concept created to optimize time management and reservations with an intuitive interface, prioritizing clarity and speed in decision-making.",
+        "challenge": "Turn a naturally complex scheduling process into a simple, reliable, and easy-to-use experience across devices.",
+        "roleTitle": "UX/UI Designer & Product Strategist",
+        "roleItems": [
+          "Scheduling journey mapping",
+          "Information architecture and flow design",
+          "Mobile-first interface creation",
+          "Usability validation in realistic scenarios",
+          "Hierarchy tuning for faster decisions"
+        ],
+        "strategyItems": [
+          "Few-step booking flow",
+          "Immediate visibility of available time slots",
+          "Visual feedback to reduce mistakes and rework"
+        ],
+        "learningsItems": [
+          "Simplicity is crucial for scheduling products",
+          "Micro-interactions reduce user uncertainty",
+          "Availability clarity prevents operational conflicts",
+          "Well-structured UX improves business efficiency"
         ]
       },
       {
