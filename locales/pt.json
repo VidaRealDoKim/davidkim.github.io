@@ -401,7 +401,7 @@
         "slug": "buddytech-acate",
         "name": "BuddyTech",
         "category": "uxui",
-        "image": "/images/projects/buddytech/Buddytech_showroom_01.png",
+        "image": "/images/projects/buddytech/Buddytech_capa.png",
         "detailImage": "/images/projects/buddytech/Buddytech_capa.png",
         "gallery": [
           "/images/projects/buddytech/Buddytech_showroom_01.png",
@@ -445,7 +445,7 @@
         "slug": "evolution",
         "name": "Evolution",
         "category": "uxui",
-        "image": "/images/projects/evolution/Evolution_showroom_01.png",
+        "image": "/images/projects/evolution/Evolution_capa.png",
         "detailImage": "/images/projects/evolution/Evolution_capa.png",
         "gallery": [
           "/images/projects/evolution/Evolution_showroom_01.png",
@@ -486,7 +486,7 @@
         "slug": "uxtreme",
         "name": "Uxtreme",
         "category": "uxui",
-        "image": "/images/projects/uxtreme/Uxtreme_showroom_01.png",
+        "image": "/images/projects/uxtreme/Uxtreme_capa.png",
         "detailImage": "/images/projects/uxtreme/Uxtreme_capa.png",
         "gallery": [
           "/images/projects/uxtreme/Uxtreme_showroom_01.png",
@@ -531,7 +531,7 @@
         "slug": "timeroom",
         "name": "Timeroom",
         "category": "uxui",
-        "image": "/images/projects/timeroom/Timeroom_showroom_01.png",
+        "image": "/images/projects/timeroom/Timeroom_capa.png",
         "detailImage": "/images/projects/timeroom/Timeroom_capa.png",
         "gallery": [
           "/images/projects/timeroom/Timeroom_showroom_01.png",
@@ -567,17 +567,6 @@
         ],
         "githubHref": "https://github.com/VidaRealDoKim/TimeRoom",
         "figmaHref": "https://www.figma.com/design/vSVq0PfSeTFxoVu2a69ciZ/TimeRoom?node-id=627-321&t=kOsUSgDDmoKhS4bn-1"
-      },
-      {
-        "slug": "plataforma-imobiliaria",
-        "name": "Plataforma Imobiliária",
-        "category": "uxui",
-        "image": "https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&w=1200&q=80",
-        "tags": ["UX/UI", "Figma", "Digital Product"],
-        "problem": "Interface confusa e baixa conversão de leads qualificados.",
-        "solution": "Redesign completo da jornada com navegação simplificada, filtros claros e hierarquia visual orientada à decisão.",
-        "result": "Experiência mais intuitiva e aumento da geração de contatos comerciais.",
-        "caseStudyHref": "https://www.behance.net/davidkim115"
       },
       {
         "slug": "rebranding-studio-move",

@@ -23,9 +23,7 @@ export function ProjectDetailPage({ slug }: ProjectDetailPageProps) {
   }
 
   const category = dictionary.projects.categories.find((item) => item.id === project.category);
-  const detailImage = "detailImage" in project && typeof project.detailImage === "string"
-    ? project.detailImage
-    : project.image;
+  const detailImage = project.image;
   const gallery: string[] = "gallery" in project && Array.isArray(project.gallery) && project.gallery.length > 0
     ? project.gallery
     : [project.image];
@@ -38,7 +36,6 @@ export function ProjectDetailPage({ slug }: ProjectDetailPageProps) {
   const learningsItems = "learningsItems" in project ? project.learningsItems : undefined;
   const figmaHref = "figmaHref" in project && typeof project.figmaHref === "string" ? project.figmaHref : undefined;
   const githubHref = "githubHref" in project && typeof project.githubHref === "string" ? project.githubHref : undefined;
-  const caseStudyHref = "caseStudyHref" in project && typeof project.caseStudyHref === "string" ? project.caseStudyHref : undefined;
   const detailLabels = "detailLabels" in dictionary.projects ? dictionary.projects.detailLabels : undefined;
 
   return (
@@ -112,16 +109,6 @@ export function ProjectDetailPage({ slug }: ProjectDetailPageProps) {
                   </Link>
                 ) : null}
 
-                {caseStudyHref ? (
-                  <Link
-                    href={caseStudyHref}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center rounded-full border border-border bg-surface px-5 py-3 text-sm font-semibold uppercase tracking-[0.08em] text-text transition-all duration-300 hover:-translate-y-0.5 hover:border-[color:var(--accent-line)]"
-                  >
-                    Case Study
-                  </Link>
-                ) : null}
               </div>
             </div>
           </Reveal>
