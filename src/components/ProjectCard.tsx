@@ -19,7 +19,7 @@ export function ProjectCard({
   return (
     <article className="group h-full cursor-pointer overflow-hidden rounded-[28px] border border-border bg-surface shadow-soft transition-all duration-500 hover:-translate-y-1 hover:border-[color:var(--accent-line)] hover:shadow-[0_22px_60px_rgba(31,31,31,0.12)] dark:hover:shadow-[0_24px_60px_rgba(0,0,0,0.42)]">
       <Link href={`/projects/${slug}`} className="flex h-full flex-col">
-        <div className="relative aspect-[16/10] overflow-hidden">
+        <div className="relative aspect-square overflow-hidden">
           <Image
             src={image}
             alt={name}
