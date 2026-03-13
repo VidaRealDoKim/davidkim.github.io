@@ -572,11 +572,80 @@
         "slug": "forum-barbearia",
         "name": "Rebranding Forum Barbearia",
         "category": "branding",
-        "image": "https://images.unsplash.com/photo-1634942537034-2531766767d1?auto=format&fit=crop&w=1200&q=80",
+        "image": "/images/projects/Forum/Forum_logo.png",
+        "detailImage": "/images/projects/Forum/Forum_logo.png",
+        "gallery": [
+          "/images/projects/Forum/Forum_showroom_01.png",
+          "/images/projects/Forum/Forum_showroom_02.png",
+          "/images/projects/Forum/Forum_showroom_03.png",
+          "/images/projects/Forum/Forum_showroom_04.png",
+          "/images/projects/Forum/Forum_showroom_05.png"
+        ],
         "tags": ["Branding", "Rebranding", "Logo", "Identidade Visual"],
-        "problem": "A marca precisava atualizar a logomarca para reforcar posicionamento e melhorar a consistencia visual.",
-        "solution": "Rebranding da logomarca da Forum Barbearia, com refinamento de tipografia, simbolo e diretrizes de aplicacao.",
-        "result": "Identidade mais forte, memoravel e coerente em canais digitais e materiais impressos.",
+        "problem": "A Forum Barbearia tinha uma marca com boa lembranca local, mas sem consistencia tecnica e visual para escalar sua comunicacao em redes sociais, fachada, uniforme e materiais impressos.",
+        "process": "Conduzimos um processo completo de rebranding: diagnostico da marca atual, definicao de atributos de posicionamento, exploracao de conceitos visuais, refinamento de tipografia e simbolo, testes de legibilidade em diferentes tamanhos e consolidacao de um sistema de aplicacao.",
+        "solution": "Rebranding da logomarca com redesenho da assinatura principal, ajustes de proporcao, contraste e leitura, criacao de versoes horizontal e reduzida, paleta de apoio, padrao tipografico e guia de uso para aplicacoes digitais e fisicas.",
+        "result": "A nova identidade elevou a percepcao de profissionalismo da marca, trouxe unidade visual em todos os pontos de contato e facilitou a producao de pecas com mais consistencia e reconhecimento.",
+        "overview": "Projeto de rebranding da Forum Barbearia focado na evolucao da logomarca e da linguagem visual para refletir melhor o posicionamento da barbearia: moderna, confiavel e com atendimento premium. O trabalho incluiu diagnostico, estrategia de marca, redesign e diretrizes de aplicacao.",
+        "challenge": "Modernizar a marca sem perder os elementos de reconhecimento construidos com os clientes atuais, equilibrando personalidade forte com legibilidade e versatilidade em diferentes formatos de uso.",
+        "roleTitle": "Brand Designer",
+        "roleItems": [
+          "Diagnostico da marca e analise de concorrentes",
+          "Definicao de direcao criativa e conceito de rebranding",
+          "Redesenho da logomarca e variacoes de assinatura",
+          "Estruturacao de sistema visual para aplicacoes",
+          "Organizacao de guia de uso para manter consistencia"
+        ],
+        "strategyItems": [
+          "Preservar reconhecimento da marca com evolucao controlada",
+          "Priorizar leitura e contraste em tamanhos reduzidos",
+          "Criar sistema flexivel para digital, fachada e impressos",
+          "Padronizar regras de aplicacao para evitar distorcoes"
+        ],
+        "learningsItems": [
+          "Rebranding eficaz exige equilibrio entre continuidade e mudanca",
+          "A qualidade tecnica da marca impacta diretamente a percepcao de valor",
+          "Um bom sistema de aplicacao reduz retrabalho e erros de execucao",
+          "Consistencia visual fortalece posicionamento e memoria de marca"
+        ],
+        "caseStudyHref": "https://www.behance.net/davidkim115"
+      },
+      {
+        "slug": "catedral-do-avivamento",
+        "name": "Rebranding Catedral do Avivamento",
+        "category": "branding",
+        "image": "/images/projects/catedral/Catedral_logo.png",
+        "detailImage": "/images/projects/catedral/Catedral_logo.png",
+        "gallery": [
+          "/images/projects/catedral/Catedral_logo.png"
+        ],
+        "tags": ["Branding", "Rebranding", "Logo", "Identidade Visual"],
+        "problem": "A identidade da Catedral do Avivamento nao comunicava com clareza sua mensagem institucional e apresentava variacoes que enfraqueciam consistencia entre ministerios, redes sociais e materiais de apoio.",
+        "process": "O rebranding foi conduzido em etapas: diagnostico da marca existente, definicao de atributos centrais (acolhimento, fe e autoridade), exploracao de caminhos visuais, refinamento tipografico e composicao simbolica, validacao de leitura em diferentes escalas e consolidacao das regras de aplicacao.",
+        "solution": "Desenvolvimento de uma nova logomarca com estrutura mais equilibrada, maior legibilidade e melhor reproducao. O sistema incluiu versoes principais e reduzidas, orientacao de uso, alinhamentos, area de respiro e recomendacoes para uso em digital e impresso.",
+        "result": "A nova identidade fortaleceu a presenca institucional da Catedral do Avivamento, aumentou a coerencia visual dos materiais e facilitou a execucao de comunicacao com mais qualidade e unidade.",
+        "overview": "Projeto de rebranding da logomarca da Catedral do Avivamento focado em traduzir valores espirituais e institucionais em uma assinatura visual contemporanea, consistente e aplicavel em multiplos contextos de comunicacao.",
+        "challenge": "Modernizar a marca sem romper com o reconhecimento da comunidade, equilibrando simbolismo, sobriedade e clareza tecnica para diferentes formatos de reproducao.",
+        "roleTitle": "Brand Designer",
+        "roleItems": [
+          "Levantamento e analise da identidade existente",
+          "Definicao de conceito e direcao visual do rebranding",
+          "Construcao e refinamento da nova logomarca",
+          "Ajustes tecnicos para legibilidade e reproducao",
+          "Estruturacao de diretrizes de aplicacao"
+        ],
+        "strategyItems": [
+          "Preservar elementos simbolicos essenciais da marca",
+          "Aumentar legibilidade e contraste em todos os tamanhos",
+          "Padronizar aplicacao para reduzir inconsistencias",
+          "Criar base visual escalavel para comunicacao institucional"
+        ],
+        "learningsItems": [
+          "Projetos institucionais exigem equilibrio entre tradicao e renovacao",
+          "Consistencia de marca depende de regras claras de aplicacao",
+          "Detalhes tecnicos de logomarca impactam percepcao de credibilidade",
+          "Direcao visual bem definida acelera producao de materiais"
+        ],
         "caseStudyHref": "https://www.behance.net/davidkim115"
       },
       {

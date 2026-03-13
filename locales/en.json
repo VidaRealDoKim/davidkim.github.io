@@ -572,11 +572,80 @@
         "slug": "forum-barbearia",
         "name": "Forum Barbearia Rebranding",
         "category": "branding",
-        "image": "https://images.unsplash.com/photo-1634942537034-2531766767d1?auto=format&fit=crop&w=1200&q=80",
+        "image": "/images/projects/Forum/Forum_logo.png",
+        "detailImage": "/images/projects/Forum/Forum_logo.png",
+        "gallery": [
+          "/images/projects/Forum/Forum_showroom_01.png",
+          "/images/projects/Forum/Forum_showroom_02.png",
+          "/images/projects/Forum/Forum_showroom_03.png",
+          "/images/projects/Forum/Forum_showroom_04.png",
+          "/images/projects/Forum/Forum_showroom_05.png"
+        ],
         "tags": ["Branding", "Rebranding", "Logo", "Visual Identity"],
-        "problem": "The brand needed a logo refresh to strengthen positioning and improve visual consistency.",
-        "solution": "Logo rebranding for Forum Barbearia, refining typography, symbol construction, and application guidelines.",
-        "result": "A stronger, more memorable identity with consistent execution across digital and print touchpoints.",
+        "problem": "Forum Barbearia had strong local recognition but lacked technical and visual consistency to scale communication across social media, storefront signage, uniforms, and print materials.",
+        "process": "We executed a full rebranding workflow: brand diagnosis, positioning attribute definition, visual concept exploration, typography and symbol refinement, legibility testing at multiple sizes, and consolidation of an application-ready identity system.",
+        "solution": "Logo rebranding with a redesigned core mark, improved proportions, contrast and readability, horizontal and reduced lockups, supporting color palette, typographic standards, and practical usage guidelines for digital and physical media.",
+        "result": "The new identity increased the brand's professional perception, unified communication across touchpoints, and made asset production faster and more consistent.",
+        "overview": "A complete branding update for Forum Barbearia focused on logo evolution and visual language refinement to better express a modern, trustworthy, and premium barbershop positioning. Scope included diagnosis, strategy, redesign, and implementation guidance.",
+        "challenge": "Modernize the brand without losing existing customer recognition, balancing personality with technical clarity and cross-channel adaptability.",
+        "roleTitle": "Brand Designer",
+        "roleItems": [
+          "Brand diagnosis and competitor benchmark",
+          "Creative direction and rebranding concept definition",
+          "Logo redesign and lockup variations",
+          "Visual system structuring for practical applications",
+          "Usage guideline organization for long-term consistency"
+        ],
+        "strategyItems": [
+          "Preserve brand recognition while evolving visual quality",
+          "Prioritize readability and contrast at small sizes",
+          "Build a flexible system for digital, signage, and print",
+          "Standardize application rules to avoid distortions"
+        ],
+        "learningsItems": [
+          "Effective rebranding balances continuity and change",
+          "Technical logo quality directly impacts perceived brand value",
+          "A clear application system reduces production errors and rework",
+          "Visual consistency strengthens positioning and brand memory"
+        ],
+        "caseStudyHref": "https://www.behance.net/davidkim115"
+      },
+      {
+        "slug": "catedral-do-avivamento",
+        "name": "Catedral do Avivamento Rebranding",
+        "category": "branding",
+        "image": "/images/projects/catedral/Catedral_logo.png",
+        "detailImage": "/images/projects/catedral/Catedral_logo.png",
+        "gallery": [
+          "/images/projects/catedral/Catedral_logo.png"
+        ],
+        "tags": ["Branding", "Rebranding", "Logo", "Visual Identity"],
+        "problem": "The previous identity of Catedral do Avivamento did not clearly communicate its institutional message and showed inconsistent usage across ministries, social channels, and support materials.",
+        "process": "The rebranding followed a structured flow: current identity diagnosis, definition of core attributes (welcome, faith, and authority), visual exploration, typographic and symbolic refinement, legibility validation at multiple scales, and consolidation of practical usage rules.",
+        "solution": "We developed a new logo system with improved balance, readability, and reproduction quality. The system includes primary and reduced lockups, spacing guidance, alignment rules, and recommendations for digital and print use.",
+        "result": "The new identity strengthened Catedral do Avivamento's institutional presence, improved visual consistency across materials, and made communication production more efficient and reliable.",
+        "overview": "A logo rebranding project for Catedral do Avivamento focused on translating spiritual and institutional values into a contemporary, consistent, and versatile visual signature.",
+        "challenge": "Modernize the brand without breaking community recognition, balancing symbolism, sobriety, and technical clarity for different reproduction contexts.",
+        "roleTitle": "Brand Designer",
+        "roleItems": [
+          "Audit and analysis of the existing identity",
+          "Rebranding concept and visual direction definition",
+          "New logo construction and refinement",
+          "Technical tuning for readability and reproduction",
+          "Application guideline structuring"
+        ],
+        "strategyItems": [
+          "Preserve essential symbolic elements of the brand",
+          "Increase readability and contrast at every size",
+          "Standardize usage to reduce inconsistencies",
+          "Build a scalable visual base for institutional communication"
+        ],
+        "learningsItems": [
+          "Institutional projects require balance between heritage and renewal",
+          "Brand consistency depends on clear application rules",
+          "Technical logo details directly affect credibility perception",
+          "Well-defined visual direction speeds up asset production"
+        ],
         "caseStudyHref": "https://www.behance.net/davidkim115"
       },
       {
