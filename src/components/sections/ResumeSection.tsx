@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import { Reveal } from "@/components/ui/Reveal";
 import { Section } from "@/components/ui/Section";
 import { useI18n } from "@/i18n/I18nProvider";
@@ -28,6 +29,7 @@ export function ResumeSection() {
   const { dictionary } = useI18n();
   const resume = dictionary.resume;
   const educationAndCertifications = resume.educationAndCertifications;
+  const [expanded, setExpanded] = useState(false);
 
   return (
     <Section id="resume" title={resume.title}>
@@ -63,99 +65,127 @@ export function ResumeSection() {
           </article>
         </Reveal>
 
-        <div className="grid gap-10 lg:grid-cols-2">
-          {[resume.designExperience, resume.developmentExperience].map((section: ResumeListSection, index) => (
-            <Reveal key={section.title} delay={80 + index * 40}>
-              <article>
-                <h3 className="text-2xl font-semibold tracking-tight text-text md:text-3xl">{section.title}</h3>
-                <div className="mt-4 h-px w-16 accent-divider" />
-                <ul className="mt-5 list-disc space-y-2 pl-5 text-sm leading-relaxed text-text/85 md:text-base">
-                  {section.items.map((item) => (
-                    <li key={item}>{item}</li>
-                  ))}
-                </ul>
-              </article>
-            </Reveal>
-          ))}
-        </div>
+        {/* Collapsible extra content */}
+        <div className={`grid transition-all duration-700 ease-in-out ${expanded ? "grid-rows-[1fr]" : "grid-rows-[0fr]"}`}>
+          <div className="min-h-0 overflow-hidden">
+            <div className="space-y-14 pb-2">
+              <div className="grid gap-10 lg:grid-cols-2">
+                {[resume.designExperience, resume.developmentExperience].map((section: ResumeListSection, index) => (
+                  <Reveal key={section.title} delay={80 + index * 40}>
+                    <article>
+                      <h3 className="text-2xl font-semibold tracking-tight text-text md:text-3xl">{section.title}</h3>
+                      <div className="mt-4 h-px w-16 accent-divider" />
+                      <ul className="mt-5 list-disc space-y-2 pl-5 text-sm leading-relaxed text-text/85 md:text-base">
+                        {section.items.map((item) => (
+                          <li key={item}>{item}</li>
+                        ))}
+                      </ul>
+                    </article>
+                  </Reveal>
+                ))}
+              </div>
 
-        <article>
-          <Reveal delay={80}>
-            <div>
-              <h3 className="text-2xl font-semibold tracking-tight text-text md:text-3xl">{educationAndCertifications.title}</h3>
-              <div className="mt-4 h-px w-16 accent-divider" />
-            </div>
-          </Reveal>
-          <div className="relative mt-10">
-            <div
-              className="absolute left-[5px] top-1 bottom-1 w-0.5 rounded-full bg-border"
-              aria-hidden="true"
-            />
-            {educationAndCertifications.items.map((item: ResumeCertificationItem, index: number) => (
-              <Reveal key={`${item.title}-${item.provider}`} delay={index < 6 ? index * 60 : 0}>
-                <div className="relative pl-9 pb-7">
-                  <span
-                    className="absolute left-0 top-[6px] block h-3 w-3 rounded-full border-2 bg-background"
-                    style={{ borderColor: "var(--accent-line)" }}
+              <article>
+                <Reveal delay={80}>
+                  <div>
+                    <h3 className="text-2xl font-semibold tracking-tight text-text md:text-3xl">{educationAndCertifications.title}</h3>
+                    <div className="mt-4 h-px w-16 accent-divider" />
+                  </div>
+                </Reveal>
+                <div className="relative mt-10">
+                  <div
+                    className="absolute left-[5px] top-1 bottom-1 w-0.5 rounded-full bg-border"
                     aria-hidden="true"
                   />
-                  {item.year ? (
-                    <span
-                      className="text-[10px] font-bold tracking-[0.12em] uppercase"
-                      style={{ color: "var(--accent-strong)" }}
-                    >
-                      {item.year}
-                    </span>
-                  ) : null}
-                  <h4 className="mt-0.5 text-sm font-semibold leading-snug text-text md:text-base">
-                    {item.title}
-                  </h4>
-                  <p className="mt-0.5 text-xs font-medium text-muted">{item.provider}</p>
-                  <p className="mt-1.5 text-xs leading-relaxed text-text/70 md:text-sm">
-                    {item.description}
-                  </p>
+                  {educationAndCertifications.items.map((item: ResumeCertificationItem, index: number) => (
+                    <Reveal key={`${item.title}-${item.provider}`} delay={index < 6 ? index * 60 : 0}>
+                      <div className="relative pl-9 pb-7">
+                        <span
+                          className="absolute left-0 top-[6px] block h-3 w-3 rounded-full border-2 bg-background"
+                          style={{ borderColor: "var(--accent-line)" }}
+                          aria-hidden="true"
+                        />
+                        {item.year ? (
+                          <span
+                            className="text-[10px] font-bold tracking-[0.12em] uppercase"
+                            style={{ color: "var(--accent-strong)" }}
+                          >
+                            {item.year}
+                          </span>
+                        ) : null}
+                        <h4 className="mt-0.5 text-sm font-semibold leading-snug text-text md:text-base">
+                          {item.title}
+                        </h4>
+                        <p className="mt-0.5 text-xs font-medium text-muted">{item.provider}</p>
+                        <p className="mt-1.5 text-xs leading-relaxed text-text/70 md:text-sm">
+                          {item.description}
+                        </p>
+                      </div>
+                    </Reveal>
+                  ))}
                 </div>
-              </Reveal>
-            ))}
-          </div>
-        </article>
+              </article>
 
-        <Reveal delay={200}>
-          <article>
-            <h3 className="text-2xl font-semibold tracking-tight text-text md:text-3xl">{resume.technicalSkills.title}</h3>
-            <div className="mt-4 h-px w-16 accent-divider" />
-            <div className="mt-6 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
-              {resume.technicalSkills.groups.map((group: ResumeListSection) => (
-                <div key={group.title} className="rounded-2xl border border-border bg-surface p-5 shadow-soft">
-                  <h4 className="text-sm font-semibold uppercase tracking-[0.1em] text-muted">{group.title}</h4>
-                  <ul className="mt-4 space-y-2 text-sm text-text/85">
-                    {group.items.map((item) => (
-                      <li key={item}>{item}</li>
+              <Reveal delay={200}>
+                <article>
+                  <h3 className="text-2xl font-semibold tracking-tight text-text md:text-3xl">{resume.technicalSkills.title}</h3>
+                  <div className="mt-4 h-px w-16 accent-divider" />
+                  <div className="mt-6 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
+                    {resume.technicalSkills.groups.map((group: ResumeListSection) => (
+                      <div key={group.title} className="rounded-2xl border border-border bg-surface p-5 shadow-soft">
+                        <h4 className="text-sm font-semibold uppercase tracking-[0.1em] text-muted">{group.title}</h4>
+                        <ul className="mt-4 space-y-2 text-sm text-text/85">
+                          {group.items.map((item) => (
+                            <li key={item}>{item}</li>
+                          ))}
+                        </ul>
+                      </div>
+                    ))}
+                  </div>
+                </article>
+              </Reveal>
+
+              <Reveal delay={240}>
+                <article className="rounded-2xl border border-border bg-surface p-6 shadow-soft md:p-8">
+                  <h3 className="text-2xl font-semibold tracking-tight text-text md:text-3xl">{resume.additionalExperience.title}</h3>
+                  <h4 className="mt-5 text-lg font-semibold text-text md:text-xl">{resume.additionalExperience.role}</h4>
+                  <p className="mt-1 text-sm text-muted">{resume.additionalExperience.organization}</p>
+                  <p className="mt-4 text-sm leading-relaxed text-text/85 md:text-base">{resume.additionalExperience.description}</p>
+                  <ul className="mt-5 list-disc space-y-2 pl-5 text-sm leading-relaxed text-text/85 md:text-base">
+                    {resume.additionalExperience.events.map((event) => (
+                      <li key={event}>{event}</li>
                     ))}
                   </ul>
-                </div>
-              ))}
+                  <p className="mt-5 text-sm leading-relaxed text-text/85 md:text-base">{resume.additionalExperience.achievement}</p>
+                  {resume.additionalExperience.connection ? (
+                    <p className="mt-4 text-sm leading-relaxed text-text/70 md:text-base">{resume.additionalExperience.connection}</p>
+                  ) : null}
+                </article>
+              </Reveal>
             </div>
-          </article>
-        </Reveal>
+          </div>
+        </div>
 
-        <Reveal delay={240}>
-          <article className="rounded-2xl border border-border bg-surface p-6 shadow-soft md:p-8">
-            <h3 className="text-2xl font-semibold tracking-tight text-text md:text-3xl">{resume.additionalExperience.title}</h3>
-            <h4 className="mt-5 text-lg font-semibold text-text md:text-xl">{resume.additionalExperience.role}</h4>
-            <p className="mt-1 text-sm text-muted">{resume.additionalExperience.organization}</p>
-            <p className="mt-4 text-sm leading-relaxed text-text/85 md:text-base">{resume.additionalExperience.description}</p>
-            <ul className="mt-5 list-disc space-y-2 pl-5 text-sm leading-relaxed text-text/85 md:text-base">
-              {resume.additionalExperience.events.map((event) => (
-                <li key={event}>{event}</li>
-              ))}
-            </ul>
-            <p className="mt-5 text-sm leading-relaxed text-text/85 md:text-base">{resume.additionalExperience.achievement}</p>
-            {resume.additionalExperience.connection ? (
-              <p className="mt-4 text-sm leading-relaxed text-text/70 md:text-base">{resume.additionalExperience.connection}</p>
-            ) : null}
-          </article>
-        </Reveal>
+        {/* Toggle button */}
+        <div className="flex justify-center">
+          <button
+            onClick={() => setExpanded((prev) => !prev)}
+            className="group flex items-center gap-2 rounded-full border border-border bg-surface px-6 py-3 text-sm font-medium text-text/80 shadow-soft transition-all duration-300 hover:border-[color:var(--accent-line)] hover:text-text"
+            aria-expanded={expanded}
+          >
+            {expanded ? resume.seeLess : resume.seeMore}
+            <svg
+              className={`h-4 w-4 transition-transform duration-300 ${expanded ? "rotate-180" : ""}`}
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              strokeWidth={2}
+              aria-hidden="true"
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+        </div>
       </div>
     </Section>
   );
