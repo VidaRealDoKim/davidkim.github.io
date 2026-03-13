@@ -42,3 +42,6 @@ next-env.d.ts
 
 # local resume export
 /public/images/curriculo david/curriculum.pdf
+
+.vercel
+.env*.local
