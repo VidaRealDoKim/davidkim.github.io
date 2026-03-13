@@ -36,6 +36,9 @@ export function ProjectDetailPage({ slug }: ProjectDetailPageProps) {
   const roleItems = "roleItems" in project ? project.roleItems : undefined;
   const strategyItems = "strategyItems" in project ? project.strategyItems : undefined;
   const learningsItems = "learningsItems" in project ? project.learningsItems : undefined;
+  const figmaHref = "figmaHref" in project && typeof project.figmaHref === "string" ? project.figmaHref : undefined;
+  const githubHref = "githubHref" in project && typeof project.githubHref === "string" ? project.githubHref : undefined;
+  const caseStudyHref = "caseStudyHref" in project && typeof project.caseStudyHref === "string" ? project.caseStudyHref : undefined;
   const detailLabels = "detailLabels" in dictionary.projects ? dictionary.projects.detailLabels : undefined;
 
   return (
@@ -86,6 +89,39 @@ export function ProjectDetailPage({ slug }: ProjectDetailPageProps) {
                 >
                   {dictionary.projects.backToProjectsLabel}
                 </Link>
+
+                {figmaHref ? (
+                  <Link
+                    href={figmaHref}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center rounded-full border border-border bg-surface px-5 py-3 text-sm font-semibold uppercase tracking-[0.08em] text-text transition-all duration-300 hover:-translate-y-0.5 hover:border-[color:var(--accent-line)]"
+                  >
+                    Figma
+                  </Link>
+                ) : null}
+
+                {githubHref ? (
+                  <Link
+                    href={githubHref}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center rounded-full border border-border bg-surface px-5 py-3 text-sm font-semibold uppercase tracking-[0.08em] text-text transition-all duration-300 hover:-translate-y-0.5 hover:border-[color:var(--accent-line)]"
+                  >
+                    GitHub
+                  </Link>
+                ) : null}
+
+                {caseStudyHref ? (
+                  <Link
+                    href={caseStudyHref}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center rounded-full border border-border bg-surface px-5 py-3 text-sm font-semibold uppercase tracking-[0.08em] text-text transition-all duration-300 hover:-translate-y-0.5 hover:border-[color:var(--accent-line)]"
+                  >
+                    Case Study
+                  </Link>
+                ) : null}
               </div>
             </div>
           </Reveal>

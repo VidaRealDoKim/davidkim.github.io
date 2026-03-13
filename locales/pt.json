@@ -408,7 +408,8 @@
           "/images/projects/buddytech/Buddytech_showroom_02.png",
           "/images/projects/buddytech/Buddytech_showroom_03.png",
           "/images/projects/buddytech/Buddytech_showroom_04.png",
-          "/images/projects/buddytech/Buddytech_showroom_05.png"
+          "/images/projects/buddytech/Buddytech_showroom_05.png",
+          "/images/projects/buddytech/Buddytech_showroom_06.png"
         ],
         "tags": ["UX/UI", "Product Design", "MVP", "1º lugar Hackathon +Devs2Blu 5ª edição (Blusoft, 2025)"],
         "problem": "Times comerciais perdem tempo com leads frios por falta de priorização inteligente baseada em dados de interação.",
@@ -436,6 +437,8 @@
           "Tomada de decisao rapida em contexto de inovacao",
           "Conexao entre UX, dados e resultado comercial"
         ],
+        "githubHref": "https://github.com/buddytech-dev",
+        "figmaHref": "https://www.figma.com/design/eGvlRGQQEiuzL7xI5l0mc2/BuddyTech?node-id=20-35&t=ZJvqkuxxR3bKj4Ki-1",
         "caseStudyHref": "https://www.behance.net/davidkim115"
       },
       {
@@ -447,7 +450,9 @@
         "gallery": [
           "/images/projects/evolution/Evolution_showroom_01.png",
           "/images/projects/evolution/Evolution_showroom_02.png",
-          "/images/projects/evolution/Evolution_showroom_03.png"
+          "/images/projects/evolution/Evolution_showroom_03.png",
+          "/images/projects/evolution/Evolution_showroom_04.png",
+          "/images/projects/evolution/Evolution_showroom_05.png"
         ],
         "tags": ["UX/UI", "Mobile", "Flutter", "Gamificação"],
         "problem": "Pessoas com objetivos claros enfrentam dificuldades em manter consistência ao longo do tempo sem acompanhamento e reforço motivacional adequados.",
@@ -474,7 +479,8 @@
           "Design de aplicativos mobile com foco em comportamento do usuário",
           "Aplicação de gamificação como estratégia de UX",
           "Construção de MVPs orientados à mudança de comportamento"
-        ]
+        ],
+        "figmaHref": "https://www.figma.com/design/oWUZVodomFkzW87wMrLayH/Evolution?node-id=43-80&t=XQQlvEgbFUwOJzsK-1"
       },
       {
         "slug": "uxtreme",
@@ -485,7 +491,9 @@
         "gallery": [
           "/images/projects/uxtreme/Uxtreme_showroom_01.png",
           "/images/projects/uxtreme/Uxtreme_showroom_02.png",
-          "/images/projects/uxtreme/Uxtreme_showroom_03.png"
+          "/images/projects/uxtreme/Uxtreme_showroom_03.png",
+          "/images/projects/uxtreme/Uxtreme_showroom_04.png",
+          "/images/projects/uxtreme/Uxtreme_showroom_05.png"
         ],
         "tags": ["UX/UI", "Product Design", "Entra21", "Projeto Final 2024", "Figma", "Sem Código"],
         "problem": "Muitos produtos digitais falham em usabilidade por não seguirem um processo completo de UX, o que gera fluxos confusos, baixa acessibilidade e interfaces pouco validadas.",
@@ -516,6 +524,7 @@
           "Aplicação prática de acessibilidade e usabilidade",
           "Organização de processo de design em equipe"
         ],
+        "figmaHref": "https://www.figma.com/design/3T3CtGzw6nzPsQipiN9Muc/Uxtreme?node-id=441-3998&t=RfBDbhQUwFIf9zbr-1",
         "caseStudyHref": "https://www.canva.com/design/DAF85ptVXSo/_TGSGXZHI14QRvt5S13eZA/edit"
       },
       {
@@ -527,7 +536,8 @@
         "gallery": [
           "/images/projects/timeroom/Timeroom_showroom_01.png",
           "/images/projects/timeroom/Timeroom_showroom_02.png",
-          "/images/projects/timeroom/Timeroom_showroom_03.png"
+          "/images/projects/timeroom/Timeroom_showroom_03.png",
+          "/images/projects/timeroom/Timeroom_showroom_04.png"
         ],
         "tags": ["UX/UI", "Product Design", "Scheduling", "Mobile"],
         "problem": "Usuários e equipes perdiam tempo para organizar agendas e reservar horários em fluxos confusos e com pouca visibilidade.",
@@ -554,7 +564,9 @@
           "Microinterações reduzem insegurança do usuário",
           "Clareza de disponibilidade evita conflitos operacionais",
           "UX bem estruturada impacta eficiência do negócio"
-        ]
+        ],
+        "githubHref": "https://github.com/VidaRealDoKim/TimeRoom",
+        "figmaHref": "https://www.figma.com/design/vSVq0PfSeTFxoVu2a69ciZ/TimeRoom?node-id=627-321&t=kOsUSgDDmoKhS4bn-1"
       },
       {
         "slug": "plataforma-imobiliaria",
